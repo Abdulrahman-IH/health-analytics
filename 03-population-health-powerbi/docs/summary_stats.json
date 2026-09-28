@@ -1,0 +1,366 @@
+{
+  "snapshot_date": "2025-12-31",
+  "period": "Jan 2025 \u2013 Dec 2025",
+  "patients": 50000,
+  "raw_rows_in": {
+    "patients": 50320,
+    "conditions": 53669,
+    "screenings": 294717,
+    "wearable_monthly": 308034,
+    "engagement_events": 297776
+  },
+  "rows_removed": {
+    "patients": 320,
+    "conditions": 923,
+    "wearable_monthly": 500,
+    "engagement_events": 2344
+  },
+  "star_schema_rows": {
+    "dim_date": 20820,
+    "dim_patient": 50000,
+    "dim_geography": 60,
+    "dim_condition": 5,
+    "dim_screening": 10,
+    "dim_event_type": 7,
+    "fact_condition": 52746,
+    "fact_screening": 294717,
+    "fact_wearable_monthly": 307534,
+    "fact_engagement_event": 295432,
+    "fact_patient_risk_snapshot": 50000
+  },
+  "demographics": {
+    "median_age": 46.0,
+    "pct_female": 51.6,
+    "pct_65_plus": 13.4,
+    "region_share": {
+      "South": 37.9,
+      "West": 24.1,
+      "Midwest": 21.0,
+      "Northeast": 17.1
+    },
+    "insurance_share": {
+      "Commercial": 73.0,
+      "Medicaid": 9.9,
+      "Medicare": 7.5,
+      "Uninsured": 4.9,
+      "Medicare Advantage": 4.7
+    }
+  },
+  "prevalence_pct": {
+    "diabetes": 12.1,
+    "hypertension": 25.9,
+    "obesity": 34.9,
+    "hyperlipidemia": 25.9,
+    "asthma": 6.7,
+    "any_focus_condition": 50.1,
+    "multimorbid": 18.3
+  },
+  "prevalence_by_region_pct": {
+    "Midwest": {
+      "hypertension": 24.7,
+      "diabetes": 11.2,
+      "obesity": 34.3
+    },
+    "Northeast": {
+      "hypertension": 23.9,
+      "diabetes": 11.0,
+      "obesity": 33.0
+    },
+    "South": {
+      "hypertension": 29.3,
+      "diabetes": 14.5,
+      "obesity": 39.8
+    },
+    "West": {
+      "hypertension": 23.2,
+      "diabetes": 9.9,
+      "obesity": 29.1
+    }
+  },
+  "prevalence_by_age_band_pct": {
+    "18\u201329": {
+      "hypertension": 6.1,
+      "diabetes": 2.8,
+      "obesity": 28.4
+    },
+    "30\u201339": {
+      "hypertension": 10.5,
+      "diabetes": 5.0,
+      "obesity": 31.7
+    },
+    "40\u201349": {
+      "hypertension": 18.8,
+      "diabetes": 8.1,
+      "obesity": 34.9
+    },
+    "50\u201359": {
+      "hypertension": 31.0,
+      "diabetes": 13.2,
+      "obesity": 37.8
+    },
+    "60\u201369": {
+      "hypertension": 46.5,
+      "diabetes": 21.9,
+      "obesity": 38.1
+    },
+    "70\u201379": {
+      "hypertension": 62.8,
+      "diabetes": 30.0,
+      "obesity": 38.9
+    },
+    "80+": {
+      "hypertension": 78.4,
+      "diabetes": 45.7,
+      "obesity": 37.1
+    }
+  },
+  "control_pct": {
+    "hypertension": 51.2,
+    "diabetes": 63.2,
+    "hyperlipidemia": 37.9
+  },
+  "screening": {
+    "overall_completion_pct": 65.2,
+    "open_care_gaps": 102654,
+    "patients_with_any_gap_pct": 87.2,
+    "by_screening_pct": {
+      "A1C_DM": 76.9,
+      "A1C_SCREEN": 57.0,
+      "AWV": 61.4,
+      "BP": 81.6,
+      "CERVICAL": 70.0,
+      "CRC": 64.6,
+      "EYE_DM": 54.4,
+      "FLU": 51.8,
+      "LIPID": 68.8,
+      "MAMMO": 72.7
+    },
+    "by_region_pct": {
+      "Midwest": 65.8,
+      "Northeast": 71.9,
+      "South": 61.0,
+      "West": 66.6
+    },
+    "enrolled_vs_not_pct": {
+      "not_enrolled": 56.9,
+      "enrolled": 69.6
+    },
+    "engaged_vs_not_pct": {
+      "Active": 69.4,
+      "Dormant": 70.1,
+      "Not enrolled": 56.9,
+      "Occasional": 69.5
+    }
+  },
+  "engagement": {
+    "enrolled_pct": 66.5,
+    "engaged_active_pct_of_enrolled": 56.1,
+    "engagement_segments_pct_of_population": {
+      "Active": 37.3,
+      "Not enrolled": 33.5,
+      "Occasional": 19.0,
+      "Dormant": 10.2
+    },
+    "events_total": 295432,
+    "events_by_type": {
+      "login": 153578,
+      "medication_reminder_sent": 41586,
+      "medication_reminder_acknowledged": 29368,
+      "appointment_booking": 26515,
+      "screening_reminder_viewed": 23610,
+      "message_to_care_team": 11783,
+      "wearable_sync": 8992
+    },
+    "events_by_channel_pct": {
+      "iOS": 48.1,
+      "Android": 37.8,
+      "Web": 14.1
+    },
+    "monthly_active_users": {
+      "202501": 7083,
+      "202502": 7121,
+      "202503": 8332,
+      "202504": 8722,
+      "202505": 9624,
+      "202506": 10180,
+      "202507": 11251,
+      "202508": 11901,
+      "202509": 12726,
+      "202510": 13974,
+      "202511": 14875,
+      "202512": 16452
+    },
+    "appointment_bookings": 26515,
+    "med_reminder_ack_rate_pct": 70.6
+  },
+  "wearables": {
+    "wearable_users_pct": 55.6,
+    "median_daily_steps": 7711.0,
+    "median_sleep_hours": 6.99,
+    "median_resting_hr": 67.1,
+    "pct_months_10k_steps": 14.3,
+    "activity_band_pct": {
+      "Somewhat active (7.5\u201310k)": 39.6,
+      "Low active (5\u20137.5k)": 35.1,
+      "Active (10k+)": 14.3,
+      "Sedentary (<5k)": 11.0
+    },
+    "steps_by_risk_tier": {
+      "High": 6720.0,
+      "Low": 8493.0,
+      "Moderate": 7703.0,
+      "Very High": 5372.0
+    },
+    "steps_by_month": {
+      "2025-01": 6799.0,
+      "2025-02": 6955.0,
+      "2025-03": 7449.0,
+      "2025-04": 7964.0,
+      "2025-05": 8256.0,
+      "2025-06": 8409.0,
+      "2025-07": 8360.0,
+      "2025-08": 8207.0,
+      "2025-09": 7957.0,
+      "2025-10": 7716.0,
+      "2025-11": 7251.0,
+      "2025-12": 6914.0
+    }
+  },
+  "risk": {
+    "tier_distribution_pct": {
+      "Moderate": 37.2,
+      "Low": 32.6,
+      "High": 18.4,
+      "Very High": 11.7
+    },
+    "tier_counts": {
+      "Moderate": 18612,
+      "Low": 16303,
+      "High": 9215,
+      "Very High": 5870
+    },
+    "mean_score": 6.02,
+    "high_or_very_high_pct": 30.2,
+    "priority_outreach_cohort": 10280,
+    "rising_risk_patients": 2559,
+    "high_risk_with_gaps": 14259,
+    "care_gaps_by_tier": {
+      "High": 2.63,
+      "Low": 1.11,
+      "Moderate": 2.3,
+      "Very High": 2.98
+    },
+    "screening_rate_by_tier_pct": {
+      "High": 59.5,
+      "Low": 78.0,
+      "Moderate": 61.7,
+      "Very High": 57.1
+    },
+    "engaged_pct_by_tier": {
+      "High": 30.8,
+      "Low": 46.0,
+      "Moderate": 37.1,
+      "Very High": 24.1
+    },
+    "tier_by_region_pct": {
+      "Midwest": {
+        "High": 17.7,
+        "Low": 33.8,
+        "Moderate": 37.4,
+        "Very High": 11.1
+      },
+      "Northeast": {
+        "High": 16.3,
+        "Low": 39.1,
+        "Moderate": 35.6,
+        "Very High": 8.9
+      },
+      "South": {
+        "High": 20.8,
+        "Low": 26.8,
+        "Moderate": 37.6,
+        "Very High": 14.7
+      },
+      "West": {
+        "High": 16.9,
+        "Low": 36.0,
+        "Moderate": 37.6,
+        "Very High": 9.6
+      }
+    }
+  },
+  "data_quality": {
+    "patients: duplicate patient_id": {
+      "before": 320,
+      "after": 0
+    },
+    "patients: non-standard region label": {
+      "before": 1594,
+      "after": 0
+    },
+    "patients: non-standard sex code": {
+      "before": 1200,
+      "after": 0
+    },
+    "patients: state written as full name": {
+      "before": 1500,
+      "after": 0
+    },
+    "patients: BMI missing": {
+      "before": 1395,
+      "after": 0
+    },
+    "patients: BMI outside 12\u201370": {
+      "before": 90,
+      "after": 0
+    },
+    "patients: birth_date after snapshot": {
+      "before": 45,
+      "after": 0
+    },
+    "conditions: duplicate record_id": {
+      "before": 400,
+      "after": 0
+    },
+    "screenings: completed but date missing": {
+      "before": 150,
+      "after": 0
+    },
+    "screenings: completed date after snapshot": {
+      "before": 200,
+      "after": 0
+    },
+    "wearables: duplicate record_id": {
+      "before": 500,
+      "after": 0
+    },
+    "wearables: steps \u2264 0 or > 50,000": {
+      "before": 650,
+      "after": 0
+    },
+    "wearables: sleep > 16 h": {
+      "before": 200,
+      "after": 0
+    },
+    "wearables: resting HR outside 35\u2013200": {
+      "before": 250,
+      "after": 0
+    },
+    "events: duplicate event_id": {
+      "before": 1500,
+      "after": 0
+    },
+    "events: timestamp after snapshot": {
+      "before": 3186,
+      "after": 0
+    },
+    "events: patient_id not in patients": {
+      "before": 250,
+      "after": 0
+    },
+    "events: non-standard channel label": {
+      "before": 700,
+      "after": 0
+    }
+  }
+}

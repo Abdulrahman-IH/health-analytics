@@ -1,0 +1,11 @@
+screening_key,screening_code,recommended_interval_months,screening_name,screening_category,guideline_source,eligible_sex,min_age,max_age
+1,A1C_DM,6,HbA1c test (diabetes management),Chronic disease management,HEDIS HBD,Any,18,120
+2,A1C_SCREEN,36,Diabetes screening (A1c / glucose),Cardiometabolic,USPSTF Grade B,Any,35,70
+3,AWV,12,Annual wellness visit,Wellness,CMS,Any,18,120
+4,BP,12,Blood pressure screening,Cardiovascular,USPSTF Grade A,Any,18,120
+5,CERVICAL,36,Cervical cancer screening,Cancer,USPSTF Grade A,F,21,65
+6,CRC,120,Colorectal cancer screening,Cancer,USPSTF Grade A/B,Any,45,75
+7,EYE_DM,12,Diabetic retinal eye exam,Chronic disease management,HEDIS EED,Any,18,120
+8,FLU,12,Influenza vaccination,Immunisation,ACIP,Any,18,120
+9,LIPID,60,Lipid panel,Cardiovascular,USPSTF Grade B,Any,40,75
+10,MAMMO,24,Breast cancer screening (mammography),Cancer,USPSTF Grade B,F,40,74

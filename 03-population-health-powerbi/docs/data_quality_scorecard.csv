@@ -1,0 +1,19 @@
+issue,rows_before,rows_after
+patients: duplicate patient_id,320,0
+patients: non-standard region label,1594,0
+patients: non-standard sex code,1200,0
+patients: state written as full name,1500,0
+patients: BMI missing,1395,0
+patients: BMI outside 12–70,90,0
+patients: birth_date after snapshot,45,0
+conditions: duplicate record_id,400,0
+screenings: completed but date missing,150,0
+screenings: completed date after snapshot,200,0
+wearables: duplicate record_id,500,0
+"wearables: steps ≤ 0 or > 50,000",650,0
+wearables: sleep > 16 h,200,0
+wearables: resting HR outside 35–200,250,0
+events: duplicate event_id,1500,0
+events: timestamp after snapshot,3186,0
+events: patient_id not in patients,250,0
+events: non-standard channel label,700,0

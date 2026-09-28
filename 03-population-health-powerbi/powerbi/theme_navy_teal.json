@@ -1,0 +1,74 @@
+{
+  "name": "Population Health — Navy & Teal",
+  "dataColors": ["#2DD4BF", "#60A5FA", "#F4B860", "#F87171", "#A78BFA", "#5EEAD4", "#93C5FD", "#FBBF24"],
+  "background": "#0B1F3A",
+  "foreground": "#F5F7FA",
+  "tableAccent": "#14B8A6",
+  "good": "#2DD4BF",
+  "neutral": "#F4B860",
+  "bad": "#F87171",
+  "maximum": "#14B8A6",
+  "center": "#1E3A5F",
+  "minimum": "#0B1F3A",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#F5F7FA" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#C7D2E0" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 32, "color": "#2DD4BF" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#F5F7FA" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#12294A" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#1E3A5F" } }, "radius": 8 }],
+        "title": [{ "show": true, "fontColor": { "solid": { "color": "#F5F7FA" } }, "fontSize": 12, "fontFamily": "Segoe UI Semibold" }],
+        "categoryAxis": [{ "labelColor": { "solid": { "color": "#C7D2E0" } }, "gridlineShow": false, "titleColor": { "solid": { "color": "#9FB3C8" } } }],
+        "valueAxis": [{ "labelColor": { "solid": { "color": "#C7D2E0" } }, "gridlineColor": { "solid": { "color": "#1E3A5F" } }, "gridlineStyle": "dotted", "titleColor": { "solid": { "color": "#9FB3C8" } } }],
+        "legend": [{ "labelColor": { "solid": { "color": "#C7D2E0" } }, "fontSize": 10, "position": "Top" }],
+        "labels": [{ "color": { "solid": { "color": "#F5F7FA" } }, "fontSize": 10 }],
+        "outspacePane": [{ "backgroundColor": { "solid": { "color": "#0B1F3A" } }, "foregroundColor": { "solid": { "color": "#F5F7FA" } } }],
+        "filterCard": [{ "$id": "Applied", "backgroundColor": { "solid": { "color": "#12294A" } }, "foregroundColor": { "solid": { "color": "#F5F7FA" } } }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#2DD4BF" } }, "fontSize": 30, "fontFamily": "Segoe UI Semibold" }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#9FB3C8" } }, "fontSize": 11 }]
+      }
+    },
+    "kpi": {
+      "*": {
+        "indicator": [{ "fontSize": 28, "fontFamily": "Segoe UI Semibold" }],
+        "goals": [{ "showGoal": true, "showDistance": true }],
+        "status": [{ "direction": "Positive", "goodColor": { "solid": { "color": "#2DD4BF" } }, "neutralColor": { "solid": { "color": "#F4B860" } }, "badColor": { "solid": { "color": "#F87171" } } }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "header": [{ "show": true, "fontColor": { "solid": { "color": "#9FB3C8" } }, "fontSize": 10 }],
+        "items": [{ "fontColor": { "solid": { "color": "#F5F7FA" } }, "background": { "solid": { "color": "#12294A" } }, "fontSize": 10 }],
+        "general": [{ "outlineColor": { "solid": { "color": "#1E3A5F" } } }]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "grid": [{ "gridVertical": false, "gridHorizontal": true, "gridHorizontalColor": { "solid": { "color": "#1E3A5F" } }, "rowPadding": 4 }],
+        "columnHeaders": [{ "fontColor": { "solid": { "color": "#F5F7FA" } }, "backColor": { "solid": { "color": "#1E3A5F" } }, "bold": true }],
+        "values": [{ "fontColorPrimary": { "solid": { "color": "#F5F7FA" } }, "backColorPrimary": { "solid": { "color": "#12294A" } }, "fontColorSecondary": { "solid": { "color": "#F5F7FA" } }, "backColorSecondary": { "solid": { "color": "#0F2444" } } }]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "columnHeaders": [{ "fontColor": { "solid": { "color": "#F5F7FA" } }, "backColor": { "solid": { "color": "#1E3A5F" } }, "bold": true }],
+        "rowHeaders": [{ "fontColor": { "solid": { "color": "#F5F7FA" } }, "backColor": { "solid": { "color": "#12294A" } } }],
+        "values": [{ "fontColorPrimary": { "solid": { "color": "#F5F7FA" } }, "backColorPrimary": { "solid": { "color": "#12294A" } }, "fontColorSecondary": { "solid": { "color": "#F5F7FA" } }, "backColorSecondary": { "solid": { "color": "#0F2444" } } }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#0B1F3A" } }, "transparency": 0 }],
+        "outspace": [{ "color": { "solid": { "color": "#071527" } } }]
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "generator": "03-population-health-powerbi/src/generate_synthetic_data.py",
+  "seed": 42,
+  "n_patients_requested": 50000,
+  "snapshot_date": "2025-12-31",
+  "period_start": "2025-01-01",
+  "row_counts": {
+    "patients": 50320,
+    "conditions": 53669,
+    "screenings": 294717,
+    "wearable_monthly": 308034,
+    "engagement_events": 297776
+  },
+  "injected_defects": {
+    "duplicate_patient_rows": 320,
+    "inconsistent_casing_rows": 2800,
+    "state_full_name_rows": 1500,
+    "missing_bmi_rows": 1400,
+    "implausible_bmi_rows": 90,
+    "future_birth_date_rows": 45,
+    "implausible_wearable_rows": 1100,
+    "duplicate_wearable_rows": 500,
+    "duplicate_event_rows": 1500,
+    "future_event_rows": 600,
+    "orphan_event_rows": 250,
+    "inconsistent_channel_rows": 700,
+    "inconsistent_screening_rows": 350,
+    "duplicate_condition_rows": 400
+  }
+}

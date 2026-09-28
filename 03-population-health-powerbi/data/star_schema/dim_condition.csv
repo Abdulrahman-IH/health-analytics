@@ -1,0 +1,6 @@
+condition_key,condition_id,snomed_code,condition_name,condition_category,is_focus_condition,control_target
+1,diabetes,44054006,Type 2 diabetes mellitus,Cardiometabolic,1,HbA1c < 8.0 %
+2,hypertension,59621000,Essential hypertension,Cardiovascular,1,BP < 140/90 mmHg
+3,obesity,414916001,Obesity (BMI 30+),Cardiometabolic,1,N/A
+4,hyperlipidemia,55822004,Hyperlipidemia,Cardiovascular,0,LDL-C < 130 mg/dL
+5,asthma,195967001,Asthma,Respiratory,0,N/A

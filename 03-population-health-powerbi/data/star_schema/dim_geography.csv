@@ -1,0 +1,61 @@
+geo_key,region,state,urbanicity,state_name,country
+1,Midwest,IL,Rural,Illinois,United States
+2,Midwest,IL,Suburban,Illinois,United States
+3,Midwest,IL,Urban,Illinois,United States
+4,Midwest,MI,Rural,Michigan,United States
+5,Midwest,MI,Suburban,Michigan,United States
+6,Midwest,MI,Urban,Michigan,United States
+7,Midwest,MN,Rural,Minnesota,United States
+8,Midwest,MN,Suburban,Minnesota,United States
+9,Midwest,MN,Urban,Minnesota,United States
+10,Midwest,OH,Rural,Ohio,United States
+11,Midwest,OH,Suburban,Ohio,United States
+12,Midwest,OH,Urban,Ohio,United States
+13,Midwest,WI,Rural,Wisconsin,United States
+14,Midwest,WI,Suburban,Wisconsin,United States
+15,Midwest,WI,Urban,Wisconsin,United States
+16,Northeast,CT,Rural,Connecticut,United States
+17,Northeast,CT,Suburban,Connecticut,United States
+18,Northeast,CT,Urban,Connecticut,United States
+19,Northeast,MA,Rural,Massachusetts,United States
+20,Northeast,MA,Suburban,Massachusetts,United States
+21,Northeast,MA,Urban,Massachusetts,United States
+22,Northeast,NJ,Rural,New Jersey,United States
+23,Northeast,NJ,Suburban,New Jersey,United States
+24,Northeast,NJ,Urban,New Jersey,United States
+25,Northeast,NY,Rural,New York,United States
+26,Northeast,NY,Suburban,New York,United States
+27,Northeast,NY,Urban,New York,United States
+28,Northeast,PA,Rural,Pennsylvania,United States
+29,Northeast,PA,Suburban,Pennsylvania,United States
+30,Northeast,PA,Urban,Pennsylvania,United States
+31,South,FL,Rural,Florida,United States
+32,South,FL,Suburban,Florida,United States
+33,South,FL,Urban,Florida,United States
+34,South,GA,Rural,Georgia,United States
+35,South,GA,Suburban,Georgia,United States
+36,South,GA,Urban,Georgia,United States
+37,South,NC,Rural,North Carolina,United States
+38,South,NC,Suburban,North Carolina,United States
+39,South,NC,Urban,North Carolina,United States
+40,South,TN,Rural,Tennessee,United States
+41,South,TN,Suburban,Tennessee,United States
+42,South,TN,Urban,Tennessee,United States
+43,South,TX,Rural,Texas,United States
+44,South,TX,Suburban,Texas,United States
+45,South,TX,Urban,Texas,United States
+46,West,AZ,Rural,Arizona,United States
+47,West,AZ,Suburban,Arizona,United States
+48,West,AZ,Urban,Arizona,United States
+49,West,CA,Rural,California,United States
+50,West,CA,Suburban,California,United States
+51,West,CA,Urban,California,United States
+52,West,CO,Rural,Colorado,United States
+53,West,CO,Suburban,Colorado,United States
+54,West,CO,Urban,Colorado,United States
+55,West,OR,Rural,Oregon,United States
+56,West,OR,Suburban,Oregon,United States
+57,West,OR,Urban,Oregon,United States
+58,West,WA,Rural,Washington,United States
+59,West,WA,Suburban,Washington,United States
+60,West,WA,Urban,Washington,United States

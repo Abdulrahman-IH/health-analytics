@@ -1,0 +1,8 @@
+event_type_key,event_type,event_category,event_label,is_meaningful_action
+1,login,Access,Login,0
+2,appointment_booking,Care navigation,Appointment booking,1
+3,message_to_care_team,Care navigation,Message to care team,1
+4,medication_reminder_acknowledged,Medication adherence,Medication reminder acknowledged,1
+5,medication_reminder_sent,Medication adherence,Medication reminder sent,0
+6,screening_reminder_viewed,Preventive care,Screening reminder viewed,1
+7,wearable_sync,Wearable,Wearable sync,0

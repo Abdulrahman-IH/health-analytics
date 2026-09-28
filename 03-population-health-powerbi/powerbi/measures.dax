@@ -1,0 +1,593 @@
+// =====================================================================================
+//  Population Health & Preventive Care Dashboard — DAX measure library
+//  ------------------------------------------------------------------------------------
+//  Model  : star schema exported by notebooks/01_clean_and_build_star_schema.ipynb
+//  Tables : dim_patient, dim_geography, dim_date, dim_condition, dim_screening,
+//           dim_event_type, fact_condition, fact_screening, fact_wearable_monthly,
+//           fact_engagement_event, fact_patient_risk_snapshot
+//  Usage  : create an empty table called `_Measures` (Enter data → one dummy column,
+//           then hide it) and paste each block into "New measure".  Every measure is
+//           written as  Name = <expression>  which is exactly what the formula bar
+//           accepts.  Tabular Editor users can paste the whole file as a C# script
+//           after wrapping with  Model.Tables["_Measures"].AddMeasure(...).
+//  Format : the trailing comment on the first line of each measure gives the
+//           recommended format string.
+//
+//  Relationship assumptions (see dashboard_spec.md §3):
+//    dim_patient[patient_key]           1 → *  every fact table                (active)
+//    dim_geography[geo_key]             1 → *  dim_patient[geo_key]            (active)
+//    dim_condition[condition_key]       1 → *  fact_condition                  (active)
+//    dim_screening[screening_key]       1 → *  fact_screening                  (active)
+//    dim_event_type[event_type_key]     1 → *  fact_engagement_event           (active)
+//    dim_date[date_key]                 1 → *  fact_engagement_event[date_key] (active)
+//    dim_date[date_key]                 1 → *  fact_wearable_monthly[month_date_key] (active)
+//    dim_date[date_key]                 1 → *  fact_screening[last_completed_date_key] (INACTIVE)
+//    dim_date[date_key]                 1 → *  fact_condition[onset_date_key]  (INACTIVE)
+//    dim_date[date_key]                 1 → *  dim_patient[app_enrollment_date_key] (INACTIVE)
+// =====================================================================================
+
+
+// -------------------------------------------------------------------------------------
+//  0. Parameters / constants
+// -------------------------------------------------------------------------------------
+
+Screening Rate Target = 0.75                           // 0%  — HEDIS-style stretch target used for KPI colouring
+
+Engagement Rate Target = 0.60                          // 0%
+
+Steps Guideline = 7500                                 // #,0 — public-health "somewhat active" threshold
+
+Snapshot Date =
+    // Reporting snapshot used to build the star schema
+    MAX ( fact_patient_risk_snapshot[snapshot_date_key] )
+
+
+// -------------------------------------------------------------------------------------
+//  1. Population
+// -------------------------------------------------------------------------------------
+
+Total Patients =
+    // #,0 — attributed population in the current filter context
+    DISTINCTCOUNT ( dim_patient[patient_key] )
+
+Total Patients (All) =
+    // #,0 — ignores every slicer; denominator for "share of population" visuals
+    CALCULATE ( [Total Patients], REMOVEFILTERS ( dim_patient ), REMOVEFILTERS ( dim_geography ) )
+
+Population Share % =
+    // 0.0% — share of the whole population that the current context represents
+    DIVIDE ( [Total Patients], [Total Patients (All)] )
+
+Median Age =
+    // 0.0
+    MEDIAN ( dim_patient[age] )
+
+Female % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[sex] = "F" ), [Total Patients] )
+
+Patients 65+ % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[age] >= 65 ), [Total Patients] )
+
+Patients with PCP % =
+    // 0.0% — access indicator: share with an assigned primary-care provider
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_primary_care_provider] = 1 ), [Total Patients] )
+
+High Deprivation % =
+    // 0.0% — share living in ADI deciles 8–10
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[adi_decile] >= 8 ), [Total Patients] )
+
+
+// -------------------------------------------------------------------------------------
+//  2. Chronic disease prevalence & control
+// -------------------------------------------------------------------------------------
+
+Patients with Condition =
+    // #,0 — distinct patients with at least one record for the condition(s) in context
+    DISTINCTCOUNT ( fact_condition[patient_key] )
+
+Condition Prevalence % =
+    // 0.0% — works with dim_condition on an axis or slicer
+    DIVIDE ( [Patients with Condition], [Total Patients] )
+
+Diabetes Prevalence % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_diabetes] = 1 ), [Total Patients] )
+
+Hypertension Prevalence % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_hypertension] = 1 ), [Total Patients] )
+
+Obesity Prevalence % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_obesity] = 1 ), [Total Patients] )
+
+Any Focus Condition % =
+    // 0.0% — diabetes OR hypertension OR obesity
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[any_focus_condition] = 1 ), [Total Patients] )
+
+Multimorbidity % =
+    // 0.0% — 2+ diagnosed chronic conditions (obesity excluded)
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[multimorbid] = 1 ), [Total Patients] )
+
+Avg Chronic Conditions per Patient =
+    // 0.00
+    AVERAGE ( dim_patient[chronic_condition_count] )
+
+Controlled Patients =
+    // #,0 — condition records meeting the guideline control target
+    CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[is_controlled] = 1 )
+
+Manageable Condition Records =
+    // #,0 — records where a control target exists (excludes obesity & asthma)
+    CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[control_status] <> "N/A" )
+
+Disease Control Rate % =
+    // 0.0% — controlled ÷ records with a control target
+    DIVIDE ( [Controlled Patients], [Manageable Condition Records] )
+
+Uncontrolled Patients =
+    // #,0
+    CALCULATE ( DISTINCTCOUNT ( fact_condition[patient_key] ), fact_condition[is_uncontrolled] = 1 )
+
+Uncontrolled Rate % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[is_uncontrolled] = 1 ), [Manageable Condition Records] )
+
+Hypertension Control % =
+    // 0.0% — BP < 140/90 among hypertensive patients
+    CALCULATE ( [Disease Control Rate %], dim_condition[condition_id] = "hypertension" )
+
+Diabetes Control % =
+    // 0.0% — HbA1c < 8.0 % among diabetic patients
+    CALCULATE ( [Disease Control Rate %], dim_condition[condition_id] = "diabetes" )
+
+Avg HbA1c =
+    // 0.0
+    CALCULATE ( AVERAGE ( fact_condition[measure_value] ), dim_condition[condition_id] = "diabetes" )
+
+Avg Systolic BP =
+    // 0
+    CALCULATE ( AVERAGE ( fact_condition[measure_value] ), dim_condition[condition_id] = "hypertension" )
+
+Avg Diastolic BP =
+    // 0
+    CALCULATE ( AVERAGE ( fact_condition[secondary_measure_value] ), dim_condition[condition_id] = "hypertension" )
+
+Avg BMI =
+    // 0.0
+    AVERAGE ( dim_patient[bmi] )
+
+On Medication % =
+    // 0.0% — share of condition records with active pharmacotherapy
+    DIVIDE ( CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[on_medication] = 1 ), COUNTROWS ( fact_condition ) )
+
+Avg Years Since Onset =
+    // 0.0
+    AVERAGE ( fact_condition[years_since_onset] )
+
+New Diagnoses in Period =
+    // #,0 — onsets whose date falls in the selected dim_date range (inactive relationship)
+    CALCULATE (
+        COUNTROWS ( fact_condition ),
+        USERELATIONSHIP ( dim_date[date_key], fact_condition[onset_date_key] )
+    )
+
+
+// -------------------------------------------------------------------------------------
+//  3. Preventive screening & care gaps
+// -------------------------------------------------------------------------------------
+
+Eligible Screenings =
+    // #,0 — patient × screening pairs where the patient meets the guideline criteria
+    SUM ( fact_screening[is_eligible] )
+
+Completed Screenings =
+    // #,0 — documented within the guideline interval at the snapshot
+    SUM ( fact_screening[is_completed] )
+
+Screening Rate % =
+    // 0.0% — headline preventive-care KPI
+    DIVIDE ( [Completed Screenings], [Eligible Screenings] )
+
+Screening Rate vs Target (pp) =
+    // +0.0;-0.0 — percentage-point gap to target
+    ( [Screening Rate %] - [Screening Rate Target] ) * 100
+
+Screening Rate Status =
+    // text — drives conditional formatting / icons
+    SWITCH (
+        TRUE (),
+        ISBLANK ( [Screening Rate %] ), "No data",
+        [Screening Rate %] >= [Screening Rate Target], "On target",
+        [Screening Rate %] >= [Screening Rate Target] - 0.10, "Watch",
+        "Below target"
+    )
+
+Screening Rate Colour =
+    // text (hex) — use in Conditional formatting → Field value
+    SWITCH ( [Screening Rate Status], "On target", "#2DD4BF", "Watch", "#F4B860", "Below target", "#F87171", "#9FB3C8" )
+
+Open Care Gaps =
+    // #,0 — eligible but not up to date
+    SUM ( fact_screening[is_care_gap] )
+
+Care Gap Rate % =
+    // 0.0%
+    DIVIDE ( [Open Care Gaps], [Eligible Screenings] )
+
+Patients with Open Care Gaps =
+    // #,0
+    CALCULATE ( DISTINCTCOUNT ( fact_screening[patient_key] ), fact_screening[is_care_gap] = 1 )
+
+Patients with Open Care Gaps % =
+    // 0.0%
+    DIVIDE ( [Patients with Open Care Gaps], [Total Patients] )
+
+Overdue Screenings =
+    // #,0 — previously screened, interval elapsed
+    CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[screening_status] = "Overdue" )
+
+Never Screened =
+    // #,0
+    CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[screening_status] = "Never screened" )
+
+Avg Days Overdue =
+    // #,0 — among overdue screenings
+    CALCULATE ( AVERAGE ( fact_screening[days_overdue] ), fact_screening[screening_status] = "Overdue" )
+
+Avg Care Gaps per Patient =
+    // 0.00
+    AVERAGE ( dim_patient[open_care_gaps] )
+
+Reminder Coverage % =
+    // 0.0% — share of open gaps where a reminder was sent
+    DIVIDE (
+        CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[is_care_gap] = 1, fact_screening[reminder_sent] = 1 ),
+        [Open Care Gaps]
+    )
+
+Screenings Completed in Period =
+    // #,0 — completions dated inside the dim_date selection (inactive relationship)
+    CALCULATE (
+        [Completed Screenings],
+        USERELATIONSHIP ( dim_date[date_key], fact_screening[last_completed_date_key] )
+    )
+
+Screening Rate % (Enrolled) =
+    // 0.0%
+    CALCULATE ( [Screening Rate %], dim_patient[app_enrolled] = 1 )
+
+Screening Rate % (Not Enrolled) =
+    // 0.0%
+    CALCULATE ( [Screening Rate %], dim_patient[app_enrolled] = 0 )
+
+Digital Engagement Lift (pp) =
+    // +0.0;-0.0 — screening-rate uplift among app-enrolled patients
+    ( [Screening Rate % (Enrolled)] - [Screening Rate % (Not Enrolled)] ) * 100
+
+Cancer Screening Rate % =
+    // 0.0% — CRC + mammography + cervical combined
+    CALCULATE ( [Screening Rate %], dim_screening[screening_category] = "Cancer" )
+
+Diabetes Care Bundle % =
+    // 0.0% — HEDIS-style: A1c test + eye exam among diabetics
+    CALCULATE ( [Screening Rate %], dim_screening[screening_category] = "Chronic disease management" )
+
+Flu Vaccination Rate % =
+    // 0.0%
+    CALCULATE ( [Screening Rate %], dim_screening[screening_code] = "FLU" )
+
+Annual Wellness Visit Rate % =
+    // 0.0%
+    CALCULATE ( [Screening Rate %], dim_screening[screening_code] = "AWV" )
+
+
+// -------------------------------------------------------------------------------------
+//  4. Digital / app engagement
+// -------------------------------------------------------------------------------------
+
+Enrolled Patients =
+    // #,0
+    CALCULATE ( [Total Patients], dim_patient[app_enrolled] = 1 )
+
+App Enrollment Rate % =
+    // 0.0% — enrolled ÷ attributed population
+    DIVIDE ( [Enrolled Patients], [Total Patients] )
+
+Engaged Patients =
+    // #,0 — "Active" segment: activity in 3+ months of the year
+    CALCULATE ( [Total Patients], dim_patient[engagement_segment] = "Active" )
+
+App Engagement Rate % =
+    // 0.0% — headline engagement KPI: active users ÷ enrolled
+    DIVIDE ( [Engaged Patients], [Enrolled Patients] )
+
+Engagement Rate vs Target (pp) =
+    // +0.0;-0.0
+    ( [App Engagement Rate %] - [Engagement Rate Target] ) * 100
+
+Engaged Share of Population % =
+    // 0.0% — active users ÷ everyone (enrolled or not)
+    DIVIDE ( [Engaged Patients], [Total Patients] )
+
+Dormant Rate % =
+    // 0.0% — enrolled but zero events in the period
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[engagement_segment] = "Dormant" ), [Enrolled Patients] )
+
+Total Events =
+    // #,0
+    SUM ( fact_engagement_event[event_count] )
+
+Logins =
+    // #,0
+    SUM ( fact_engagement_event[is_login] )
+
+Active Users =
+    // #,0 — distinct patients with ≥1 event in the current date context
+    DISTINCTCOUNT ( fact_engagement_event[patient_key] )
+
+Monthly Active Users =
+    // #,0 — place dim_date[year_month] on the axis
+    CALCULATE ( [Active Users], ALLEXCEPT ( dim_date, dim_date[year_month] ) )
+
+MAU Previous Month =
+    // #,0
+    CALCULATE (
+        [Active Users],
+        DATEADD ( DATE ( LEFT ( MAX ( dim_date[year_month] ), 4 ), RIGHT ( MAX ( dim_date[year_month] ), 2 ), 1 ), -1, MONTH )
+    )
+
+MAU Growth MoM % =
+    // +0.0%;-0.0%
+    DIVIDE ( [Active Users] - [MAU Previous Month], [MAU Previous Month] )
+
+Events per Active User =
+    // 0.0
+    DIVIDE ( [Total Events], [Active Users] )
+
+Events per Enrolled Patient =
+    // 0.0
+    DIVIDE ( [Total Events], [Enrolled Patients] )
+
+Appointment Bookings =
+    // #,0
+    SUM ( fact_engagement_event[is_booking] )
+
+Bookings per 100 Enrolled =
+    // 0.0
+    DIVIDE ( [Appointment Bookings], [Enrolled Patients] ) * 100
+
+Medication Reminders Sent =
+    // #,0
+    CALCULATE ( [Total Events], dim_event_type[event_type] = "medication_reminder_sent" )
+
+Medication Reminders Acknowledged =
+    // #,0
+    SUM ( fact_engagement_event[is_med_reminder_ack] )
+
+Medication Reminder Ack Rate % =
+    // 0.0% — adherence proxy
+    DIVIDE ( [Medication Reminders Acknowledged], [Medication Reminders Sent] )
+
+Screening Reminders Viewed =
+    // #,0
+    CALCULATE ( [Total Events], dim_event_type[event_type] = "screening_reminder_viewed" )
+
+Meaningful Actions =
+    // #,0 — bookings, reminder acknowledgements, screening-reminder views, care-team messages
+    CALCULATE ( [Total Events], dim_event_type[is_meaningful_action] = 1 )
+
+Meaningful Action Rate % =
+    // 0.0% — share of all events that are more than a login
+    DIVIDE ( [Meaningful Actions], [Total Events] )
+
+Avg Session Minutes =
+    // 0.0
+    AVERAGE ( fact_engagement_event[session_minutes] )
+
+Mobile Share % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Total Events], fact_engagement_event[channel] IN { "iOS", "Android" } ), [Total Events] )
+
+Wearable-Linked Enrolled % =
+    // 0.0% — enrolled patients who also sync a wearable
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[app_enrolled] = 1, dim_patient[wearable_user] = 1 ), [Enrolled Patients] )
+
+New Enrollments in Period =
+    // #,0 — enrollment dates inside the dim_date selection (inactive relationship)
+    CALCULATE (
+        [Enrolled Patients],
+        USERELATIONSHIP ( dim_date[date_key], dim_patient[app_enrollment_date_key] )
+    )
+
+
+// -------------------------------------------------------------------------------------
+//  5. Wearable vitals & lifestyle
+// -------------------------------------------------------------------------------------
+
+Wearable Users =
+    // #,0
+    CALCULATE ( [Total Patients], dim_patient[wearable_user] = 1 )
+
+Wearable Adoption % =
+    // 0.0%
+    DIVIDE ( [Wearable Users], [Total Patients] )
+
+Device Months =
+    // #,0 — patient-month observations with a synced device
+    COUNTROWS ( fact_wearable_monthly )
+
+Avg Daily Steps =
+    // #,0
+    AVERAGE ( fact_wearable_monthly[avg_daily_steps] )
+
+Median Daily Steps =
+    // #,0
+    MEDIAN ( fact_wearable_monthly[avg_daily_steps] )
+
+Avg Daily Steps vs Guideline =
+    // +#,0;-#,0
+    [Avg Daily Steps] - [Steps Guideline]
+
+Avg Sleep Hours =
+    // 0.0
+    AVERAGE ( fact_wearable_monthly[avg_sleep_hours] )
+
+Avg Resting HR =
+    // 0.0
+    AVERAGE ( fact_wearable_monthly[avg_resting_hr] )
+
+Avg Active Days per Month =
+    // 0.0
+    AVERAGE ( fact_wearable_monthly[active_days] )
+
+Months Meeting 10k Steps % =
+    // 0.0%
+    DIVIDE ( SUM ( fact_wearable_monthly[meets_10k_steps] ), [Device Months] )
+
+Sedentary Share % =
+    // 0.0% — device-months averaging < 5,000 steps/day
+    DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[activity_band] = "Sedentary (<5k)" ), [Device Months] )
+
+Active Share % =
+    // 0.0% — device-months averaging ≥ 10,000 steps/day
+    DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[activity_band] = "Active (10k+)" ), [Device Months] )
+
+Short Sleep Share % =
+    // 0.0% — device-months averaging < 6 h sleep
+    DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[sleep_band] = "Short (<6h)" ), [Device Months] )
+
+Elevated Resting HR Share % =
+    // 0.0% — device-months with resting HR ≥ 80 bpm
+    DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[avg_resting_hr] >= 80 ), [Device Months] )
+
+Avg Daily Steps Prior Month =
+    // #,0
+    CALCULATE ( [Avg Daily Steps], DATEADD ( dim_date[date], -1, MONTH ) )
+
+Avg Daily Steps MoM % =
+    // +0.0%;-0.0%
+    DIVIDE ( [Avg Daily Steps] - [Avg Daily Steps Prior Month], [Avg Daily Steps Prior Month] )
+
+Sedentary Patients =
+    // #,0 — 12-month average under 5,000 steps/day
+    CALCULATE ( [Total Patients], dim_patient[avg_daily_steps_12m] < 5000 )
+
+
+// -------------------------------------------------------------------------------------
+//  6. Risk stratification & outreach
+// -------------------------------------------------------------------------------------
+
+Avg Risk Score =
+    // 0.00
+    AVERAGE ( dim_patient[risk_score] )
+
+Patients in Tier =
+    // #,0 — put dim_patient[risk_tier] on an axis (sort by risk_tier_order)
+    [Total Patients]
+
+Risk Tier Share % =
+    // 0.0% — tier ÷ all patients in the *other* slicers' context
+    DIVIDE ( [Total Patients], CALCULATE ( [Total Patients], REMOVEFILTERS ( dim_patient[risk_tier], dim_patient[risk_tier_order] ) ) )
+
+High Risk Patients =
+    // #,0 — High + Very High
+    CALCULATE ( [Total Patients], dim_patient[risk_tier] IN { "High", "Very High" } )
+
+High Risk Share % =
+    // 0.0%
+    DIVIDE ( [High Risk Patients], [Total Patients] )
+
+Very High Risk Patients =
+    // #,0
+    CALCULATE ( [Total Patients], dim_patient[risk_tier] = "Very High" )
+
+Low Risk Share % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[risk_tier] = "Low" ), [Total Patients] )
+
+Rising Risk Patients =
+    // #,0 — Moderate tier with ≥1 uncontrolled condition: highest-value prevention cohort
+    CALCULATE ( [Total Patients], dim_patient[risk_tier] = "Moderate", dim_patient[uncontrolled_condition_count] >= 1 )
+
+Priority Outreach Cohort =
+    // #,0 — high risk + open care gap + not actively engaged (feeds the outreach list)
+    CALCULATE (
+        [Total Patients],
+        dim_patient[risk_tier] IN { "High", "Very High" },
+        dim_patient[open_care_gaps] >= 1,
+        dim_patient[is_engaged_user] = 0
+    )
+
+Priority Outreach Share % =
+    // 0.0%
+    DIVIDE ( [Priority Outreach Cohort], [Total Patients] )
+
+High Risk Engaged % =
+    // 0.0% — engagement penetration inside the high-risk population
+    DIVIDE (
+        CALCULATE ( [Engaged Patients], dim_patient[risk_tier] IN { "High", "Very High" } ),
+        [High Risk Patients]
+    )
+
+Avg Risk Score Contribution =
+    // 0.00 — average points from the component in context (use with the unpivoted points columns)
+    AVERAGEX (
+        fact_patient_risk_snapshot,
+        fact_patient_risk_snapshot[chronic_points] + fact_patient_risk_snapshot[control_points]
+            + fact_patient_risk_snapshot[care_gap_points] + fact_patient_risk_snapshot[obesity_points]
+            + fact_patient_risk_snapshot[age_points] + fact_patient_risk_snapshot[smoking_points]
+            + fact_patient_risk_snapshot[inactivity_points] + fact_patient_risk_snapshot[social_points]
+            + fact_patient_risk_snapshot[access_points]
+    )
+
+Risk Tier Colour =
+    // text (hex) — conditional formatting for tier visuals
+    SWITCH (
+        SELECTEDVALUE ( dim_patient[risk_tier] ),
+        "Low", "#2DD4BF",
+        "Moderate", "#60A5FA",
+        "High", "#F4B860",
+        "Very High", "#F87171",
+        "#9FB3C8"
+    )
+
+
+// -------------------------------------------------------------------------------------
+//  7. Data quality & lineage (appendix page)
+// -------------------------------------------------------------------------------------
+
+BMI Imputed % =
+    // 0.0% — share of patients whose BMI was imputed during cleaning
+    DIVIDE ( CALCULATE ( [Total Patients], dim_patient[bmi_imputed] = 1 ), [Total Patients] )
+
+Screening Flags Downgraded =
+    // #,0 — records flagged complete in source but lacking a valid date
+    CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[completed_flag_raw] = 1, fact_screening[is_completed] = 0 )
+
+Wearable Months with Missing Steps % =
+    // 0.0%
+    DIVIDE ( CALCULATE ( [Device Months], ISBLANK ( fact_wearable_monthly[avg_daily_steps] ) ), [Device Months] )
+
+
+// -------------------------------------------------------------------------------------
+//  8. Dynamic titles & labels
+// -------------------------------------------------------------------------------------
+
+Selected Region Label =
+    // text
+    IF ( ISFILTERED ( dim_geography[region] ), CONCATENATEX ( VALUES ( dim_geography[region] ), dim_geography[region], ", " ), "All regions" )
+
+Selected Condition Label =
+    // text
+    IF ( ISFILTERED ( dim_condition[condition_name] ), SELECTEDVALUE ( dim_condition[condition_name], "Multiple conditions" ), "All conditions" )
+
+Screening Page Title =
+    // text
+    "Preventive screening · " & [Selected Region Label] & " · " & FORMAT ( [Screening Rate %], "0.0%" ) & " completed"
+
+Population Card Subtitle =
+    // text
+    FORMAT ( [Total Patients], "#,0" ) & " patients · snapshot " & FORMAT ( DATE ( LEFT ( [Snapshot Date], 4 ), MID ( [Snapshot Date], 5, 2 ), RIGHT ( [Snapshot Date], 2 ) ), "d mmm yyyy" )
