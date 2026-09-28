@@ -1,0 +1,5 @@
+expression DataFolder = "C:\health-analytics\03-population-health-powerbi\data\star_schema" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 88d374f0-fbcc-5fd5-b793-05e2e8e84be3
+
+	annotation PBI_ResultType = Text
+

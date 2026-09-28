@@ -1,0 +1,58 @@
+relationship 971c2f5c-e5f6-50d8-98ba-722326f0987b
+	fromColumn: fact_screening.patient_key
+	toColumn: dim_patient.patient_key
+
+relationship e264674b-0676-5f5a-a0b3-42b8a481ce4f
+	fromColumn: fact_condition.patient_key
+	toColumn: dim_patient.patient_key
+
+relationship 72e990e5-66ed-5e5e-865b-a5f13e02d98e
+	fromColumn: fact_wearable_monthly.patient_key
+	toColumn: dim_patient.patient_key
+
+relationship 51f0d1b6-fba2-55f0-9162-95260da3dafd
+	fromColumn: fact_engagement_event.patient_key
+	toColumn: dim_patient.patient_key
+
+relationship f2a6594c-de34-566a-8310-2feaa8a42edc
+	fromColumn: fact_patient_risk_snapshot.patient_key
+	toColumn: dim_patient.patient_key
+
+relationship 7bbec684-9dfb-53d2-abfd-8d30583ffd52
+	fromColumn: dim_patient.geo_key
+	toColumn: dim_geography.geo_key
+
+relationship 4ac16d58-2413-5b5b-a248-cd7b219535f2
+	fromColumn: fact_condition.condition_key
+	toColumn: dim_condition.condition_key
+
+relationship f4bfcdb1-b918-5a0c-baf0-cc93e504b69e
+	fromColumn: fact_screening.screening_key
+	toColumn: dim_screening.screening_key
+
+relationship a8b3777e-8873-51d3-893e-2e594fdc7847
+	fromColumn: fact_engagement_event.event_type_key
+	toColumn: dim_event_type.event_type_key
+
+relationship 8970f74e-8904-5ffb-b876-40ae8ebc488b
+	fromColumn: fact_engagement_event.date_key
+	toColumn: dim_date.date_key
+
+relationship 356952b4-a252-5be3-bac7-4ae026b4161f
+	fromColumn: fact_wearable_monthly.month_date_key
+	toColumn: dim_date.date_key
+
+relationship b744e98b-2cc6-556d-8b7d-737c557c0ff2
+	isActive: false
+	fromColumn: fact_screening.last_completed_date_key
+	toColumn: dim_date.date_key
+
+relationship d41d4d1e-f846-5344-8049-073f9640783e
+	isActive: false
+	fromColumn: fact_condition.onset_date_key
+	toColumn: dim_date.date_key
+
+relationship f221561a-7378-5bb7-a05a-c04276bc485a
+	isActive: false
+	fromColumn: dim_patient.app_enrollment_date_key
+	toColumn: dim_date.date_key

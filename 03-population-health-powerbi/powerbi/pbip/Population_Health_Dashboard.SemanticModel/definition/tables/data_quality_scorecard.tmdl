@@ -1,0 +1,38 @@
+table data_quality_scorecard
+	lineageTag: cccddc5c-5d44-542d-bf63-c8ac07a1d098
+
+	column issue
+		dataType: string
+		lineageTag: 416f4503-77cd-5cbd-8724-cd8a55b962ff
+		summarizeBy: none
+		sourceColumn: issue
+
+		annotation SummarizationSetBy = Automatic
+
+	column rows_before
+		dataType: int64
+		lineageTag: cfef6785-1365-5500-84b6-d85faa8baccb
+		summarizeBy: sum
+		sourceColumn: rows_before
+
+		annotation SummarizationSetBy = Automatic
+
+	column rows_after
+		dataType: int64
+		lineageTag: 8b383b4e-9c69-5c96-94cc-8a3c95b0b0d4
+		summarizeBy: sum
+		sourceColumn: rows_after
+
+		annotation SummarizationSetBy = Automatic
+
+	partition data_quality_scorecard = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\..\..\docs\data_quality_scorecard.csv"), [Delimiter = ",", Columns = 3, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"issue", type text}, {"rows_before", Int64.Type}, {"rows_after", Int64.Type}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

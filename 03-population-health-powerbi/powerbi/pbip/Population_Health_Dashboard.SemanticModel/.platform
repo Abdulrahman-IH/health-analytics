@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Population_Health_Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "695b94b4-6d04-550c-b7cb-0c20b63e9f36"
+  }
+}

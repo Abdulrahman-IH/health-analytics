@@ -1,0 +1,115 @@
+table fact_engagement_event
+	lineageTag: b17d40bc-df10-5c92-9829-1f1123aec9dc
+
+	column event_id
+		dataType: string
+		lineageTag: f5b87963-5064-5d8a-85b5-4fede6ac56cd
+		summarizeBy: none
+		sourceColumn: event_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_key
+		dataType: int64
+		isHidden
+		lineageTag: 1b65fe1e-45c6-5cbd-b493-69d65701925b
+		summarizeBy: none
+		sourceColumn: patient_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_type_key
+		dataType: int64
+		isHidden
+		lineageTag: ac267fc5-3e0f-594e-8f83-d892255f9c17
+		summarizeBy: none
+		sourceColumn: event_type_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_key
+		dataType: int64
+		isHidden
+		lineageTag: ae25b2c2-94d4-5f0b-a97f-7bf8eec415a9
+		summarizeBy: none
+		sourceColumn: date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_timestamp
+		dataType: dateTime
+		formatString: yyyy-mm-dd hh:nn:ss
+		lineageTag: aa35fde4-a14f-5a71-ad75-a0902d5197dd
+		summarizeBy: none
+		sourceColumn: event_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column hour_of_day
+		dataType: int64
+		lineageTag: 1ab42c46-6f13-5688-abbc-b9219237fcb5
+		summarizeBy: sum
+		sourceColumn: hour_of_day
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel
+		dataType: string
+		lineageTag: 051347cf-e9e7-5c71-8531-5f0739603a57
+		summarizeBy: none
+		sourceColumn: channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_minutes
+		dataType: double
+		formatString: 0.0
+		lineageTag: 3b461df3-2d63-5416-822c-13ff272787f3
+		summarizeBy: sum
+		sourceColumn: session_minutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_login
+		dataType: int64
+		lineageTag: d8b9b48f-c2fa-50c5-a2ee-6eadea17b16b
+		summarizeBy: sum
+		sourceColumn: is_login
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_booking
+		dataType: int64
+		lineageTag: a9ca3679-0291-5fce-8a5f-7d38361de951
+		summarizeBy: sum
+		sourceColumn: is_booking
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_med_reminder_ack
+		dataType: int64
+		lineageTag: bffe5df4-2957-5c2b-9e81-e7f6b208ce7e
+		summarizeBy: sum
+		sourceColumn: is_med_reminder_ack
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_count
+		dataType: int64
+		lineageTag: 8b558869-62cf-57d4-8c77-0d13674255ee
+		summarizeBy: sum
+		sourceColumn: event_count
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_engagement_event = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\fact_engagement_event.csv"), [Delimiter = ",", Columns = 12, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"event_id", type text}, {"patient_key", Int64.Type}, {"event_type_key", Int64.Type}, {"date_key", Int64.Type}, {"event_timestamp", type datetime}, {"hour_of_day", Int64.Type}, {"channel", type text}, {"session_minutes", type number}, {"is_login", Int64.Type}, {"is_booking", Int64.Type}, {"is_med_reminder_ack", Int64.Type}, {"event_count", Int64.Type}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

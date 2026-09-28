@@ -1,0 +1,738 @@
+table _Measures
+	lineageTag: bc47d808-a3e3-5e42-81d6-39190b855b9b
+
+	/// HEDIS-style stretch target used for KPI colouring
+	measure 'Screening Rate Target' = 0.75
+		formatString: 0%
+		displayFolder: 0. Parameters / constants
+		lineageTag: e19d8463-7e9b-52f9-a4bd-5aec3e3941fa
+
+	measure 'Engagement Rate Target' = 0.60
+		formatString: 0%
+		displayFolder: 0. Parameters / constants
+		lineageTag: b70680db-517d-5280-8841-6de02d9565f3
+
+	/// public-health "somewhat active" threshold
+	measure 'Steps Guideline' = 7500
+		formatString: #,0
+		displayFolder: 0. Parameters / constants
+		lineageTag: 2a34e5a5-ce5c-5e50-9fb0-3bb08f25d12a
+
+	/// Reporting snapshot used to build the star schema
+	measure 'Snapshot Date' = MAX ( fact_patient_risk_snapshot[snapshot_date_key] )
+		displayFolder: 0. Parameters / constants
+		lineageTag: a94c241d-1450-5161-9814-b68dd5e0fd3e
+
+	/// attributed population in the current filter context
+	measure 'Total Patients' = DISTINCTCOUNT ( dim_patient[patient_key] )
+		formatString: #,0
+		displayFolder: 1. Population
+		lineageTag: 2de4aada-7dc8-5863-aebb-98315ba1d5c5
+
+	/// ignores every slicer; denominator for "share of population" visuals
+	measure 'Total Patients (All)' = CALCULATE ( [Total Patients], REMOVEFILTERS ( dim_patient ), REMOVEFILTERS ( dim_geography ) )
+		formatString: #,0
+		displayFolder: 1. Population
+		lineageTag: aafec064-0cae-5ef1-96fd-736f11b395de
+
+	/// share of the whole population that the current context represents
+	measure 'Population Share %' = DIVIDE ( [Total Patients], [Total Patients (All)] )
+		formatString: 0.0%
+		displayFolder: 1. Population
+		lineageTag: 463a0019-abab-5074-88b8-3431736438f1
+
+	measure 'Median Age' = MEDIAN ( dim_patient[age] )
+		formatString: 0.0
+		displayFolder: 1. Population
+		lineageTag: 3bd08fe6-fcf8-53bb-addd-ff9e745e1073
+
+	measure 'Female %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[sex] = "F" ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 1. Population
+		lineageTag: b54f4ad4-8cec-5b5e-98fb-ab2f338102a2
+
+	measure 'Patients 65+ %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[age] >= 65 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 1. Population
+		lineageTag: 5c32d4b2-70a7-5d55-95e2-cd5004d2e1b2
+
+	/// access indicator: share with an assigned primary-care provider
+	measure 'Patients with PCP %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_primary_care_provider] = 1 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 1. Population
+		lineageTag: 43aa106c-acff-5636-8586-d0c9304bef27
+
+	/// share living in ADI deciles 8–10
+	measure 'High Deprivation %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[adi_decile] >= 8 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 1. Population
+		lineageTag: 9e0c9c0f-ba79-5878-af4f-b2e1575e9606
+
+	/// distinct patients with at least one record for the condition(s) in context
+	measure 'Patients with Condition' = DISTINCTCOUNT ( fact_condition[patient_key] )
+		formatString: #,0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: be695a0b-a52d-5923-938e-2f1e5d75acb9
+
+	/// works with dim_condition on an axis or slicer
+	measure 'Condition Prevalence %' = DIVIDE ( [Patients with Condition], [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: ce82e120-7abb-5657-90e4-e1ceac48bc17
+
+	measure 'Diabetes Prevalence %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_diabetes] = 1 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: e0eafe3e-98a4-58a1-835e-2889ea0223ec
+
+	measure 'Hypertension Prevalence %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_hypertension] = 1 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: b0e703b7-b22a-57eb-aa18-f99587d6c18f
+
+	measure 'Obesity Prevalence %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[has_obesity] = 1 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: b31622a9-e20f-5d45-9479-eae22b60bc28
+
+	/// diabetes OR hypertension OR obesity
+	measure 'Any Focus Condition %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[any_focus_condition] = 1 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 40ae306d-e304-5527-aaa9-e16785826d27
+
+	/// 2+ diagnosed chronic conditions (obesity excluded)
+	measure 'Multimorbidity %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[multimorbid] = 1 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: a766705f-f647-591e-888c-a19a7636d62b
+
+	measure 'Avg Chronic Conditions per Patient' = AVERAGE ( dim_patient[chronic_condition_count] )
+		formatString: 0.00
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: f16ad598-63b9-59a0-b8fd-e5307695b6a5
+
+	/// all condition records in context (value field for status-mix visuals)
+	measure 'Condition Records' = COUNTROWS ( fact_condition )
+		formatString: #,0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 304a89ee-d82c-5300-bef2-2a9f1300ccea
+
+	/// condition records meeting the guideline control target
+	measure 'Controlled Patients' = CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[is_controlled] = 1 )
+		formatString: #,0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: b4657d94-f8c8-58a9-a424-8c838f2f9310
+
+	/// records where a control target exists (excludes obesity & asthma)
+	measure 'Manageable Condition Records' = CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[control_status] <> "N/A" )
+		formatString: #,0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 6cac07a5-4942-532b-8306-c13e93c77087
+
+	/// controlled ÷ records with a control target
+	measure 'Disease Control Rate %' = DIVIDE ( [Controlled Patients], [Manageable Condition Records] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: b597d645-d57e-5065-af9b-f5ebc92e01fc
+
+	measure 'Uncontrolled Patients' = CALCULATE ( DISTINCTCOUNT ( fact_condition[patient_key] ), fact_condition[is_uncontrolled] = 1 )
+		formatString: #,0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: a45ae2f4-1200-5706-8cbe-e3a0b87981e2
+
+	measure 'Uncontrolled Rate %' = DIVIDE ( CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[is_uncontrolled] = 1 ), [Manageable Condition Records] )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 5990ae75-4bc1-5edc-bb4a-f5dc6fbc72b0
+
+	/// BP < 140/90 among hypertensive patients
+	measure 'Hypertension Control %' = CALCULATE ( [Disease Control Rate %], dim_condition[condition_id] = "hypertension" )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 0a1c1314-7922-57b4-a7aa-41045c08c703
+
+	/// HbA1c < 8.0 % among diabetic patients
+	measure 'Diabetes Control %' = CALCULATE ( [Disease Control Rate %], dim_condition[condition_id] = "diabetes" )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 06dc67f5-a09a-5cfa-b469-e739270d17cd
+
+	measure 'Avg HbA1c' = CALCULATE ( AVERAGE ( fact_condition[measure_value] ), dim_condition[condition_id] = "diabetes" )
+		formatString: 0.0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 27c19c64-4b17-5abc-9c9d-56104b3a2398
+
+	measure 'Avg Systolic BP' = CALCULATE ( AVERAGE ( fact_condition[measure_value] ), dim_condition[condition_id] = "hypertension" )
+		formatString: 0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 3d8ea4fd-661f-5be7-8a50-b1d8159bc03b
+
+	measure 'Avg Diastolic BP' = CALCULATE ( AVERAGE ( fact_condition[secondary_measure_value] ), dim_condition[condition_id] = "hypertension" )
+		formatString: 0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: d0c2fac5-a1ac-5708-b3bb-eff867728ce0
+
+	measure 'Avg BMI' = AVERAGE ( dim_patient[bmi] )
+		formatString: 0.0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: 1443d9ae-c305-5e56-9c56-9dc8a0c9e550
+
+	/// share of condition records with active pharmacotherapy
+	measure 'On Medication %' = DIVIDE ( CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[on_medication] = 1 ), COUNTROWS ( fact_condition ) )
+		formatString: 0.0%
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: eb89268f-a9ef-5731-b159-a26e6016ac80
+
+	measure 'Avg Years Since Onset' = AVERAGE ( fact_condition[years_since_onset] )
+		formatString: 0.0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: abd55395-2962-5ad1-913f-670ffd69a98c
+
+	/// onsets whose date falls in the selected dim_date range (inactive relationship)
+	measure 'New Diagnoses in Period' =
+			CALCULATE (
+			    COUNTROWS ( fact_condition ),
+			    USERELATIONSHIP ( dim_date[date_key], fact_condition[onset_date_key] )
+			)
+		formatString: #,0
+		displayFolder: 2. Chronic disease prevalence & control
+		lineageTag: ad153883-658a-550e-b0ac-fd844d02db01
+
+	/// patient × screening pairs where the patient meets the guideline criteria
+	measure 'Eligible Screenings' = SUM ( fact_screening[is_eligible] )
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: c9b59e3d-eb5d-5759-b88e-35ed9b91af5e
+
+	/// documented within the guideline interval at the snapshot
+	measure 'Completed Screenings' = SUM ( fact_screening[is_completed] )
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: bfac328f-8296-5c37-b627-695278355fe1
+
+	/// headline preventive-care KPI
+	measure 'Screening Rate %' = DIVIDE ( [Completed Screenings], [Eligible Screenings] )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 8871c7ae-bda5-5d4f-93ef-995e7d99e790
+
+	/// percentage-point gap to target
+	measure 'Screening Rate vs Target (pp)' = ( [Screening Rate %] - [Screening Rate Target] ) * 100
+		formatString: +0.0;-0.0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: f7c6bf6e-b977-59e8-96db-139953eb481f
+
+	/// drives conditional formatting / icons
+	measure 'Screening Rate Status' =
+			SWITCH (
+			    TRUE (),
+			    ISBLANK ( [Screening Rate %] ), "No data",
+			    [Screening Rate %] >= [Screening Rate Target], "On target",
+			    [Screening Rate %] >= [Screening Rate Target] - 0.10, "Watch",
+			    "Below target"
+			)
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 46d04109-1e61-5136-95f5-d93f9af600cd
+
+	/// use in Conditional formatting → Field value
+	measure 'Screening Rate Colour' = SWITCH ( [Screening Rate Status], "On target", "#2DD4BF", "Watch", "#F4B860", "Below target", "#F87171", "#9FB3C8" )
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 06aedf57-1805-515e-a0de-77a0b57bc6a7
+
+	/// eligible but not up to date
+	measure 'Open Care Gaps' = SUM ( fact_screening[is_care_gap] )
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: eca9ea9a-3ab8-507c-bc0c-a3918257735d
+
+	measure 'Care Gap Rate %' = DIVIDE ( [Open Care Gaps], [Eligible Screenings] )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: d3973f99-8236-5f86-82b5-ff09ce89433b
+
+	measure 'Patients with Open Care Gaps' = CALCULATE ( DISTINCTCOUNT ( fact_screening[patient_key] ), fact_screening[is_care_gap] = 1 )
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 20b88c80-fd1c-5520-b8e1-d45f68f83ea2
+
+	measure 'Patients with Open Care Gaps %' = DIVIDE ( [Patients with Open Care Gaps], [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: af30cfd6-5e27-5a95-8c7b-ffcb0eab2313
+
+	/// previously screened, interval elapsed
+	measure 'Overdue Screenings' = CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[screening_status] = "Overdue" )
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 72372ac9-0fd8-5be4-ae85-e240d434a0d8
+
+	measure 'Never Screened' = CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[screening_status] = "Never screened" )
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 2f8a5adf-d0f4-5acd-9cff-de28f09ba319
+
+	/// among overdue screenings
+	measure 'Avg Days Overdue' = CALCULATE ( AVERAGE ( fact_screening[days_overdue] ), fact_screening[screening_status] = "Overdue" )
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 12590eba-b4bd-553f-b920-50a43a31f963
+
+	measure 'Avg Care Gaps per Patient' = AVERAGE ( dim_patient[open_care_gaps] )
+		formatString: 0.00
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 98380421-f1b9-5830-98f9-d06a0ec77be5
+
+	/// share of open gaps where a reminder was sent
+	measure 'Reminder Coverage %' =
+			DIVIDE (
+			    CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[is_care_gap] = 1, fact_screening[reminder_sent] = 1 ),
+			    [Open Care Gaps]
+			)
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 1dcf1ea9-81d5-5de9-8175-e42ce8a91dae
+
+	/// completions dated inside the dim_date selection (inactive relationship)
+	measure 'Screenings Completed in Period' =
+			CALCULATE (
+			    [Completed Screenings],
+			    USERELATIONSHIP ( dim_date[date_key], fact_screening[last_completed_date_key] )
+			)
+		formatString: #,0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 62b747e9-33b3-5bde-838e-e358208eb197
+
+	measure 'Screening Rate % (Enrolled)' = CALCULATE ( [Screening Rate %], dim_patient[app_enrolled] = 1 )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 5b7a6b06-d757-57bf-88f6-9f61ce053ca8
+
+	measure 'Screening Rate % (Not Enrolled)' = CALCULATE ( [Screening Rate %], dim_patient[app_enrolled] = 0 )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 0f117551-3d41-51cc-ba01-572897101214
+
+	/// screening-rate uplift among app-enrolled patients
+	measure 'Digital Engagement Lift (pp)' = ( [Screening Rate % (Enrolled)] - [Screening Rate % (Not Enrolled)] ) * 100
+		formatString: +0.0;-0.0
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: a91a3fab-ab42-5270-b324-d31646ec88bd
+
+	/// CRC + mammography + cervical combined
+	measure 'Cancer Screening Rate %' = CALCULATE ( [Screening Rate %], dim_screening[screening_category] = "Cancer" )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: debcb68d-7aaa-5a0b-ade2-b540834add67
+
+	/// HEDIS-style: A1c test + eye exam among diabetics
+	measure 'Diabetes Care Bundle %' = CALCULATE ( [Screening Rate %], dim_screening[screening_category] = "Chronic disease management" )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 1a153614-c32e-5228-9303-22da8643ab9d
+
+	measure 'Flu Vaccination Rate %' = CALCULATE ( [Screening Rate %], dim_screening[screening_code] = "FLU" )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: 71b59db0-c4bd-569f-906b-ef4e31d4db69
+
+	measure 'Annual Wellness Visit Rate %' = CALCULATE ( [Screening Rate %], dim_screening[screening_code] = "AWV" )
+		formatString: 0.0%
+		displayFolder: 3. Preventive screening & care gaps
+		lineageTag: dcf35e79-a020-5cbe-b462-1bec406e9fc4
+
+	measure 'Enrolled Patients' = CALCULATE ( [Total Patients], dim_patient[app_enrolled] = 1 )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 43b3a09b-e3b0-5137-a254-43fe497ad50b
+
+	/// enrolled ÷ attributed population
+	measure 'App Enrollment Rate %' = DIVIDE ( [Enrolled Patients], [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: afa674d8-3674-5ed8-ae2c-03bce205a12a
+
+	/// "Active" segment: activity in 3+ months of the year
+	measure 'Engaged Patients' = CALCULATE ( [Total Patients], dim_patient[engagement_segment] = "Active" )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 3eed26a1-7e98-5a42-8d15-5818314312e9
+
+	/// headline engagement KPI: active users ÷ enrolled
+	measure 'App Engagement Rate %' = DIVIDE ( [Engaged Patients], [Enrolled Patients] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: a447241e-379f-51da-b3dc-0a051d039f43
+
+	measure 'Engagement Rate vs Target (pp)' = ( [App Engagement Rate %] - [Engagement Rate Target] ) * 100
+		formatString: +0.0;-0.0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 84c1dedb-6eec-5fa0-badb-831683b4d5e1
+
+	/// active users ÷ everyone (enrolled or not)
+	measure 'Engaged Share of Population %' = DIVIDE ( [Engaged Patients], [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 896944a4-59c8-5edc-a134-cc6477168ee4
+
+	/// enrolled but zero events in the period
+	measure 'Dormant Rate %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[engagement_segment] = "Dormant" ), [Enrolled Patients] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 5d7f93e7-89da-554a-a105-d8fc1e5b9c48
+
+	measure 'Total Events' = SUM ( fact_engagement_event[event_count] )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: aac8a9ff-ab05-5048-a49c-5f96e066ef94
+
+	measure Logins = SUM ( fact_engagement_event[is_login] )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 594ba6c9-6dd6-5b11-ba3f-f37ae89d8392
+
+	/// distinct patients with ≥1 event in the current date context
+	measure 'Active Users' = DISTINCTCOUNT ( fact_engagement_event[patient_key] )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: cc99b81a-5032-59bc-8d25-ab5eabf49556
+
+	/// place dim_date[year_month] on the axis
+	measure 'Monthly Active Users' = CALCULATE ( [Active Users], ALLEXCEPT ( dim_date, dim_date[year_month] ) )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: adb50e09-1c29-55cc-8760-a77e4875f1de
+
+	measure 'MAU Previous Month' =
+			CALCULATE (
+			    [Active Users],
+			    DATEADD ( DATE ( LEFT ( MAX ( dim_date[year_month] ), 4 ), RIGHT ( MAX ( dim_date[year_month] ), 2 ), 1 ), -1, MONTH )
+			)
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: d052d672-91b6-5c1c-92f9-1165daf554fa
+
+	measure 'MAU Growth MoM %' = DIVIDE ( [Active Users] - [MAU Previous Month], [MAU Previous Month] )
+		formatString: +0.0%;-0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 06979f3c-9f84-5e20-b17a-4d3fce9cf892
+
+	measure 'Events per Active User' = DIVIDE ( [Total Events], [Active Users] )
+		formatString: 0.0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 50df1b64-20f5-5be6-9689-81c3e6f70cf4
+
+	measure 'Events per Enrolled Patient' = DIVIDE ( [Total Events], [Enrolled Patients] )
+		formatString: 0.0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 24bc59fa-fadf-5eea-8c15-3b854e105697
+
+	measure 'Appointment Bookings' = SUM ( fact_engagement_event[is_booking] )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 32e4190a-f870-54b1-9ff4-bf1dfc62bb3d
+
+	measure 'Bookings per 100 Enrolled' = DIVIDE ( [Appointment Bookings], [Enrolled Patients] ) * 100
+		formatString: 0.0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: eb9ebd29-6d63-5baf-8d69-8a82e7fd1ffa
+
+	measure 'Medication Reminders Sent' = CALCULATE ( [Total Events], dim_event_type[event_type] = "medication_reminder_sent" )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 7a02ac50-f869-592b-8584-75993e684eae
+
+	measure 'Medication Reminders Acknowledged' = SUM ( fact_engagement_event[is_med_reminder_ack] )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 04c40412-b9d1-5db9-98ff-7552c6834fe8
+
+	/// adherence proxy
+	measure 'Medication Reminder Ack Rate %' = DIVIDE ( [Medication Reminders Acknowledged], [Medication Reminders Sent] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 85118656-208b-566c-bfbb-e5bfc524ae31
+
+	measure 'Screening Reminders Viewed' = CALCULATE ( [Total Events], dim_event_type[event_type] = "screening_reminder_viewed" )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 6a32bc4e-5e81-54f2-b508-c66c6c4ae7db
+
+	/// bookings, reminder acknowledgements, screening-reminder views, care-team messages
+	measure 'Meaningful Actions' = CALCULATE ( [Total Events], dim_event_type[is_meaningful_action] = 1 )
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 40874e18-54d3-51b8-9936-c1693c819419
+
+	/// share of all events that are more than a login
+	measure 'Meaningful Action Rate %' = DIVIDE ( [Meaningful Actions], [Total Events] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 627fe67f-c2f3-55bd-9b46-5c03b42ad294
+
+	measure 'Avg Session Minutes' = AVERAGE ( fact_engagement_event[session_minutes] )
+		formatString: 0.0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 3d0bf8b6-bb58-58d9-a641-9bf1a409fe1a
+
+	measure 'Mobile Share %' = DIVIDE ( CALCULATE ( [Total Events], fact_engagement_event[channel] IN { "iOS", "Android" } ), [Total Events] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 4d763c1f-8293-5e8a-b1f9-5dd14a943b95
+
+	/// enrolled patients who also sync a wearable
+	measure 'Wearable-Linked Enrolled %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[app_enrolled] = 1, dim_patient[wearable_user] = 1 ), [Enrolled Patients] )
+		formatString: 0.0%
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 7437ac7e-0478-5f12-8483-b8564831d4be
+
+	/// enrollment dates inside the dim_date selection (inactive relationship)
+	measure 'New Enrollments in Period' =
+			CALCULATE (
+			    [Enrolled Patients],
+			    USERELATIONSHIP ( dim_date[date_key], dim_patient[app_enrollment_date_key] )
+			)
+		formatString: #,0
+		displayFolder: 4. Digital / app engagement
+		lineageTag: 11d7d8f1-6874-5c5f-b9c0-69968ebb7aed
+
+	measure 'Wearable Users' = CALCULATE ( [Total Patients], dim_patient[wearable_user] = 1 )
+		formatString: #,0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: c22ce79c-f2c3-5a67-a816-5295a75e9601
+
+	measure 'Wearable Adoption %' = DIVIDE ( [Wearable Users], [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 32412f48-9dd6-5989-925e-afe3f8a19424
+
+	/// patient-month observations with a synced device
+	measure 'Device Months' = COUNTROWS ( fact_wearable_monthly )
+		formatString: #,0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: e0f364f2-0784-5cb0-8f68-7beb5f2c23ab
+
+	measure 'Avg Daily Steps' = AVERAGE ( fact_wearable_monthly[avg_daily_steps] )
+		formatString: #,0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 34c52222-4ff4-5964-8bee-2360ce01ab22
+
+	measure 'Median Daily Steps' = MEDIAN ( fact_wearable_monthly[avg_daily_steps] )
+		formatString: #,0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 4e6efb2a-841f-5eff-8d6b-21626cd8b664
+
+	measure 'Avg Daily Steps vs Guideline' = [Avg Daily Steps] - [Steps Guideline]
+		formatString: +#,0;-#,0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: e7517685-1f1d-541b-8f47-d5cf2ea6a31e
+
+	measure 'Avg Sleep Hours' = AVERAGE ( fact_wearable_monthly[avg_sleep_hours] )
+		formatString: 0.0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: c9a85b8f-e06a-5d6f-9afd-18f5e824cf3f
+
+	measure 'Avg Resting HR' = AVERAGE ( fact_wearable_monthly[avg_resting_hr] )
+		formatString: 0.0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 059240f8-c5b8-5322-9d57-60803ec34dde
+
+	measure 'Avg Active Days per Month' = AVERAGE ( fact_wearable_monthly[active_days] )
+		formatString: 0.0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: c1b42fad-dad8-5509-ac5d-cc8242b1a8a7
+
+	measure 'Months Meeting 10k Steps %' = DIVIDE ( SUM ( fact_wearable_monthly[meets_10k_steps] ), [Device Months] )
+		formatString: 0.0%
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: f141412d-e411-5f26-af30-a2f4a0dd4e80
+
+	/// device-months averaging < 5,000 steps/day
+	measure 'Sedentary Share %' = DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[activity_band] = "Sedentary (<5k)" ), [Device Months] )
+		formatString: 0.0%
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: feaada8a-f75b-5f41-9f74-51506db04835
+
+	/// device-months averaging ≥ 10,000 steps/day
+	measure 'Active Share %' = DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[activity_band] = "Active (10k+)" ), [Device Months] )
+		formatString: 0.0%
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 0c774a45-fc9f-5a82-9d9b-edaa57ce834a
+
+	/// device-months averaging < 6 h sleep
+	measure 'Short Sleep Share %' = DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[sleep_band] = "Short (<6h)" ), [Device Months] )
+		formatString: 0.0%
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: ccb44858-242d-5018-bbf9-434929b35f8a
+
+	/// device-months with resting HR ≥ 80 bpm
+	measure 'Elevated Resting HR Share %' = DIVIDE ( CALCULATE ( [Device Months], fact_wearable_monthly[avg_resting_hr] >= 80 ), [Device Months] )
+		formatString: 0.0%
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 56b57958-8145-5e8a-9750-728b95ecc7b7
+
+	measure 'Avg Daily Steps Prior Month' = CALCULATE ( [Avg Daily Steps], DATEADD ( dim_date[date], -1, MONTH ) )
+		formatString: #,0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 71a64f17-1c4d-5e78-adc7-27280b78f2a0
+
+	measure 'Avg Daily Steps MoM %' = DIVIDE ( [Avg Daily Steps] - [Avg Daily Steps Prior Month], [Avg Daily Steps Prior Month] )
+		formatString: +0.0%;-0.0%
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 955e539b-b50e-5650-b018-7edd08ab4d50
+
+	/// 12-month average under 5,000 steps/day
+	measure 'Sedentary Patients' = CALCULATE ( [Total Patients], dim_patient[avg_daily_steps_12m] < 5000 )
+		formatString: #,0
+		displayFolder: 5. Wearable vitals & lifestyle
+		lineageTag: 83a7a2b0-28cb-5db7-afcc-4eed280f013d
+
+	measure 'Avg Risk Score' = AVERAGE ( dim_patient[risk_score] )
+		formatString: 0.00
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: 87082b12-a292-515b-b8ce-e8774df3869f
+
+	/// put dim_patient[risk_tier] on an axis (sort by risk_tier_order)
+	measure 'Patients in Tier' = [Total Patients]
+		formatString: #,0
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: cefe5aed-99c6-5757-916f-203f8761b853
+
+	/// tier ÷ all patients in the *other* slicers' context
+	measure 'Risk Tier Share %' = DIVIDE ( [Total Patients], CALCULATE ( [Total Patients], REMOVEFILTERS ( dim_patient[risk_tier], dim_patient[risk_tier_order] ) ) )
+		formatString: 0.0%
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: 183cc884-769a-5de9-927c-2e4a3b2635ae
+
+	/// High + Very High
+	measure 'High Risk Patients' = CALCULATE ( [Total Patients], dim_patient[risk_tier] IN { "High", "Very High" } )
+		formatString: #,0
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: fa3ba3b7-18f0-5bfa-94db-e59a4ac4924b
+
+	measure 'High Risk Share %' = DIVIDE ( [High Risk Patients], [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: c9e40dd6-9e6e-5af3-b227-f4a2afb579fa
+
+	measure 'Very High Risk Patients' = CALCULATE ( [Total Patients], dim_patient[risk_tier] = "Very High" )
+		formatString: #,0
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: 8d088252-297b-56c2-8bed-85020027e930
+
+	measure 'Low Risk Share %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[risk_tier] = "Low" ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: eb9456a2-47a3-537b-af32-a84f19526e69
+
+	/// Moderate tier with ≥1 uncontrolled condition: highest-value prevention cohort
+	measure 'Rising Risk Patients' = CALCULATE ( [Total Patients], dim_patient[risk_tier] = "Moderate", dim_patient[uncontrolled_condition_count] >= 1 )
+		formatString: #,0
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: a1835302-474e-5ac4-83a7-a3e92afe9444
+
+	/// high risk + open care gap + not actively engaged (feeds the outreach list)
+	measure 'Priority Outreach Cohort' =
+			CALCULATE (
+			    [Total Patients],
+			    dim_patient[risk_tier] IN { "High", "Very High" },
+			    dim_patient[open_care_gaps] >= 1,
+			    dim_patient[is_engaged_user] = 0
+			)
+		formatString: #,0
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: 6b318213-2688-5fdd-bfe7-216e6277df06
+
+	measure 'Priority Outreach Share %' = DIVIDE ( [Priority Outreach Cohort], [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: 39f2e19b-b927-5ce3-88d8-a682a8746bab
+
+	/// engagement penetration inside the high-risk population
+	measure 'High Risk Engaged %' =
+			DIVIDE (
+			    CALCULATE ( [Engaged Patients], dim_patient[risk_tier] IN { "High", "Very High" } ),
+			    [High Risk Patients]
+			)
+		formatString: 0.0%
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: 0f7e495c-1037-530a-a70f-985b44fdf299
+
+	/// average points from the component in context (use with the unpivoted points columns)
+	measure 'Avg Risk Score Contribution' =
+			AVERAGEX (
+			    fact_patient_risk_snapshot,
+			    fact_patient_risk_snapshot[chronic_points] + fact_patient_risk_snapshot[control_points]
+			        + fact_patient_risk_snapshot[care_gap_points] + fact_patient_risk_snapshot[obesity_points]
+			        + fact_patient_risk_snapshot[age_points] + fact_patient_risk_snapshot[smoking_points]
+			        + fact_patient_risk_snapshot[inactivity_points] + fact_patient_risk_snapshot[social_points]
+			        + fact_patient_risk_snapshot[access_points]
+			)
+		formatString: 0.00
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: b5e5730c-b90f-50e7-9e63-41620278cf85
+
+	/// conditional formatting for tier visuals
+	measure 'Risk Tier Colour' =
+			SWITCH (
+			    SELECTEDVALUE ( dim_patient[risk_tier] ),
+			    "Low", "#2DD4BF",
+			    "Moderate", "#60A5FA",
+			    "High", "#F4B860",
+			    "Very High", "#F87171",
+			    "#9FB3C8"
+			)
+		displayFolder: 6. Risk stratification & outreach
+		lineageTag: ff7a1264-a2a4-5662-b4d8-e8d976cc6fb9
+
+	/// share of patients whose BMI was imputed during cleaning
+	measure 'BMI Imputed %' = DIVIDE ( CALCULATE ( [Total Patients], dim_patient[bmi_imputed] = 1 ), [Total Patients] )
+		formatString: 0.0%
+		displayFolder: 7. Data quality & lineage (appendix page)
+		lineageTag: c17a2944-180c-5202-ad82-81d09948e43c
+
+	/// records flagged complete in source but lacking a valid date
+	measure 'Screening Flags Downgraded' = CALCULATE ( COUNTROWS ( fact_screening ), fact_screening[completed_flag_raw] = 1, fact_screening[is_completed] = 0 )
+		formatString: #,0
+		displayFolder: 7. Data quality & lineage (appendix page)
+		lineageTag: cf47531c-df16-506b-b80a-73dffc639c86
+
+	measure 'Wearable Months with Missing Steps %' = DIVIDE ( CALCULATE ( [Device Months], ISBLANK ( fact_wearable_monthly[avg_daily_steps] ) ), [Device Months] )
+		formatString: 0.0%
+		displayFolder: 7. Data quality & lineage (appendix page)
+		lineageTag: 0ad7d25a-4341-5b8b-b199-e57c1b50e63a
+
+	measure 'Selected Region Label' = IF ( ISFILTERED ( dim_geography[region] ), CONCATENATEX ( VALUES ( dim_geography[region] ), dim_geography[region], ", " ), "All regions" )
+		displayFolder: 8. Dynamic titles & labels
+		lineageTag: 8befb280-6b50-50da-9c5c-fc4d3472ae85
+
+	measure 'Selected Condition Label' = IF ( ISFILTERED ( dim_condition[condition_name] ), SELECTEDVALUE ( dim_condition[condition_name], "Multiple conditions" ), "All conditions" )
+		displayFolder: 8. Dynamic titles & labels
+		lineageTag: 72002068-2b99-524c-8476-858e210a7fa7
+
+	measure 'Screening Page Title' = "Preventive screening · " & [Selected Region Label] & " · " & FORMAT ( [Screening Rate %], "0.0%" ) & " completed"
+		displayFolder: 8. Dynamic titles & labels
+		lineageTag: fe58525d-7ea0-531f-b708-9dfbd986497b
+
+	measure 'Population Card Subtitle' = FORMAT ( [Total Patients], "#,0" ) & " patients · snapshot " & FORMAT ( DATE ( LEFT ( [Snapshot Date], 4 ), MID ( [Snapshot Date], 5, 2 ), RIGHT ( [Snapshot Date], 2 ) ), "d mmm yyyy" )
+		displayFolder: 8. Dynamic titles & labels
+		lineageTag: c14e22e5-c9a7-528c-b7d4-fb9da317ea29
+
+	column Column1
+		dataType: int64
+		isHidden
+		lineageTag: cc8d38f3-5ab4-5069-b853-934d0c68ef75
+		summarizeBy: sum
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = #table(type table [Column1 = Int64.Type], {})
+				in
+				    Source
+
+	annotation PBI_ResultType = Table

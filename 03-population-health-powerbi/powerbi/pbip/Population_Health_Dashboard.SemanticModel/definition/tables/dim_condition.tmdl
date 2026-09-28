@@ -1,0 +1,71 @@
+table dim_condition
+	lineageTag: f54d2459-142c-50a1-a2cf-97f6dbed244f
+
+	column condition_key
+		dataType: int64
+		isHidden
+		lineageTag: 61ef4443-4de3-59db-9d84-c552c9bbe627
+		summarizeBy: none
+		sourceColumn: condition_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column condition_id
+		dataType: string
+		lineageTag: 5260eb78-dc45-55ce-afd6-64f781efd17c
+		summarizeBy: none
+		sourceColumn: condition_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column snomed_code
+		dataType: int64
+		lineageTag: 96ff70c4-0b70-57a6-9596-82ba05c06953
+		summarizeBy: none
+		sourceColumn: snomed_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column condition_name
+		dataType: string
+		lineageTag: b5743e1b-362a-5c41-a6c1-0a213b0a10cf
+		summarizeBy: none
+		sourceColumn: condition_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column condition_category
+		dataType: string
+		lineageTag: 8fc28afa-a1e2-56ff-99df-434a54198471
+		summarizeBy: none
+		sourceColumn: condition_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_focus_condition
+		dataType: int64
+		lineageTag: efcb5c50-51e5-583a-9183-7e7aa7dd833a
+		summarizeBy: none
+		sourceColumn: is_focus_condition
+
+		annotation SummarizationSetBy = Automatic
+
+	column control_target
+		dataType: string
+		lineageTag: 6f1346d1-4aa6-5d7c-8acc-fa06dc99ba4a
+		summarizeBy: none
+		sourceColumn: control_target
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_condition = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_condition.csv"), [Delimiter = ",", Columns = 7, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"condition_key", Int64.Type}, {"condition_id", type text}, {"snomed_code", Int64.Type}, {"condition_name", type text}, {"condition_category", type text}, {"is_focus_condition", Int64.Type}, {"control_target", type text}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

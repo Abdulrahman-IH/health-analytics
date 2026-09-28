@@ -1,0 +1,128 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "v036",
+  "position": {
+    "x": 200,
+    "y": 430,
+    "z": 36,
+    "width": 351,
+    "height": 280,
+    "tabOrder": 36
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_patient"
+                    }
+                  },
+                  "Property": "adi_band"
+                }
+              },
+              "queryRef": "dim_patient.adi_band",
+              "nativeQueryRef": "adi_band"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Obesity Prevalence %"
+                }
+              },
+              "queryRef": "_Measures.Obesity Prevalence %",
+              "nativeQueryRef": "Obesity Prevalence %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Hypertension Prevalence %"
+                }
+              },
+              "queryRef": "_Measures.Hypertension Prevalence %",
+              "nativeQueryRef": "Hypertension Prevalence %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Diabetes Prevalence %"
+                }
+              },
+              "queryRef": "_Measures.Diabetes Prevalence %",
+              "nativeQueryRef": "Diabetes Prevalence %"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Prevalence by deprivation band'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

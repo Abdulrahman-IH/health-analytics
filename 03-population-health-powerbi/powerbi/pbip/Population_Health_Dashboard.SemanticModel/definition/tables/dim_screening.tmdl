@@ -1,0 +1,87 @@
+table dim_screening
+	lineageTag: b125d501-8537-5585-a6a0-aa80f3416556
+
+	column screening_key
+		dataType: int64
+		isHidden
+		lineageTag: 100a0160-7401-5ad1-abd9-86ccef347684
+		summarizeBy: none
+		sourceColumn: screening_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column screening_code
+		dataType: string
+		lineageTag: dd757b8e-2608-52ac-b440-3af7bf7271d2
+		summarizeBy: none
+		sourceColumn: screening_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column recommended_interval_months
+		dataType: int64
+		lineageTag: 072b443a-64c8-5b3a-87fc-0eb5ea250e3e
+		summarizeBy: none
+		sourceColumn: recommended_interval_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column screening_name
+		dataType: string
+		lineageTag: 89879176-7020-51aa-bc87-52f16c49cb74
+		summarizeBy: none
+		sourceColumn: screening_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column screening_category
+		dataType: string
+		lineageTag: 8dd26ac7-17fb-5d29-9422-71f5ce1ecb3c
+		summarizeBy: none
+		sourceColumn: screening_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column guideline_source
+		dataType: string
+		lineageTag: 7817b99e-bbd7-59dd-8108-b7a526c94ae8
+		summarizeBy: none
+		sourceColumn: guideline_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column eligible_sex
+		dataType: string
+		lineageTag: e721b562-78d3-56f4-b635-729673cf994b
+		summarizeBy: none
+		sourceColumn: eligible_sex
+
+		annotation SummarizationSetBy = Automatic
+
+	column min_age
+		dataType: int64
+		lineageTag: 36820f84-77ee-5868-a40d-073615f45447
+		summarizeBy: none
+		sourceColumn: min_age
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_age
+		dataType: int64
+		lineageTag: 1c56daf3-2037-50cb-aa6c-d984a408129e
+		summarizeBy: none
+		sourceColumn: max_age
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_screening = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_screening.csv"), [Delimiter = ",", Columns = 9, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"screening_key", Int64.Type}, {"screening_code", type text}, {"recommended_interval_months", Int64.Type}, {"screening_name", type text}, {"screening_category", type text}, {"guideline_source", type text}, {"eligible_sex", type text}, {"min_age", Int64.Type}, {"max_age", Int64.Type}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "v124",
+  "position": {
+    "x": 644,
+    "y": 150,
+    "z": 124,
+    "width": 626,
+    "height": 560,
+    "tabOrder": 124
+  },
+  "visual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Cleaning rules: duplicates removed on natural keys \u00b7 region / sex / channel normalised \u00b7 states to postal codes \u00b7 BMI outside 12\u201370 nulled and imputed by sex \u00d7 age band (flag kept) \u00b7 screenings count only with a documented date inside the guideline interval \u00b7 wearable plausibility: steps 1\u201350,000, sleep 2\u201316 h, resting HR 35\u2013200 \u00b7 events outside enrolment\u2192snapshot dropped. Control thresholds: BP < 140/90, HbA1c < 8.0 %, LDL < 130 mg/dL. Risk tiers: Low 0\u20133 \u00b7 Moderate 4\u20137 \u00b7 High 8\u201311 \u00b7 Very High 12+.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "fontWeight": "normal",
+                      "color": "#C7D2E0"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

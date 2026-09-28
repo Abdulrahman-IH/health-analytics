@@ -1,0 +1,28 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["DataFolder", "dim_condition", "dim_date", "dim_event_type", "dim_geography", "dim_patient", "dim_screening", "fact_condition", "fact_engagement_event", "fact_patient_risk_snapshot", "fact_screening", "fact_wearable_monthly", "data_quality_scorecard", "_Measures"]
+
+ref table dim_condition
+ref table dim_date
+ref table dim_event_type
+ref table dim_geography
+ref table dim_patient
+ref table dim_screening
+ref table fact_condition
+ref table fact_engagement_event
+ref table fact_patient_risk_snapshot
+ref table fact_screening
+ref table fact_wearable_monthly
+ref table data_quality_scorecard
+ref table _Measures
+
+ref cultureInfo en-US

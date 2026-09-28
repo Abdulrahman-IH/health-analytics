@@ -1,0 +1,118 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "v035",
+  "position": {
+    "x": 919,
+    "y": 150,
+    "z": 35,
+    "width": 351,
+    "height": 270,
+    "tabOrder": 35
+  },
+  "visual": {
+    "visualType": "hundredPercentStackedBarChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_condition"
+                    }
+                  },
+                  "Property": "condition_name"
+                }
+              },
+              "queryRef": "dim_condition.condition_name",
+              "nativeQueryRef": "condition_name"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_condition"
+                    }
+                  },
+                  "Property": "control_status"
+                }
+              },
+              "queryRef": "fact_condition.control_status",
+              "nativeQueryRef": "control_status"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Condition Records"
+                }
+              },
+              "queryRef": "_Measures.Condition Records",
+              "nativeQueryRef": "Condition Records"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Control status by condition'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

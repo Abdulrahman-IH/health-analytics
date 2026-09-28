@@ -1,0 +1,114 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "v053",
+  "position": {
+    "x": 559,
+    "y": 150,
+    "z": 53,
+    "width": 351,
+    "height": 230,
+    "tabOrder": 53
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_screening"
+                    }
+                  },
+                  "Property": "screening_category"
+                }
+              },
+              "queryRef": "dim_screening.screening_category",
+              "nativeQueryRef": "screening_category"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Screening Rate % (Enrolled)"
+                }
+              },
+              "queryRef": "_Measures.Screening Rate % (Enrolled)",
+              "nativeQueryRef": "Screening Rate % (Enrolled)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Screening Rate % (Not Enrolled)"
+                }
+              },
+              "queryRef": "_Measures.Screening Rate % (Not Enrolled)",
+              "nativeQueryRef": "Screening Rate % (Not Enrolled)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Enrolled vs not enrolled'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

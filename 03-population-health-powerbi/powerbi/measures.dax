@@ -115,6 +115,10 @@ Avg Chronic Conditions per Patient =
     // 0.00
     AVERAGE ( dim_patient[chronic_condition_count] )
 
+Condition Records =
+    // #,0 — all condition records in context (value field for status-mix visuals)
+    COUNTROWS ( fact_condition )
+
 Controlled Patients =
     // #,0 — condition records meeting the guideline control target
     CALCULATE ( COUNTROWS ( fact_condition ), fact_condition[is_controlled] = 1 )

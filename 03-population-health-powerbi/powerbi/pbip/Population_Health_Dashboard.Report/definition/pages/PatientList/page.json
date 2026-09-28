@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.0.0/schema.json",
+  "name": "PatientList",
+  "displayName": "8 \u00b7 Patient list",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "PatientListDrillthrough",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "p_region",
+        "boundFilter": "f_dt_region"
+      },
+      {
+        "name": "p_risk_tier",
+        "boundFilter": "f_dt_risk_tier"
+      }
+    ]
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f_dt_region",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_geography"
+              }
+            },
+            "Property": "region"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "f_dt_risk_tier",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_patient"
+              }
+            },
+            "Property": "risk_tier"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  }
+}

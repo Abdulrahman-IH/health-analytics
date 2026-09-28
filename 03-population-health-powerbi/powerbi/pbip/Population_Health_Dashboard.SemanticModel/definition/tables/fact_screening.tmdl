@@ -1,0 +1,132 @@
+table fact_screening
+	lineageTag: a6c31f25-a928-50ba-9939-94b8174d1d5d
+
+	column screening_record_id
+		dataType: string
+		lineageTag: 9293be72-dddc-5692-8591-60c0777a795c
+		summarizeBy: none
+		sourceColumn: screening_record_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_key
+		dataType: int64
+		isHidden
+		lineageTag: 73328421-3d7e-5f2a-bc65-9e642c507182
+		summarizeBy: none
+		sourceColumn: patient_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column screening_key
+		dataType: int64
+		isHidden
+		lineageTag: 28c7d049-c442-5961-9133-019bd07cbe1e
+		summarizeBy: none
+		sourceColumn: screening_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date_key
+		dataType: int64
+		isHidden
+		lineageTag: 81833af6-a205-5439-b421-8688798af884
+		summarizeBy: none
+		sourceColumn: snapshot_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_completed_date_key
+		dataType: int64
+		isHidden
+		lineageTag: d581621c-f82c-54bc-9789-09eaf49b17a6
+		summarizeBy: none
+		sourceColumn: last_completed_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column next_due_date_key
+		dataType: int64
+		isHidden
+		lineageTag: 2018ac1d-cdac-52c0-b076-db8844795213
+		summarizeBy: none
+		sourceColumn: next_due_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_eligible
+		dataType: int64
+		lineageTag: c3ca2820-7654-5118-a651-516cacb55aa5
+		summarizeBy: sum
+		sourceColumn: is_eligible
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_completed
+		dataType: int64
+		lineageTag: 57dd132b-2838-59e5-9352-892bef9c9bb6
+		summarizeBy: sum
+		sourceColumn: is_completed
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_care_gap
+		dataType: int64
+		lineageTag: 2e02d8c3-6bc2-58e1-92ba-d90cc512f421
+		summarizeBy: sum
+		sourceColumn: is_care_gap
+
+		annotation SummarizationSetBy = Automatic
+
+	column screening_status
+		dataType: string
+		lineageTag: cff39b50-b141-52aa-9caa-7b8eb0cf2abd
+		summarizeBy: none
+		sourceColumn: screening_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_since_last
+		dataType: int64
+		lineageTag: 5b2afa3a-1671-5dc8-bc48-df3752f2cac1
+		summarizeBy: sum
+		sourceColumn: days_since_last
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_overdue
+		dataType: int64
+		lineageTag: 5801c570-c7e3-5add-af00-61f9df29cf84
+		summarizeBy: sum
+		sourceColumn: days_overdue
+
+		annotation SummarizationSetBy = Automatic
+
+	column reminder_sent
+		dataType: int64
+		lineageTag: 7b06055b-2b6f-5751-981b-5d3c751daf40
+		summarizeBy: sum
+		sourceColumn: reminder_sent
+
+		annotation SummarizationSetBy = Automatic
+
+	column completed_flag_raw
+		dataType: int64
+		isHidden
+		lineageTag: f1761ab7-3252-5674-a478-2b5d1e41944b
+		summarizeBy: sum
+		sourceColumn: completed_flag_raw
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_screening = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\fact_screening.csv"), [Delimiter = ",", Columns = 14, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"screening_record_id", type text}, {"patient_key", Int64.Type}, {"screening_key", Int64.Type}, {"snapshot_date_key", Int64.Type}, {"last_completed_date_key", Int64.Type}, {"next_due_date_key", Int64.Type}, {"is_eligible", Int64.Type}, {"is_completed", Int64.Type}, {"is_care_gap", Int64.Type}, {"screening_status", type text}, {"days_since_last", Int64.Type}, {"days_overdue", Int64.Type}, {"reminder_sent", Int64.Type}, {"completed_flag_raw", Int64.Type}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "v099",
+  "position": {
+    "x": 919,
+    "y": 430,
+    "z": 99,
+    "width": 351,
+    "height": 280,
+    "tabOrder": 99
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_patient"
+                    }
+                  },
+                  "Property": "wearable_device"
+                }
+              },
+              "queryRef": "dim_patient.wearable_device",
+              "nativeQueryRef": "wearable_device",
+              "displayName": "Device"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Wearable Users"
+                }
+              },
+              "queryRef": "_Measures.Wearable Users",
+              "nativeQueryRef": "Wearable Users"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Daily Steps"
+                }
+              },
+              "queryRef": "_Measures.Avg Daily Steps",
+              "nativeQueryRef": "Avg Daily Steps"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Active Days per Month"
+                }
+              },
+              "queryRef": "_Measures.Avg Active Days per Month",
+              "nativeQueryRef": "Avg Active Days per Month"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Resting HR"
+                }
+              },
+              "queryRef": "_Measures.Avg Resting HR",
+              "nativeQueryRef": "Avg Resting HR"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Device mix'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,387 @@
+table dim_patient
+	lineageTag: 8ca9906e-c9ea-56e3-848b-ddcf262cddbd
+
+	column patient_key
+		dataType: int64
+		isHidden
+		lineageTag: 7d946f6d-5f33-5fe3-bebd-34af98364e91
+		summarizeBy: none
+		sourceColumn: patient_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_id
+		dataType: string
+		lineageTag: dc0caa36-d227-53c4-a9ff-4cd508cc469b
+		summarizeBy: none
+		sourceColumn: patient_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column geo_key
+		dataType: int64
+		isHidden
+		lineageTag: 8b312d01-25f1-51f0-86b7-c98c3b64b38b
+		summarizeBy: none
+		sourceColumn: geo_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column birth_date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: e7d326c1-d5e9-5c73-be55-5d7a200668cf
+		summarizeBy: none
+		sourceColumn: birth_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column age
+		dataType: int64
+		lineageTag: 5c8e6e98-384b-54b0-b640-263cc99bb2cb
+		summarizeBy: none
+		sourceColumn: age
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_band
+		dataType: string
+		sortByColumn: age_band_order
+		lineageTag: b70cd34e-10d8-57ac-9e67-d06e026eacbd
+		summarizeBy: none
+		sourceColumn: age_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_band_order
+		dataType: int64
+		lineageTag: 45377826-8108-501a-a3b8-dd1324e90678
+		summarizeBy: none
+		sourceColumn: age_band_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column sex
+		dataType: string
+		lineageTag: bbdee256-126e-5f85-ba0c-0b6fda7ba66c
+		summarizeBy: none
+		sourceColumn: sex
+
+		annotation SummarizationSetBy = Automatic
+
+	column sex_label
+		dataType: string
+		lineageTag: 53b54dac-51a3-54c9-a92c-1e514543026b
+		summarizeBy: none
+		sourceColumn: sex_label
+
+		annotation SummarizationSetBy = Automatic
+
+	column race_ethnicity
+		dataType: string
+		lineageTag: ca178690-b9dd-52f8-9cb3-ac8a64199320
+		summarizeBy: none
+		sourceColumn: race_ethnicity
+
+		annotation SummarizationSetBy = Automatic
+
+	column insurance_type
+		dataType: string
+		lineageTag: 3a57d6c4-7dd4-59fb-942f-c1e2cafb8c01
+		summarizeBy: none
+		sourceColumn: insurance_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column smoking_status
+		dataType: string
+		lineageTag: e8af84ee-dc5b-5bb0-8299-65b6362b2205
+		summarizeBy: none
+		sourceColumn: smoking_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column adi_decile
+		dataType: int64
+		lineageTag: 0d0c9bd7-e6c9-53d8-8761-6cb552744dee
+		summarizeBy: none
+		sourceColumn: adi_decile
+
+		annotation SummarizationSetBy = Automatic
+
+	column adi_band
+		dataType: string
+		lineageTag: 08d97e7e-3839-5462-acde-46aff8a2e072
+		summarizeBy: none
+		sourceColumn: adi_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_primary_care_provider
+		dataType: int64
+		lineageTag: 55b325f7-a935-5ad0-8e5a-8e0a490a0d95
+		summarizeBy: none
+		sourceColumn: has_primary_care_provider
+
+		annotation SummarizationSetBy = Automatic
+
+	column height_cm
+		dataType: double
+		formatString: 0.0
+		lineageTag: a72bed9a-eef1-54bd-a26e-74e61545b153
+		summarizeBy: none
+		sourceColumn: height_cm
+
+		annotation SummarizationSetBy = Automatic
+
+	column weight_kg
+		dataType: double
+		formatString: 0.0
+		lineageTag: 70c36108-ea02-5886-b1db-9521787ce814
+		summarizeBy: none
+		sourceColumn: weight_kg
+
+		annotation SummarizationSetBy = Automatic
+
+	column bmi
+		dataType: double
+		formatString: 0.0
+		lineageTag: ba3dd8e2-01aa-5305-b61a-3a38d3b4935d
+		summarizeBy: none
+		sourceColumn: bmi
+
+		annotation SummarizationSetBy = Automatic
+
+	column bmi_category
+		dataType: string
+		lineageTag: bbe02b41-53a2-5d9a-853a-f05a04189496
+		summarizeBy: none
+		sourceColumn: bmi_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column bmi_imputed
+		dataType: int64
+		lineageTag: 6f1bed73-60ff-551b-9aab-cb0866bb7bd2
+		summarizeBy: none
+		sourceColumn: bmi_imputed
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_diabetes
+		dataType: int64
+		lineageTag: 5d5e864d-f0e3-541e-9454-466e533913b4
+		summarizeBy: none
+		sourceColumn: has_diabetes
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_hypertension
+		dataType: int64
+		lineageTag: c8bf392c-1edf-59d1-9adb-949b7d9fd9a0
+		summarizeBy: none
+		sourceColumn: has_hypertension
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_obesity
+		dataType: int64
+		lineageTag: 3f515eb8-5e7a-580c-970b-b245c800fc8d
+		summarizeBy: none
+		sourceColumn: has_obesity
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_hyperlipidemia
+		dataType: int64
+		lineageTag: 6f8db20d-b32a-5935-a4e0-aeef8bfbf9bc
+		summarizeBy: none
+		sourceColumn: has_hyperlipidemia
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_asthma
+		dataType: int64
+		lineageTag: 76ee34a9-2389-53e4-bf63-642b1b5250eb
+		summarizeBy: none
+		sourceColumn: has_asthma
+
+		annotation SummarizationSetBy = Automatic
+
+	column any_focus_condition
+		dataType: int64
+		lineageTag: 5a8a06d9-1d07-521b-8395-c09322525627
+		summarizeBy: none
+		sourceColumn: any_focus_condition
+
+		annotation SummarizationSetBy = Automatic
+
+	column chronic_condition_count
+		dataType: int64
+		lineageTag: 40bc6e5a-5a82-5369-b368-43cca13e4f6f
+		summarizeBy: none
+		sourceColumn: chronic_condition_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column multimorbid
+		dataType: int64
+		lineageTag: 61d516fc-dc8f-5fce-899c-53c3c861a4e1
+		summarizeBy: none
+		sourceColumn: multimorbid
+
+		annotation SummarizationSetBy = Automatic
+
+	column uncontrolled_condition_count
+		dataType: int64
+		lineageTag: c9080554-ab33-539b-82d9-db6353fcdc14
+		summarizeBy: none
+		sourceColumn: uncontrolled_condition_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column eligible_screenings
+		dataType: int64
+		lineageTag: 632ed610-3be3-5e05-9cbf-452b31b86615
+		summarizeBy: none
+		sourceColumn: eligible_screenings
+
+		annotation SummarizationSetBy = Automatic
+
+	column completed_screenings
+		dataType: int64
+		lineageTag: 357a1ed7-8330-54b3-b8d5-d05402a901fc
+		summarizeBy: none
+		sourceColumn: completed_screenings
+
+		annotation SummarizationSetBy = Automatic
+
+	column open_care_gaps
+		dataType: int64
+		lineageTag: 0965c245-9c32-5f32-85a5-a7f6d004c26a
+		summarizeBy: none
+		sourceColumn: open_care_gaps
+
+		annotation SummarizationSetBy = Automatic
+
+	column app_enrolled
+		dataType: int64
+		lineageTag: 0f1bc6af-be6f-55ee-b602-35364726a72d
+		summarizeBy: none
+		sourceColumn: app_enrolled
+
+		annotation SummarizationSetBy = Automatic
+
+	column app_enrollment_date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 431826a9-eeda-5d75-8d73-cf5b6ccfc644
+		summarizeBy: none
+		sourceColumn: app_enrollment_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column app_enrollment_date_key
+		dataType: int64
+		isHidden
+		lineageTag: e9cd6f48-75b7-5ee2-8272-a39e21b9b507
+		summarizeBy: none
+		sourceColumn: app_enrollment_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column engagement_segment
+		dataType: string
+		lineageTag: 479e90ca-ddbe-5a2f-a80e-5d2e55395895
+		summarizeBy: none
+		sourceColumn: engagement_segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_engaged_user
+		dataType: int64
+		lineageTag: ff996a0d-cb92-5670-8096-f3ab001eaf37
+		summarizeBy: none
+		sourceColumn: is_engaged_user
+
+		annotation SummarizationSetBy = Automatic
+
+	column wearable_user
+		dataType: int64
+		lineageTag: 7b46f234-66ea-5d90-819a-086f28ed53d7
+		summarizeBy: none
+		sourceColumn: wearable_user
+
+		annotation SummarizationSetBy = Automatic
+
+	column wearable_device
+		dataType: string
+		lineageTag: 60d4d943-470f-5bd4-90fb-cdc8bf818255
+		summarizeBy: none
+		sourceColumn: wearable_device
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_daily_steps_12m
+		dataType: double
+		formatString: #,0
+		lineageTag: 4a3011b0-77d9-55e3-b822-71a4d6cd8be4
+		summarizeBy: none
+		sourceColumn: avg_daily_steps_12m
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_sleep_hours_12m
+		dataType: double
+		formatString: 0.0
+		lineageTag: dbcdba8f-5aa4-51ef-a5af-e8ed9eff0e00
+		summarizeBy: none
+		sourceColumn: avg_sleep_hours_12m
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_resting_hr_12m
+		dataType: double
+		formatString: 0.0
+		lineageTag: 75365420-2860-5af9-b7c5-aa82e5e38933
+		summarizeBy: none
+		sourceColumn: avg_resting_hr_12m
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_score
+		dataType: int64
+		lineageTag: d01949a2-c425-5cdc-ba56-b09ff6154367
+		summarizeBy: none
+		sourceColumn: risk_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_tier
+		dataType: string
+		sortByColumn: risk_tier_order
+		lineageTag: 623465e2-1dc7-5aa6-96a6-22ef917a2386
+		summarizeBy: none
+		sourceColumn: risk_tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_tier_order
+		dataType: int64
+		lineageTag: 872d0141-3920-5d14-9325-801a325ab77c
+		summarizeBy: none
+		sourceColumn: risk_tier_order
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_patient = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_patient.csv"), [Delimiter = ",", Columns = 45, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"patient_key", Int64.Type}, {"patient_id", type text}, {"geo_key", Int64.Type}, {"birth_date", type date}, {"age", Int64.Type}, {"age_band", type text}, {"age_band_order", Int64.Type}, {"sex", type text}, {"sex_label", type text}, {"race_ethnicity", type text}, {"insurance_type", type text}, {"smoking_status", type text}, {"adi_decile", Int64.Type}, {"adi_band", type text}, {"has_primary_care_provider", Int64.Type}, {"height_cm", type number}, {"weight_kg", type number}, {"bmi", type number}, {"bmi_category", type text}, {"bmi_imputed", Int64.Type}, {"has_diabetes", Int64.Type}, {"has_hypertension", Int64.Type}, {"has_obesity", Int64.Type}, {"has_hyperlipidemia", Int64.Type}, {"has_asthma", Int64.Type}, {"any_focus_condition", Int64.Type}, {"chronic_condition_count", Int64.Type}, {"multimorbid", Int64.Type}, {"uncontrolled_condition_count", Int64.Type}, {"eligible_screenings", Int64.Type}, {"completed_screenings", Int64.Type}, {"open_care_gaps", Int64.Type}, {"app_enrolled", Int64.Type}, {"app_enrollment_date", type date}, {"app_enrollment_date_key", Int64.Type}, {"engagement_segment", type text}, {"is_engaged_user", Int64.Type}, {"wearable_user", Int64.Type}, {"wearable_device", type text}, {"avg_daily_steps_12m", type number}, {"avg_sleep_hours_12m", type number}, {"avg_resting_hr_12m", type number}, {"risk_score", Int64.Type}, {"risk_tier", type text}, {"risk_tier_order", Int64.Type}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

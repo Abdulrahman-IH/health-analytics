@@ -1,0 +1,123 @@
+table fact_wearable_monthly
+	lineageTag: 728272da-4e84-54e4-a49f-db8d978180b0
+
+	column wearable_record_id
+		dataType: string
+		lineageTag: 0f3d6bee-cd3f-5a14-aa2b-b13f9fa29788
+		summarizeBy: none
+		sourceColumn: wearable_record_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_key
+		dataType: int64
+		isHidden
+		lineageTag: f3537f70-8cba-515f-8aff-191480380613
+		summarizeBy: none
+		sourceColumn: patient_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_date_key
+		dataType: int64
+		isHidden
+		lineageTag: 749b4ae9-6ab3-5989-81a6-b49c2dae3019
+		summarizeBy: none
+		sourceColumn: month_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_month
+		dataType: string
+		lineageTag: f14c924e-9e18-5ae2-b7c8-b75e1b270685
+		summarizeBy: none
+		sourceColumn: year_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column device_type
+		dataType: string
+		lineageTag: ad55a777-1790-543c-bdf5-7017fc7858b4
+		summarizeBy: none
+		sourceColumn: device_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_daily_steps
+		dataType: double
+		formatString: #,0
+		lineageTag: 5ff28356-3cae-5671-818b-d01fd3264eb0
+		summarizeBy: sum
+		sourceColumn: avg_daily_steps
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_sleep_hours
+		dataType: double
+		formatString: 0.0
+		lineageTag: c6f5acc8-0e6d-5fe1-8e6c-3f458a79e33d
+		summarizeBy: sum
+		sourceColumn: avg_sleep_hours
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_resting_hr
+		dataType: double
+		formatString: 0.0
+		lineageTag: ae9694d0-c34f-57e6-819b-c529872a8f0a
+		summarizeBy: sum
+		sourceColumn: avg_resting_hr
+
+		annotation SummarizationSetBy = Automatic
+
+	column active_days
+		dataType: int64
+		lineageTag: 9dce9cc1-1416-5264-a6ba-167fc2ab1138
+		summarizeBy: sum
+		sourceColumn: active_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_with_10k_steps
+		dataType: int64
+		lineageTag: e9c70e73-4d29-5205-b8c2-3a9c2acb48af
+		summarizeBy: sum
+		sourceColumn: days_with_10k_steps
+
+		annotation SummarizationSetBy = Automatic
+
+	column meets_10k_steps
+		dataType: int64
+		lineageTag: 382cf6de-28db-5631-86f2-e667f97fb155
+		summarizeBy: sum
+		sourceColumn: meets_10k_steps
+
+		annotation SummarizationSetBy = Automatic
+
+	column activity_band
+		dataType: string
+		lineageTag: 673769a8-4aef-5e45-8c18-2e2807c44718
+		summarizeBy: none
+		sourceColumn: activity_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column sleep_band
+		dataType: string
+		lineageTag: 3a88a646-2429-5560-8b2b-0cb5a84fff0c
+		summarizeBy: none
+		sourceColumn: sleep_band
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_wearable_monthly = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\fact_wearable_monthly.csv"), [Delimiter = ",", Columns = 13, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"wearable_record_id", type text}, {"patient_key", Int64.Type}, {"month_date_key", Int64.Type}, {"year_month", type text}, {"device_type", type text}, {"avg_daily_steps", type number}, {"avg_sleep_hours", type number}, {"avg_resting_hr", type number}, {"active_days", Int64.Type}, {"days_with_10k_steps", Int64.Type}, {"meets_10k_steps", Int64.Type}, {"activity_band", type text}, {"sleep_band", type text}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

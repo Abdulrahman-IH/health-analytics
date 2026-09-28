@@ -1,0 +1,266 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "v115",
+  "position": {
+    "x": 559,
+    "y": 150,
+    "z": 115,
+    "width": 351,
+    "height": 230,
+    "tabOrder": 115
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_patient"
+                    }
+                  },
+                  "Property": "risk_tier"
+                }
+              },
+              "queryRef": "dim_patient.risk_tier",
+              "nativeQueryRef": "risk_tier"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "chronic_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.chronic_points)",
+              "nativeQueryRef": "Avg(chronic_points)",
+              "displayName": "Chronic burden"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "control_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.control_points)",
+              "nativeQueryRef": "Avg(control_points)",
+              "displayName": "Disease control"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "care_gap_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.care_gap_points)",
+              "nativeQueryRef": "Avg(care_gap_points)",
+              "displayName": "Care gaps"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "age_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.age_points)",
+              "nativeQueryRef": "Avg(age_points)",
+              "displayName": "Age"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "obesity_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.obesity_points)",
+              "nativeQueryRef": "Avg(obesity_points)",
+              "displayName": "Obesity"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "smoking_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.smoking_points)",
+              "nativeQueryRef": "Avg(smoking_points)",
+              "displayName": "Smoking"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "inactivity_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.inactivity_points)",
+              "nativeQueryRef": "Avg(inactivity_points)",
+              "displayName": "Inactivity"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "social_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.social_points)",
+              "nativeQueryRef": "Avg(social_points)",
+              "displayName": "Deprivation"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_patient_risk_snapshot"
+                        }
+                      },
+                      "Property": "access_points"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(fact_patient_risk_snapshot.access_points)",
+              "nativeQueryRef": "Avg(access_points)",
+              "displayName": "No PCP"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Average score composition by tier'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

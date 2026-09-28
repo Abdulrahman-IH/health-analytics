@@ -1,0 +1,55 @@
+table dim_event_type
+	lineageTag: 4f88c7ea-853a-5c75-86ca-f995ca931962
+
+	column event_type_key
+		dataType: int64
+		isHidden
+		lineageTag: 8fd05cf0-c222-51e8-8af5-cc8f2d8de263
+		summarizeBy: none
+		sourceColumn: event_type_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_type
+		dataType: string
+		lineageTag: 0acc8112-0ab1-5b2a-8fe4-bc4f56b4a0af
+		summarizeBy: none
+		sourceColumn: event_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_category
+		dataType: string
+		lineageTag: 596e5380-a200-5b26-a270-03fe2aaece62
+		summarizeBy: none
+		sourceColumn: event_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_label
+		dataType: string
+		lineageTag: f522b730-7395-5fd8-a6ad-c065cf5a7768
+		summarizeBy: none
+		sourceColumn: event_label
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_meaningful_action
+		dataType: int64
+		lineageTag: 18d7b8d4-d780-52f7-aa0d-5ee72c9154f5
+		summarizeBy: none
+		sourceColumn: is_meaningful_action
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_event_type = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_event_type.csv"), [Delimiter = ",", Columns = 5, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"event_type_key", Int64.Type}, {"event_type", type text}, {"event_category", type text}, {"event_label", type text}, {"is_meaningful_action", Int64.Type}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

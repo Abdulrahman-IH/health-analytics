@@ -1,0 +1,204 @@
+table fact_patient_risk_snapshot
+	lineageTag: 89d0eee9-d860-5234-bef1-b0b7ed1885f8
+
+	column patient_key
+		dataType: int64
+		isHidden
+		lineageTag: 9d589e21-bdec-592b-98ce-c6bd796b0d9c
+		summarizeBy: none
+		sourceColumn: patient_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date_key
+		dataType: int64
+		isHidden
+		lineageTag: 3f97b4ce-221c-5bc5-96f6-ef6e968aae1d
+		summarizeBy: none
+		sourceColumn: snapshot_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_score
+		dataType: int64
+		lineageTag: 84ad42b1-b935-5b84-ae5d-586c04e8dbe9
+		summarizeBy: sum
+		sourceColumn: risk_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_tier
+		dataType: string
+		lineageTag: f6bcba2b-1a1c-5a60-aebc-684b865874fd
+		summarizeBy: none
+		sourceColumn: risk_tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column chronic_condition_count
+		dataType: int64
+		lineageTag: f764aea7-0b5a-54c3-af97-8036de0dc42c
+		summarizeBy: sum
+		sourceColumn: chronic_condition_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column uncontrolled_condition_count
+		dataType: int64
+		lineageTag: f65313a1-2481-5574-97ce-dc44cf83f2b6
+		summarizeBy: sum
+		sourceColumn: uncontrolled_condition_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column open_care_gaps
+		dataType: int64
+		lineageTag: c1b15c31-d7de-562a-b530-4a1c2e85bd66
+		summarizeBy: sum
+		sourceColumn: open_care_gaps
+
+		annotation SummarizationSetBy = Automatic
+
+	column eligible_screenings
+		dataType: int64
+		lineageTag: 3f76148e-93f6-5fd1-a742-1668ec5f5da2
+		summarizeBy: sum
+		sourceColumn: eligible_screenings
+
+		annotation SummarizationSetBy = Automatic
+
+	column completed_screenings
+		dataType: int64
+		lineageTag: 5421b990-244d-53b1-b727-0184deadd21d
+		summarizeBy: sum
+		sourceColumn: completed_screenings
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_daily_steps_12m
+		dataType: double
+		formatString: #,0
+		lineageTag: 2bdc3cd4-85e9-5dc4-a220-de6777e05ddf
+		summarizeBy: sum
+		sourceColumn: avg_daily_steps_12m
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_sleep_hours_12m
+		dataType: double
+		formatString: 0.0
+		lineageTag: 571b9651-e0a8-5ad0-89d8-18690d97fad8
+		summarizeBy: sum
+		sourceColumn: avg_sleep_hours_12m
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_resting_hr_12m
+		dataType: double
+		formatString: 0.0
+		lineageTag: 04d43e33-5089-530d-aa61-fa245c34dbdc
+		summarizeBy: sum
+		sourceColumn: avg_resting_hr_12m
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_engaged_user
+		dataType: int64
+		lineageTag: 6617ad91-c0e3-5916-9fca-d65c716edaa2
+		summarizeBy: sum
+		sourceColumn: is_engaged_user
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_points
+		dataType: int64
+		lineageTag: b656bd2a-f62f-5dfd-8d7b-a36c95896a65
+		summarizeBy: sum
+		sourceColumn: age_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column chronic_points
+		dataType: int64
+		lineageTag: 724281f3-8202-5227-b769-45e43880ee5b
+		summarizeBy: sum
+		sourceColumn: chronic_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column obesity_points
+		dataType: int64
+		lineageTag: af7ff1cb-e706-5474-a952-eb08c43f3e68
+		summarizeBy: sum
+		sourceColumn: obesity_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column control_points
+		dataType: int64
+		lineageTag: 2eae511a-21f7-5425-acaf-48492e4ec5cf
+		summarizeBy: sum
+		sourceColumn: control_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column smoking_points
+		dataType: int64
+		lineageTag: 076e03d7-4e14-5091-bd8e-a348ed41d1ae
+		summarizeBy: sum
+		sourceColumn: smoking_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column inactivity_points
+		dataType: int64
+		lineageTag: b758a144-da0f-59fa-9bd9-23cfcda18c69
+		summarizeBy: sum
+		sourceColumn: inactivity_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column care_gap_points
+		dataType: int64
+		lineageTag: c550be49-d923-54d8-a24f-3bf9d58536ba
+		summarizeBy: sum
+		sourceColumn: care_gap_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column social_points
+		dataType: int64
+		lineageTag: 14fd0200-5439-5c6e-9e14-9faa4bf94f4d
+		summarizeBy: sum
+		sourceColumn: social_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column access_points
+		dataType: int64
+		lineageTag: 5ec1a959-a37b-5b0f-9d00-4974cef0407c
+		summarizeBy: sum
+		sourceColumn: access_points
+
+		annotation SummarizationSetBy = Automatic
+
+	column screening_completion_rate
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 223c6cf7-1e5a-579c-ac73-96167fac370b
+		summarizeBy: sum
+		sourceColumn: screening_completion_rate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_patient_risk_snapshot = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\fact_patient_risk_snapshot.csv"), [Delimiter = ",", Columns = 23, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"patient_key", Int64.Type}, {"snapshot_date_key", Int64.Type}, {"risk_score", Int64.Type}, {"risk_tier", type text}, {"chronic_condition_count", Int64.Type}, {"uncontrolled_condition_count", Int64.Type}, {"open_care_gaps", Int64.Type}, {"eligible_screenings", Int64.Type}, {"completed_screenings", Int64.Type}, {"avg_daily_steps_12m", type number}, {"avg_sleep_hours_12m", type number}, {"avg_resting_hr_12m", type number}, {"is_engaged_user", Int64.Type}, {"age_points", Int64.Type}, {"chronic_points", Int64.Type}, {"obesity_points", Int64.Type}, {"control_points", Int64.Type}, {"smoking_points", Int64.Type}, {"inactivity_points", Int64.Type}, {"care_gap_points", Int64.Type}, {"social_points", Int64.Type}, {"access_points", Int64.Type}, {"screening_completion_rate", type number}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

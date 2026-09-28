@@ -1,0 +1,63 @@
+table dim_geography
+	lineageTag: 7e64086c-3b5d-557b-8f88-adbbef2849b3
+
+	column geo_key
+		dataType: int64
+		isHidden
+		lineageTag: ab20c5a9-e3ba-5bc1-87eb-19884fe67e18
+		summarizeBy: none
+		sourceColumn: geo_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 4a338213-e05c-50f4-946a-a18b26d3c042
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: aefb5195-e4c3-5d80-9e0e-fde3baca30d0
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column urbanicity
+		dataType: string
+		lineageTag: d183469c-bc32-5942-b2c5-8285cb6d747a
+		summarizeBy: none
+		sourceColumn: urbanicity
+
+		annotation SummarizationSetBy = Automatic
+
+	column state_name
+		dataType: string
+		lineageTag: 0fc6d9a1-328a-5b69-956f-b725cf7dfb35
+		summarizeBy: none
+		sourceColumn: state_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 5f561033-8347-59a7-923b-6ea7a7068aba
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_geography = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_geography.csv"), [Delimiter = ",", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"geo_key", Int64.Type}, {"region", type text}, {"state", type text}, {"urbanicity", type text}, {"state_name", type text}, {"country", type text}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

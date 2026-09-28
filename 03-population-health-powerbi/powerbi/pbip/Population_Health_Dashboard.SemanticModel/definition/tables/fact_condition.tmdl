@@ -1,0 +1,133 @@
+table fact_condition
+	lineageTag: 9e355958-72a9-5dbc-ab15-666455dae918
+
+	column condition_record_id
+		dataType: string
+		lineageTag: dceaa931-008d-586d-92f3-d0b8dc87f72b
+		summarizeBy: none
+		sourceColumn: condition_record_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column patient_key
+		dataType: int64
+		isHidden
+		lineageTag: b929b252-2e90-5c70-85de-6dcdc89d5d93
+		summarizeBy: none
+		sourceColumn: patient_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column condition_key
+		dataType: int64
+		isHidden
+		lineageTag: 5f786556-5772-572d-b3d4-a2f17480a98c
+		summarizeBy: none
+		sourceColumn: condition_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column onset_date_key
+		dataType: int64
+		isHidden
+		lineageTag: b716d162-dec0-5248-b0db-890eab4124f7
+		summarizeBy: none
+		sourceColumn: onset_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_date_key
+		dataType: int64
+		isHidden
+		lineageTag: ccb4f502-78fb-5f55-8fb1-12a742c6ccc2
+		summarizeBy: none
+		sourceColumn: snapshot_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column measure_name
+		dataType: string
+		lineageTag: b890a89f-037a-54aa-b9ab-0f2e7172b627
+		summarizeBy: none
+		sourceColumn: measure_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column measure_value
+		dataType: double
+		formatString: 0.0
+		lineageTag: 9f4c0db6-7536-5993-8294-4495466b5429
+		summarizeBy: sum
+		sourceColumn: measure_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column secondary_measure_name
+		dataType: string
+		lineageTag: ea1be6f5-ec3b-5310-935c-e48cdba61117
+		summarizeBy: none
+		sourceColumn: secondary_measure_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column secondary_measure_value
+		dataType: double
+		formatString: 0
+		lineageTag: 7daba4f1-10df-55ff-8560-023a37d7dcd0
+		summarizeBy: sum
+		sourceColumn: secondary_measure_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column control_status
+		dataType: string
+		lineageTag: 4895a9d3-5778-5e51-90d3-ec206809930b
+		summarizeBy: none
+		sourceColumn: control_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_controlled
+		dataType: int64
+		lineageTag: 2b8e5257-cf75-5b80-a72b-8de08caf25c8
+		summarizeBy: sum
+		sourceColumn: is_controlled
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_uncontrolled
+		dataType: int64
+		lineageTag: 52f1b665-3091-5b15-a2d2-8a5a8aa3ab60
+		summarizeBy: sum
+		sourceColumn: is_uncontrolled
+
+		annotation SummarizationSetBy = Automatic
+
+	column on_medication
+		dataType: int64
+		lineageTag: dfbb61ce-5fa0-565b-b89e-2889469fbc29
+		summarizeBy: sum
+		sourceColumn: on_medication
+
+		annotation SummarizationSetBy = Automatic
+
+	column years_since_onset
+		dataType: double
+		formatString: 0.0
+		lineageTag: 0d3eae80-ec6f-5a43-9569-2330774db0d6
+		summarizeBy: sum
+		sourceColumn: years_since_onset
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_condition = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\fact_condition.csv"), [Delimiter = ",", Columns = 14, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"condition_record_id", type text}, {"patient_key", Int64.Type}, {"condition_key", Int64.Type}, {"onset_date_key", Int64.Type}, {"snapshot_date_key", Int64.Type}, {"measure_name", type text}, {"measure_value", type number}, {"secondary_measure_name", type text}, {"secondary_measure_value", type number}, {"control_status", type text}, {"is_controlled", Int64.Type}, {"is_uncontrolled", Int64.Type}, {"on_medication", Int64.Type}, {"years_since_onset", type number}}, "en-US")
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
