@@ -1,0 +1,59 @@
+factor,level_value,index_stays,readmissions,readmission_rate_30d,relative_risk,share_of_readmissions,risk_rank_in_factor
+Admission type,Emergency,56503,6944,0.1229,1.16,0.8864,1
+Admission type,Elective,17626,890,0.0505,0.48,0.1136,2
+Age band,85+,6047,922,0.1525,1.44,0.1177,1
+Age band,75-84,9449,1405,0.1487,1.41,0.1793,2
+Age band,65-74,11812,1231,0.1042,0.99,0.1571,3
+Age band,0-17,10020,1025,0.1023,0.97,0.1308,4
+Age band,45-64,19561,1972,0.1008,0.95,0.2517,5
+Age band,18-44,17240,1279,0.0742,0.7,0.1633,6
+Diagnosis group,Heart failure,1712,392,0.229,2.17,0.05,1
+Diagnosis group,COPD exacerbation,2170,430,0.1982,1.88,0.0549,2
+Diagnosis group,Hip fracture,2387,471,0.1973,1.87,0.0601,3
+Diagnosis group,Chemotherapy complication,784,135,0.1722,1.63,0.0172,4
+Diagnosis group,Bowel obstruction,2179,363,0.1666,1.58,0.0463,5
+Diagnosis group,Frailty & falls,2254,368,0.1633,1.54,0.047,6
+Diagnosis group,Sepsis,1863,280,0.1503,1.42,0.0357,7
+Diagnosis group,Respiratory failure,1781,266,0.1494,1.41,0.034,8
+Diagnosis group,Febrile neutropenia,576,85,0.1476,1.4,0.0109,9
+Diagnosis group,Sepsis (critical),1979,284,0.1435,1.36,0.0363,10
+Diagnosis group,Diabetes complications,1898,256,0.1349,1.28,0.0327,11
+Diagnosis group,Pneumonia,3072,407,0.1325,1.25,0.052,12
+Diagnosis group,Bronchiolitis,3755,473,0.126,1.19,0.0604,13
+Diagnosis group,Urinary tract infection,1876,234,0.1247,1.18,0.0299,14
+Diagnosis group,Acute myocardial infarction,1492,181,0.1213,1.15,0.0231,15
+Diagnosis group,Asthma,2591,306,0.1181,1.12,0.0391,16
+Diagnosis group,Gastrointestinal bleed,1265,149,0.1178,1.11,0.019,17
+Diagnosis group,Cardiac arrest,886,102,0.1151,1.09,0.013,18
+Diagnosis group,Antenatal complication,785,89,0.1134,1.07,0.0114,19
+Diagnosis group,Stroke,1556,166,0.1067,1.01,0.0212,20
+Diagnosis group,Colorectal resection,1898,181,0.0954,0.9,0.0231,21
+Diagnosis group,Arrhythmia,2037,181,0.0889,0.84,0.0231,22
+Diagnosis group,Gastroenteritis,2628,204,0.0776,0.73,0.026,23
+Diagnosis group,Appendicitis,3637,280,0.077,0.73,0.0357,24
+Diagnosis group,Cholecystectomy,6907,517,0.0749,0.71,0.066,25
+Diagnosis group,Caesarean section,3758,271,0.0721,0.68,0.0346,26
+Diagnosis group,Oncology surgery,1053,73,0.0693,0.66,0.0093,27
+Diagnosis group,Spinal surgery,570,35,0.0614,0.58,0.0045,28
+Diagnosis group,Palliative care,545,33,0.0606,0.57,0.0042,29
+Diagnosis group,Chest pain (low risk),884,53,0.06,0.57,0.0068,30
+Diagnosis group,Minor fractures & soft tissue,1269,70,0.0552,0.52,0.0089,31
+Diagnosis group,Spontaneous vaginal delivery,4054,215,0.053,0.5,0.0274,32
+Diagnosis group,Post-operative critical care,684,33,0.0482,0.46,0.0042,33
+Diagnosis group,Hip replacement,1281,53,0.0414,0.39,0.0068,34
+Diagnosis group,Cardiac catheterisation,408,16,0.0392,0.37,0.002,35
+Diagnosis group,Knee replacement,1213,46,0.0379,0.36,0.0059,36
+Diagnosis group,Induction of labour,959,36,0.0375,0.36,0.0046,37
+Diagnosis group,Paediatric surgery,897,26,0.029,0.27,0.0033,38
+Diagnosis group,Hernia repair,2586,74,0.0286,0.27,0.0094,39
+Discharge day,Fri-Sun,26264,2962,0.1128,1.07,0.3781,1
+Discharge day,Mon-Thu,47865,4872,0.1018,0.96,0.6219,2
+Discharge destination,Left against medical advice,754,187,0.248,2.35,0.0239,1
+Discharge destination,Care home / rehab,2881,479,0.1663,1.57,0.0611,2
+Discharge destination,Home with support,7168,862,0.1203,1.14,0.11,3
+Discharge destination,Home,63326,6306,0.0996,0.94,0.805,4
+Length of stay,5: 21+ days,1108,162,0.1462,1.38,0.0207,1
+Length of stay,4: 7-20 days,10917,1481,0.1357,1.28,0.189,2
+Length of stay,3: 3-6 days,24634,2733,0.1109,1.05,0.3489,3
+Length of stay,2: 1-2 days,29499,2726,0.0924,0.87,0.348,4
+Length of stay,1: <1 day,7971,732,0.0918,0.87,0.0934,5

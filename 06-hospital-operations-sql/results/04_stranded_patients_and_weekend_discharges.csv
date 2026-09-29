@@ -1,0 +1,16 @@
+hospital_code,hospital_type,discharges,stranded_share,super_stranded_share,stranded_bed_day_share,super_stranded_bed_day_share,weekend_discharge_ratio,monday_surge_ratio,stranded_pct_rank,weekend_gap_pct_rank
+QET,Teaching,9414,0.2024,0.0218,0.5301,0.1349,0.635,1.507,1.0,0.214
+SAU,Teaching,10088,0.1838,0.0195,0.5044,0.1243,0.63,1.562,0.929,0.429
+SDN,Regional General,5721,0.1689,0.017,0.4805,0.1088,0.625,1.47,0.857,0.643
+PNT,Teaching,9499,0.1672,0.0175,0.4792,0.1152,0.65,1.472,0.786,0.071
+CLR,Regional General,5265,0.1677,0.0152,0.4703,0.0996,0.654,1.511,0.714,0.0
+KMR,Regional General,5455,0.1635,0.0141,0.4688,0.097,0.612,1.524,0.643,0.786
+ASH,Community,2237,0.1591,0.013,0.4572,0.0896,0.609,1.533,0.571,0.857
+HBV,Regional General,6640,0.1541,0.0127,0.4548,0.0911,0.635,1.521,0.5,0.286
+SLC,Community,2255,0.1557,0.0111,0.4511,0.0825,0.578,1.554,0.429,1.0
+BRK,Community,2234,0.1576,0.0103,0.4425,0.0629,0.619,1.348,0.357,0.714
+RVG,Regional General,5855,0.146,0.012,0.442,0.0862,0.628,1.496,0.286,0.5
+WBG,Regional General,6310,0.1477,0.0124,0.4372,0.0884,0.626,1.489,0.214,0.571
+TMS,Regional General,5800,0.1471,0.0107,0.4356,0.0782,0.638,1.405,0.143,0.143
+EFG,Regional General,5860,0.1357,0.0125,0.433,0.0968,0.634,1.434,0.071,0.357
+MRC,Community,2505,0.1505,0.012,0.4317,0.083,0.606,1.487,0.0,0.929
