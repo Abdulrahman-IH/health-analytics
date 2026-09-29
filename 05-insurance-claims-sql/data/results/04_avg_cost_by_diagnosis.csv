@@ -1,0 +1,27 @@
+diagnosis_code,description,category,approved_claims,members,avg_billed,avg_approved,median_approved,approved_to_billed_pct,total_approved,approved_per_member
+O80,Encounter for full-term uncomplicated delivery,Maternity,931,734,4597.0,2643.0,3183.0,57.5,2460693.0,3352.0
+K80.20,Calculus of gallbladder without obstruction,Digestive,5640,3137,2670.0,1579.0,472.0,59.1,8904596.0,2839.0
+C50.911,Malignant neoplasm of right female breast,Oncology,652,108,2368.0,1288.0,790.0,54.4,839802.0,7776.0
+S82.201A,"Fracture of shaft of right tibia, initial encounter",Injury,6450,3596,2161.0,1211.0,491.0,56.0,7809040.0,2172.0
+M17.11,"Primary osteoarthritis, right knee",Musculoskeletal,4144,635,1908.0,1031.0,151.0,54.0,4273073.0,6729.0
+I25.10,Atherosclerotic heart disease of native coronary artery,Circulatory,4047,593,1678.0,854.0,167.0,50.9,3454966.0,5826.0
+S06.0X0A,Concussion without loss of consciousness,Injury,6501,3622,858.0,486.0,453.0,56.7,3161357.0,873.0
+C34.90,Malignant neoplasm of bronchus or lung,Oncology,412,66,835.0,481.0,489.0,57.6,198292.0,3004.0
+R07.9,"Chest pain, unspecified",Symptoms & Signs,6335,3450,528.0,311.0,413.0,59.0,1971757.0,572.0
+K21.9,Gastro-esophageal reflux disease,Digestive,6400,3510,534.0,302.0,128.0,56.5,1931987.0,550.0
+J18.9,"Pneumonia, unspecified organism",Respiratory,5474,3287,340.0,190.0,154.0,55.9,1040658.0,317.0
+I48.91,Unspecified atrial fibrillation,Circulatory,1957,289,347.0,182.0,159.0,52.3,355542.0,1230.0
+M54.50,"Low back pain, unspecified",Musculoskeletal,6006,3321,338.0,178.0,120.0,52.5,1067481.0,321.0
+Z12.31,Screening mammogram for malignant neoplasm of breast,Preventive,2252,1146,307.0,155.0,157.0,50.4,348443.0,304.0
+F32.9,"Major depressive disorder, single episode",Behavioral Health,9453,1409,282.0,149.0,155.0,52.9,1407579.0,999.0
+J45.909,"Unspecified asthma, uncomplicated",Respiratory,8537,1260,262.0,143.0,114.0,54.5,1217863.0,967.0
+G43.909,"Migraine, unspecified",Neurological,6412,3573,265.0,140.0,115.0,53.0,899450.0,252.0
+F41.1,Generalized anxiety disorder,Behavioral Health,10369,1521,257.0,139.0,127.0,53.9,1437775.0,945.0
+J06.9,Acute upper respiratory infection,Respiratory,5405,3262,248.0,138.0,114.0,55.7,745779.0,229.0
+L03.90,"Cellulitis, unspecified",Skin,6835,3786,250.0,138.0,113.0,55.3,946044.0,250.0
+N18.30,"Chronic kidney disease, stage 3 unspecified",Renal,2397,368,233.0,124.0,26.0,53.4,298128.0,810.0
+I10,Essential (primary) hypertension,Circulatory,21937,3147,196.0,106.0,112.0,54.1,2332600.0,741.0
+Z00.00,General adult medical exam without abnormal findings,Preventive,6122,3340,203.0,106.0,27.0,52.1,646737.0,194.0
+E78.5,"Hyperlipidemia, unspecified",Endocrine,15366,2288,178.0,97.0,109.0,54.5,1488786.0,651.0
+E11.9,Type 2 diabetes mellitus without complications,Endocrine,10697,1542,176.0,96.0,109.0,54.4,1026460.0,666.0
+N39.0,"Urinary tract infection, site not specified",Genitourinary,6769,3762,140.0,76.0,103.0,54.4,516721.0,137.0
