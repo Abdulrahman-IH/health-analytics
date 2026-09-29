@@ -1,0 +1,31 @@
+provider_id,provider_name,specialty,network_status,claims,members,markup_ratio,pct_99215,dup_rate_pct,outlier_rate_pct,claims_per_member,approved_paid,risk_score,red_flags
+PR20590,Horizon Cardiology Associates,Cardiology,In-Network,146,47,3.2,69.6,12.33,4.79,3.11,69052.0,98.7,4
+PR20672,Oakwood Endocrinology Associates,Endocrinology,In-Network,627,266,4.37,54.9,11.32,3.35,2.36,87798.0,97.8,4
+PR21050,Dr. Nancy Wilson,Cardiology,In-Network,901,340,4.72,60.5,9.43,2.66,2.65,441292.0,97.4,3
+PR20882,Unity Behavioral Health Associates,Behavioral Health,In-Network,541,158,5.35,68.4,9.98,2.96,3.42,72586.0,96.0,4
+PR20062,Riverside Orthopedics Associates,Orthopedics,In-Network,132,71,5.04,54.2,9.85,2.27,1.86,176433.0,95.8,4
+PR20903,Valley Internal Medicine Associates,Internal Medicine,Out-of-Network,567,218,5.4,61.6,10.41,3.35,2.6,31309.0,95.1,4
+PR20327,Horizon Internal Medicine Associates,Internal Medicine,In-Network,387,141,4.31,61.5,9.56,2.84,2.74,44956.0,95.0,4
+PR20286,Dr. Barbara Young,Family Medicine,In-Network,661,257,4.84,66.5,9.53,2.27,2.57,78451.0,94.1,4
+PR20798,Crescent Family Medicine Associates,Family Medicine,Out-of-Network,281,112,4.69,60.5,12.46,3.56,2.51,12749.0,93.5,4
+PR20504,Dr. Elizabeth Thomas,Family Medicine,In-Network,113,42,4.29,65.6,8.85,1.77,2.69,12963.0,93.0,3
+PR20974,Valley Orthopedics Associates,Orthopedics,Out-of-Network,97,59,6.32,51.7,9.28,3.09,1.64,46413.0,92.4,4
+PR20752,Dr. Hassan Ramirez,Family Medicine,In-Network,268,110,4.32,67.1,9.33,1.87,2.44,30527.0,91.8,4
+PR20899,Riverside Internal Medicine Associates,Internal Medicine,In-Network,518,219,4.84,60.8,8.49,1.74,2.37,62035.0,91.3,4
+PR20584,Cedar Internal Medicine Associates,Internal Medicine,In-Network,149,63,4.08,64.6,10.74,1.34,2.37,18575.0,91.0,3
+PR20744,Dr. Robert Nguyen,Orthopedics,In-Network,100,61,3.92,63.0,7.0,2.0,1.64,247209.0,90.5,3
+PR20932,Dr. Daniel Chen,Behavioral Health,In-Network,328,123,4.6,65.8,9.76,1.52,2.67,42644.0,89.1,4
+PR21053,Dr. Barbara Garcia,Family Medicine,In-Network,51,13,2.38,8.6,1.96,1.96,3.92,5289.0,86.8,1
+PR20728,Pinecrest Family Medicine Associates,Family Medicine,In-Network,335,115,2.75,5.3,2.99,0.6,2.91,35810.0,83.6,1
+PR20505,Dr. Ahmed Thompson,Family Medicine,In-Network,85,19,2.1,6.0,2.35,1.18,4.47,8329.0,81.1,0
+PR20297,Dr. Omar Robinson,Internal Medicine,Out-of-Network,113,39,2.18,6.4,2.65,0.88,2.9,4834.0,81.1,0
+PR21032,Dr. Hassan Smith,Internal Medicine,In-Network,71,29,2.18,4.3,5.63,1.41,2.45,8274.0,81.0,1
+PR20984,Evergreen Cardiology Associates,Cardiology,In-Network,52,22,3.32,53.6,7.69,0.0,2.36,29450.0,80.9,3
+PR20132,Dr. Jessica Jones,Endocrinology,Out-of-Network,334,132,2.13,5.7,2.1,0.3,2.53,18200.0,80.2,0
+PR21036,Dr. Elizabeth Taylor,Family Medicine,In-Network,234,75,2.55,6.0,1.71,0.85,3.12,23771.0,80.0,1
+PR21141,Highland Internal Medicine Associates,Internal Medicine,In-Network,170,50,2.19,5.5,2.35,0.59,3.4,17720.0,79.1,0
+PR20760,Harbor Imaging,Radiology,In-Network,435,160,3.77,,12.41,2.53,2.72,98520.0,78.7,3
+PR20509,Dr. Robert Davis,Family Medicine,In-Network,73,29,2.27,3.7,2.74,1.37,2.52,7347.0,77.9,0
+PR20298,Dr. Elizabeth Perez,Neurology,In-Network,166,68,2.38,0.0,3.61,1.2,2.44,19803.0,77.7,3
+PR21134,Cedar Physical Therapy,Physical Therapy,Out-of-Network,123,58,5.13,,10.57,4.07,2.12,6263.0,77.7,3
+PR20683,Riverside Imaging,Radiology,Out-of-Network,1092,408,4.26,,10.9,1.28,2.68,117824.0,76.5,2

@@ -1,0 +1,19 @@
+specialty,adjudicated,rejection_rate_pct,prior_auth_pct,out_of_network_pct,coding_pct,duplicate_pct,admin_eligibility_pct,clinical_policy_pct,top_rejection_reason
+General Surgery,1636,21.94,35.38,24.79,12.53,6.41,16.71,4.18,R02 - Missing or invalid prior authorization
+Radiology,14487,20.01,18.25,25.18,15.8,11.42,16.38,12.97,"R05 - Out-of-network provider, no OON benefit"
+Physical Therapy,6644,19.73,0.0,47.14,13.35,7.17,17.32,15.03,"R05 - Out-of-network provider, no OON benefit"
+Oncology,1043,17.26,30.56,5.56,18.33,8.33,22.78,14.44,R02 - Missing or invalid prior authorization
+Internal Medicine,20474,15.08,0.0,38.37,20.4,11.01,22.31,7.9,"R05 - Out-of-network provider, no OON benefit"
+Family Medicine,20587,14.84,0.0,36.73,20.82,10.97,23.57,7.92,"R05 - Out-of-network provider, no OON benefit"
+Cardiology,8624,14.63,9.67,17.51,24.01,12.68,23.38,12.76,R06 - Diagnosis/procedure code mismatch or invalid code
+Orthopedics,6859,14.56,1.5,29.23,26.93,9.81,22.52,10.01,"R05 - Out-of-network provider, no OON benefit"
+Endocrinology,12414,14.4,0.0,34.14,24.85,11.08,21.88,8.06,"R05 - Out-of-network provider, no OON benefit"
+Urgent Care,11265,13.76,0.0,38.26,19.61,7.81,26.84,7.48,"R05 - Out-of-network provider, no OON benefit"
+Hospital Medicine,847,13.34,0.0,39.82,13.27,7.96,30.97,7.96,"R05 - Out-of-network provider, no OON benefit"
+Behavioral Health,22080,13.11,0.0,19.32,25.29,10.99,29.03,15.38,R06 - Diagnosis/procedure code mismatch or invalid code
+OB/GYN,849,12.96,0.0,31.82,25.45,6.36,29.09,7.27,"R05 - Out-of-network provider, no OON benefit"
+Laboratory,20948,12.95,0.0,31.34,23.89,9.77,28.06,6.93,"R05 - Out-of-network provider, no OON benefit"
+Neurology,11981,12.06,0.0,26.02,27.06,11.42,28.44,7.06,R06 - Diagnosis/procedure code mismatch or invalid code
+Gastroenterology,13495,11.4,0.0,26.14,21.07,11.9,33.22,7.67,"R05 - Out-of-network provider, no OON benefit"
+Emergency Medicine,16364,10.66,0.0,11.81,22.13,11.93,32.4,21.73,R07 - Missing or incomplete claim information
+Nephrology,4315,8.48,0.0,2.73,37.16,10.66,40.98,8.47,R06 - Diagnosis/procedure code mismatch or invalid code

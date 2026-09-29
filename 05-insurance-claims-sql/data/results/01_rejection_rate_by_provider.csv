@@ -1,0 +1,26 @@
+provider_id,provider_name,specialty,network_status,adjudicated_claims,rejected_claims,rejection_rate_pct,specialty_rate_pct,pts_above_specialty,rank_in_specialty,rejected_billed
+PR20798,Crescent Family Medicine Associates,Family Medicine,Out-of-Network,275,159,57.82,15.12,42.7,1,101295.0
+PR20596,Cedar Diagnostics Lab,Laboratory,Out-of-Network,850,429,50.47,12.95,37.52,1,17675.0
+PR20582,Parkside Physical Therapy,Physical Therapy,Out-of-Network,186,103,55.38,18.66,36.72,1,22866.0
+PR20575,Horizon Diagnostics Lab,Laboratory,Out-of-Network,535,256,47.85,12.95,34.9,2,10414.0
+PR20705,Dr. Hassan Williams,Behavioral Health,Out-of-Network,225,106,47.11,12.73,34.38,1,20157.0
+PR20677,Bayside Behavioral Health Associates,Behavioral Health,Out-of-Network,290,134,46.21,12.73,33.48,2,40023.0
+PR20289,Dr. Lisa Ali,Gastroenterology,Out-of-Network,664,281,42.32,10.98,31.34,1,145918.0
+PR20137,Pinecrest Cardiology Associates,Cardiology,Out-of-Network,193,90,46.63,16.12,30.51,1,62556.0
+PR20903,Valley Internal Medicine Associates,Internal Medicine,Out-of-Network,557,268,48.11,17.75,30.36,1,232527.0
+PR20302,Crescent Neurology Associates,Neurology,Out-of-Network,432,182,42.13,11.99,30.14,1,46108.0
+PR20683,Riverside Imaging,Radiology,Out-of-Network,1066,540,50.66,20.81,29.85,1,719724.0
+PR20833,Pinecrest Family Medicine Associates,Family Medicine,Out-of-Network,184,82,44.57,15.12,29.45,2,18301.0
+PR20660,Dr. Michael Nguyen,Endocrinology,Out-of-Network,162,70,43.21,14.47,28.74,1,14314.0
+PR20132,Dr. Jessica Jones,Endocrinology,Out-of-Network,331,143,43.2,14.47,28.73,2,37165.0
+PR21197,Evergreen Endocrinology Associates,Endocrinology,Out-of-Network,1075,460,42.79,14.47,28.32,3,131967.0
+PR20681,Dr. Jennifer Moore,Urgent Care,Out-of-Network,166,69,41.57,13.31,28.26,1,10844.0
+PR20526,Dr. Lisa Khan,Urgent Care,Out-of-Network,1095,452,41.28,13.31,27.97,2,69038.0
+PR20809,Dr. Robert Walker,Gastroenterology,Out-of-Network,302,117,38.74,10.98,27.76,2,48997.0
+PR21052,Northgate Orthopedics Associates,Orthopedics,Out-of-Network,166,74,44.58,17.16,27.42,1,337340.0
+PR20551,Lakeview Behavioral Health Associates,Behavioral Health,Out-of-Network,265,105,39.62,12.73,26.89,3,31191.0
+PR20621,Parkside Neurology Associates,Neurology,Out-of-Network,415,161,38.8,11.99,26.81,2,46218.0
+PR20983,Dr. Carlos Davis,Family Medicine,Out-of-Network,320,132,41.25,15.12,26.13,3,26284.0
+PR20982,Dr. Nancy Smith,Internal Medicine,Out-of-Network,216,94,43.52,17.75,25.77,2,21754.0
+PR20122,Dr. Thomas Ramirez,Family Medicine,Out-of-Network,219,89,40.64,15.12,25.52,4,13869.0
+PR20607,Dr. Elizabeth Taylor,Internal Medicine,Out-of-Network,695,300,43.17,17.75,25.42,3,60262.0

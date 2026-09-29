@@ -1,0 +1,4 @@
+dup_type,duplicate_claims,caught_by_edits,paid_duplicates,pending_duplicates,leakage_rate_pct,dollars_paid_on_duplicates,providers_involved
+Exact duplicate,2590,2238,296,5,11.4,100945.0,755
+Near duplicate,1206,668,453,4,37.6,116465.0,528
+Same-day repeat service,285,3,241,6,84.6,39702.0,212

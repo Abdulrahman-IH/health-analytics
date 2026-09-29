@@ -1,0 +1,986 @@
+claim_id,procedure_code,procedure_description,provider_id,provider_name,specialty,service_date,procedure_median_billed,billed_amount,times_median,claim_status,rejection_reason_code,approved_amount
+CLM10193775,92928,Percutaneous coronary stent placement,PR21050,Dr. Nancy Wilson,Cardiology,2025-12-02,21550.1,503836.4,23.4,Pending,,
+CLM10000192,27759,Open treatment of tibial shaft fracture,PR20974,Valley Orthopedics Associates,Orthopedics,2024-01-03,8206.43,259841.47,31.7,Rejected,R10,0.0
+CLM10035916,27759,Open treatment of tibial shaft fracture,PR20062,Riverside Orthopedics Associates,Orthopedics,2024-04-26,8206.43,245008.42,29.9,Rejected,R06,0.0
+CLM10001704,27759,Open treatment of tibial shaft fracture,PR21078,Horizon Orthopedics Associates,Orthopedics,2024-01-04,8206.43,170985.98,20.8,Rejected,R10,0.0
+CLM10099930,92928,Percutaneous coronary stent placement,PR21142,Dr. Nancy Singh,Cardiology,2025-01-08,21550.1,172605.71,8.0,Approved,,12145.03
+CLM10149109,27759,Open treatment of tibial shaft fracture,PR21052,Northgate Orthopedics Associates,Orthopedics,2025-06-24,8206.43,142256.34,17.3,Rejected,R10,0.0
+CLM10006659,27759,Open treatment of tibial shaft fracture,PR21078,Horizon Orthopedics Associates,Orthopedics,2024-01-31,8206.43,131339.27,16.0,Rejected,R05,0.0
+CLM10083867,47562,Laparoscopic cholecystectomy,PR20107,Summit General Surgery Associates,General Surgery,2024-11-19,8887.0,124064.23,14.0,Rejected,R10,0.0
+CLM10023686,47562,Laparoscopic cholecystectomy,PR20443,Dr. Wei Khan,General Surgery,2024-03-24,8887.0,119468.05,13.4,Rejected,R10,0.0
+CLM10117966,27759,Open treatment of tibial shaft fracture,PR20184,Dr. Mark Miller,Orthopedics,2025-02-15,8206.43,99966.2,12.2,Rejected,R10,0.0
+CLM10043087,47562,Laparoscopic cholecystectomy,PR20068,Dr. Sarah Kim,General Surgery,2024-06-17,8887.0,99661.34,11.2,Rejected,R10,0.0
+CLM10045714,47562,Laparoscopic cholecystectomy,PR20697,Dr. Joseph Gonzalez,General Surgery,2024-06-20,8887.0,96763.07,10.9,Approved,,5660.41
+CLM10038582,59400,Routine obstetric care incl. vaginal delivery,PR20667,Northgate OB/GYN Associates,OB/GYN,2024-05-08,5491.22,90720.45,16.5,Rejected,R10,0.0
+CLM10115951,27759,Open treatment of tibial shaft fracture,PR20387,Dr. Jennifer Jackson,Orthopedics,2025-03-01,8206.43,88127.53,10.7,Approved,,4988.3
+CLM10187326,27759,Open treatment of tibial shaft fracture,PR20312,Unity Orthopedics Associates,Orthopedics,2025-11-14,8206.43,87628.29,10.7,Approved,,5194.82
+CLM10169765,47562,Laparoscopic cholecystectomy,PR20783,Dr. John Hernandez,General Surgery,2025-09-08,8887.0,87916.7,9.9,Pending,,
+CLM10075893,27759,Open treatment of tibial shaft fracture,PR20578,Summit Orthopedics Associates,Orthopedics,2024-10-12,8206.43,69731.27,8.5,Rejected,R10,0.0
+CLM10049338,47562,Laparoscopic cholecystectomy,PR20906,Valley General Surgery Associates,General Surgery,2024-07-05,8887.0,69368.06,7.8,Approved,,5632.9
+CLM10175324,47562,Laparoscopic cholecystectomy,PR20906,Valley General Surgery Associates,General Surgery,2025-10-02,8887.0,65771.9,7.4,Approved,,5654.19
+CLM10071531,27759,Open treatment of tibial shaft fracture,PR20479,Dr. Sarah Chen,Orthopedics,2024-09-10,8206.43,64708.52,7.9,Rejected,R10,0.0
+CLM10171793,47562,Laparoscopic cholecystectomy,PR20525,Lakeview General Surgery Associates,General Surgery,2024-11-19,8887.0,63931.92,7.2,Rejected,R08,0.0
+CLM10035867,47562,Laparoscopic cholecystectomy,PR20079,Dr. Richard Harris,General Surgery,2024-05-16,8887.0,63212.49,7.1,Rejected,R10,0.0
+CLM10016110,47562,Laparoscopic cholecystectomy,PR20027,Dr. Laura Khan,General Surgery,2024-02-20,8887.0,63034.48,7.1,Rejected,R10,0.0
+CLM10104081,J9355,"Injection, trastuzumab, 10 mg",PR20887,Dr. Thomas Smith,Oncology,2024-12-29,7510.84,60342.88,8.0,Approved,,4595.96
+CLM10063951,27759,Open treatment of tibial shaft fracture,PR21094,Dr. Maria Thomas,Orthopedics,2024-08-07,8206.43,53274.1,6.5,Rejected,R10,0.0
+CLM10121875,59400,Routine obstetric care incl. vaginal delivery,PR21170,Harbor OB/GYN Associates,OB/GYN,2025-03-19,5491.22,39634.07,7.2,Rejected,R10,0.0
+CLM10098803,74177,CT abdomen & pelvis with contrast,PR20683,Riverside Imaging,Radiology,2024-12-26,1228.47,34490.51,28.1,Rejected,R05,0.0
+CLM10181127,74177,CT abdomen & pelvis with contrast,PR20683,Riverside Imaging,Radiology,2025-10-14,1228.47,32483.73,26.4,Rejected,R02,0.0
+CLM10033498,72148,MRI lumbar spine without contrast,PR20851,Unity Imaging,Radiology,2024-05-03,1108.45,31445.38,28.4,Rejected,R10,0.0
+CLM10109040,72148,MRI lumbar spine without contrast,PR20851,Unity Imaging,Radiology,2025-01-28,1108.45,31309.39,28.2,Rejected,R10,0.0
+CLM10048061,74177,CT abdomen & pelvis with contrast,PR20683,Riverside Imaging,Radiology,2024-06-21,1228.47,30777.91,25.1,Approved,,498.67
+CLM10094122,74177,CT abdomen & pelvis with contrast,PR20760,Harbor Imaging,Radiology,2024-12-17,1228.47,26868.04,21.9,Rejected,R10,0.0
+CLM10103738,74177,CT abdomen & pelvis with contrast,PR20760,Harbor Imaging,Radiology,2024-12-17,1228.47,26868.04,21.9,Rejected,R01,0.0
+CLM10047228,96413,"Chemotherapy infusion, first hour",PR20485,Dr. Sarah Lee,Oncology,2024-07-01,1493.16,24953.31,16.7,Rejected,R10,0.0
+CLM10068718,70450,CT head without contrast,PR20851,Unity Imaging,Radiology,2024-09-24,759.9,22796.23,30.0,Rejected,R07,0.0
+CLM10077224,70450,CT head without contrast,PR20851,Unity Imaging,Radiology,2024-09-24,759.9,22796.23,30.0,Rejected,R01,0.0
+CLM10095362,74177,CT abdomen & pelvis with contrast,PR20724,Unity Imaging,Radiology,2024-12-19,1228.47,21329.44,17.4,Rejected,R10,0.0
+CLM10028437,72148,MRI lumbar spine without contrast,PR20683,Riverside Imaging,Radiology,2024-04-18,1108.45,20870.76,18.8,Approved,,464.82
+CLM10103904,43239,Upper GI endoscopy with biopsy,PR21098,Harbor Gastroenterology Associates,Gastroenterology,2025-01-17,1616.88,21190.82,13.1,Rejected,R10,0.0
+CLM10063481,93306,"Echocardiography, transthoracic, complete",PR21050,Dr. Nancy Wilson,Cardiology,2024-08-22,932.71,19729.44,21.2,Rejected,R10,0.0
+CLM10144108,99285,"Emergency dept visit, high severity",PR20434,Oakwood Medical Center,Emergency Medicine,2025-05-29,1093.06,18995.64,17.4,Approved,,637.22
+CLM10055902,99285,"Emergency dept visit, high severity",PR20434,Oakwood Medical Center,Emergency Medicine,2024-08-06,1093.06,18955.54,17.3,Rejected,R10,0.0
+CLM10105653,93306,"Echocardiography, transthoracic, complete",PR21050,Dr. Nancy Wilson,Cardiology,2025-01-28,932.71,18563.06,19.9,Rejected,R10,0.0
+CLM10022227,70450,CT head without contrast,PR20683,Riverside Imaging,Radiology,2024-03-06,759.9,18328.62,24.1,Approved,,275.57
+CLM10190115,93306,"Echocardiography, transthoracic, complete",PR21050,Dr. Nancy Wilson,Cardiology,2025-11-17,932.71,18063.53,19.4,Approved,,620.97
+CLM10076511,99285,"Emergency dept visit, high severity",PR20567,Summit Medical Center,Emergency Medicine,2024-10-17,1093.06,18110.35,16.6,Rejected,R10,0.0
+CLM10163788,70450,CT head without contrast,PR20851,Unity Imaging,Radiology,2025-08-04,759.9,17455.68,23.0,Approved,,450.54
+CLM10127108,70450,CT head without contrast,PR20683,Riverside Imaging,Radiology,2025-04-02,759.9,17417.66,22.9,Approved,,342.93
+CLM10056908,72148,MRI lumbar spine without contrast,PR20851,Unity Imaging,Radiology,2024-08-14,1108.45,17604.91,15.9,Rejected,R10,0.0
+CLM10129498,99285,"Emergency dept visit, high severity",PR21115,Cedar Medical Center,Emergency Medicine,2025-04-14,1093.06,17263.03,15.8,Approved,,687.36
+CLM10037898,43239,Upper GI endoscopy with biopsy,PR20465,Dr. Laura Hernandez,Gastroenterology,2024-05-17,1616.88,16790.85,10.4,Approved,,966.15
+CLM10080679,99285,"Emergency dept visit, high severity",PR20842,Lakeview Medical Center,Emergency Medicine,2024-11-08,1093.06,15676.3,14.3,Rejected,R06,0.0
+CLM10128033,99215,"Office visit, established patient, high complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2025-04-09,581.63,14922.67,25.7,Rejected,R05,0.0
+CLM10150832,70450,CT head without contrast,PR20035,Evergreen Imaging,Radiology,2025-06-25,759.9,15050.44,19.8,Approved,,430.03
+CLM10193524,99215,"Office visit, established patient, high complexity",PR20744,Dr. Robert Nguyen,Orthopedics,2025-12-04,581.63,14717.61,25.3,Rejected,R10,0.0
+CLM10098728,99215,"Office visit, established patient, high complexity",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2024-12-04,581.63,14517.67,25.0,Rejected,R10,0.0
+CLM10103406,99215,"Office visit, established patient, high complexity",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2024-12-04,581.63,14517.67,25.0,Rejected,R10,0.0
+CLM10029128,73721,MRI knee without contrast,PR21187,Unity Imaging,Radiology,2024-04-19,1103.91,14603.28,13.2,Rejected,R02,0.0
+CLM10026911,99285,"Emergency dept visit, high severity",PR20377,Horizon Medical Center,Emergency Medicine,2024-03-15,1093.06,14530.8,13.3,Approved,,580.09
+CLM10103228,70450,CT head without contrast,PR20760,Harbor Imaging,Radiology,2025-01-15,759.9,14088.79,18.5,Rejected,R10,0.0
+CLM10138567,99215,"Office visit, established patient, high complexity",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-05-16,581.63,13893.0,23.9,Approved,,235.7
+CLM10073372,99285,"Emergency dept visit, high severity",PR20058,Summit Medical Center,Emergency Medicine,2024-10-08,1093.06,14141.01,12.9,Rejected,R09,0.0
+CLM10179513,70450,CT head without contrast,PR20897,Evergreen Imaging,Radiology,2025-10-15,759.9,13717.97,18.1,Rejected,R10,0.0
+CLM10039223,99285,"Emergency dept visit, high severity",PR20058,Summit Medical Center,Emergency Medicine,2024-05-27,1093.06,13902.09,12.7,Rejected,R10,0.0
+CLM10078468,74177,CT abdomen & pelvis with contrast,PR20463,Highland Imaging,Radiology,2024-10-22,1228.47,13886.48,11.3,Rejected,R10,0.0
+CLM10068167,72148,MRI lumbar spine without contrast,PR20642,Valley Imaging,Radiology,2024-09-25,1108.45,13739.95,12.4,Approved,,612.63
+CLM10193670,99215,"Office visit, established patient, high complexity",PR20286,Dr. Barbara Young,Family Medicine,2025-11-25,581.63,12982.42,22.3,Pending,,
+CLM10138837,74177,CT abdomen & pelvis with contrast,PR20897,Evergreen Imaging,Radiology,2025-05-15,1228.47,13586.09,11.1,Rejected,R07,0.0
+CLM10152551,99284,"Emergency dept visit, moderate-high severity",PR21176,Valley Medical Center,Emergency Medicine,2025-05-29,720.63,12802.3,17.8,Rejected,R10,0.0
+CLM10060634,99285,"Emergency dept visit, high severity",PR20058,Summit Medical Center,Emergency Medicine,2024-08-12,1093.06,13068.95,12.0,Approved,,707.17
+CLM10195703,99396,"Preventive visit, established patient, 40-64",PR20286,Dr. Barbara Young,Family Medicine,2025-12-02,373.77,12335.32,33.0,Pending,,
+CLM10153594,70450,CT head without contrast,PR20897,Evergreen Imaging,Radiology,2025-07-16,759.9,12593.2,16.6,Approved,,446.59
+CLM10122256,99285,"Emergency dept visit, high severity",PR20553,Northgate Medical Center,Emergency Medicine,2025-02-17,1093.06,12858.57,11.8,Rejected,R01,0.0
+CLM10099919,99285,"Emergency dept visit, high severity",PR20781,Evergreen Medical Center,Emergency Medicine,2025-01-08,1093.06,12851.47,11.8,Approved,,638.56
+CLM10108585,99284,"Emergency dept visit, moderate-high severity",PR20553,Northgate Medical Center,Emergency Medicine,2025-02-05,720.63,12475.7,17.3,Approved,,448.14
+CLM10063059,99215,"Office visit, established patient, high complexity",PR20752,Dr. Hassan Ramirez,Family Medicine,2024-08-29,581.63,12127.1,20.9,Approved,,228.42
+CLM10114224,99285,"Emergency dept visit, high severity",PR20553,Northgate Medical Center,Emergency Medicine,2025-02-17,1093.06,12637.74,11.6,Approved,,641.51
+CLM10143381,70450,CT head without contrast,PR20659,Horizon Imaging,Radiology,2025-05-29,759.9,12076.55,15.9,Rejected,R10,0.0
+CLM10057401,96413,"Chemotherapy infusion, first hour",PR20723,Dr. Susan Patel,Oncology,2024-08-16,1493.16,12641.59,8.5,Rejected,R10,0.0
+CLM10066437,99215,"Office visit, established patient, high complexity",PR20286,Dr. Barbara Young,Family Medicine,2024-09-13,581.63,11634.46,20.0,Rejected,R10,0.0
+CLM10049083,93306,"Echocardiography, transthoracic, complete",PR20843,Dr. David Clark,Cardiology,2024-07-03,932.71,11922.33,12.8,Approved,,532.2
+CLM10158553,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-07-29,298.26,11258.0,37.7,Approved,,195.87
+CLM10169720,70450,CT head without contrast,PR20683,Riverside Imaging,Radiology,2025-09-04,759.9,11538.61,15.2,Pending,,
+CLM10183977,70450,CT head without contrast,PR20760,Harbor Imaging,Radiology,2025-10-27,759.9,11427.33,15.0,Rejected,R10,0.0
+CLM10133374,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2025-04-25,581.63,11166.78,19.2,Approved,,211.89
+CLM10149314,97110,"Therapeutic exercise, each 15 minutes",PR20199,Evergreen Physical Therapy,Physical Therapy,2025-06-22,200.42,10657.72,53.2,Approved,,146.21
+CLM10012213,99284,"Emergency dept visit, moderate-high severity",PR20616,Parkside Medical Center,Emergency Medicine,2024-02-07,720.63,11009.94,15.3,Approved,,298.6
+CLM10104856,72148,MRI lumbar spine without contrast,PR20642,Valley Imaging,Radiology,2025-01-20,1108.45,11338.79,10.2,Rejected,R10,0.0
+CLM10189127,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2025-11-06,581.63,10647.3,18.3,Pending,,
+CLM10069456,99284,"Emergency dept visit, moderate-high severity",PR20980,Parkside Medical Center,Emergency Medicine,2024-09-24,720.63,10677.31,14.8,Rejected,R10,0.0
+CLM10033860,99285,"Emergency dept visit, high severity",PR20527,Crescent Medical Center,Emergency Medicine,2024-04-16,1093.06,10980.81,10.0,Approved,,659.94
+CLM10157665,99284,"Emergency dept visit, moderate-high severity",PR20058,Summit Medical Center,Emergency Medicine,2025-07-04,720.63,10418.17,14.5,Rejected,R10,0.0
+CLM10165089,99284,"Emergency dept visit, moderate-high severity",PR20058,Summit Medical Center,Emergency Medicine,2025-07-04,720.63,10418.17,14.5,Rejected,R01,0.0
+CLM10117278,99215,"Office visit, established patient, high complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2025-03-07,581.63,10159.19,17.5,Rejected,R05,0.0
+CLM10144160,99284,"Emergency dept visit, moderate-high severity",PR20434,Oakwood Medical Center,Emergency Medicine,2025-06-02,720.63,10260.41,14.2,Rejected,R10,0.0
+CLM10057831,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-08-15,581.63,10112.39,17.4,Rejected,R10,0.0
+CLM10125925,99284,"Emergency dept visit, moderate-high severity",PR20842,Lakeview Medical Center,Emergency Medicine,2025-03-28,720.63,10229.48,14.2,Rejected,R10,0.0
+CLM10044724,74177,CT abdomen & pelvis with contrast,PR20704,Highland Imaging,Radiology,2024-06-13,1228.47,10577.46,8.6,Rejected,R06,0.0
+CLM10041653,99203,"Office visit, new patient, low complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-05-23,259.65,9567.21,36.8,Approved,,105.83
+CLM10136741,99396,"Preventive visit, established patient, 40-64",PR20504,Dr. Elizabeth Thomas,Family Medicine,2025-05-12,373.77,9655.12,25.8,Rejected,R10,0.0
+CLM10052345,99214,"Office visit, established patient, moderate complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-07-20,276.45,9474.48,34.3,Approved,,160.54
+CLM10055522,99214,"Office visit, established patient, moderate complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-07-20,276.45,9474.48,34.3,Rejected,R01,0.0
+CLM10107941,99215,"Office visit, established patient, high complexity",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2025-02-04,581.63,9713.7,16.7,Approved,,216.94
+CLM10070353,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-09-30,581.63,9668.6,16.6,Approved,,233.43
+CLM10046434,99215,"Office visit, established patient, high complexity",PR20590,Horizon Cardiology Associates,Cardiology,2024-06-20,581.63,9593.19,16.5,Approved,,201.68
+CLM10023222,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-03-26,581.63,9559.28,16.4,Approved,,229.52
+CLM10073213,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-10-15,581.63,9471.36,16.3,Approved,,236.48
+CLM10092707,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2024-12-17,298.26,9155.74,30.7,Rejected,R10,0.0
+CLM10134963,99215,"Office visit, established patient, high complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2025-04-25,581.63,9321.92,16.0,Rejected,R06,0.0
+CLM10043089,99285,"Emergency dept visit, high severity",PR20891,Pinecrest Medical Center,Emergency Medicine,2024-06-17,1093.06,9807.31,9.0,Rejected,R09,0.0
+CLM10111120,70450,CT head without contrast,PR21164,Evergreen Imaging,Radiology,2025-02-12,759.9,9468.85,12.5,Approved,,458.24
+CLM10136968,99284,"Emergency dept visit, moderate-high severity",PR20507,Meadow Medical Center,Emergency Medicine,2025-05-12,720.63,9301.04,12.9,Approved,,449.57
+CLM10161312,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2025-07-31,581.63,9044.66,15.6,Rejected,R10,0.0
+CLM10093805,99285,"Emergency dept visit, high severity",PR21130,Valley Medical Center,Emergency Medicine,2024-12-16,1093.06,9496.03,8.7,Rejected,R10,0.0
+CLM10083624,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-11-20,581.63,8969.53,15.4,Rejected,R10,0.0
+CLM10020386,99285,"Emergency dept visit, high severity",PR20054,Riverside Medical Center,Emergency Medicine,2024-03-09,1093.06,9454.29,8.6,Approved,,630.54
+CLM10165140,99285,"Emergency dept visit, high severity",PR20916,Meadow Medical Center,Emergency Medicine,2025-08-13,1093.06,9307.36,8.5,Rejected,R10,0.0
+CLM10165881,99285,"Emergency dept visit, high severity",PR20916,Meadow Medical Center,Emergency Medicine,2025-08-13,1093.06,9307.36,8.5,Rejected,R01,0.0
+CLM10042479,99284,"Emergency dept visit, moderate-high severity",PR20058,Summit Medical Center,Emergency Medicine,2024-06-06,720.63,8917.28,12.4,Approved,,423.94
+CLM10114201,99215,"Office visit, established patient, high complexity",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2025-02-14,581.63,8700.73,15.0,Rejected,R07,0.0
+CLM10025219,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2024-03-23,298.26,8395.76,28.1,Rejected,R10,0.0
+CLM10195212,99285,"Emergency dept visit, high severity",PR20058,Summit Medical Center,Emergency Medicine,2025-12-04,1093.06,9153.57,8.4,Pending,,
+CLM10091602,99214,"Office visit, established patient, moderate complexity",PR20974,Valley Orthopedics Associates,Orthopedics,2024-12-03,276.45,8315.5,30.1,Rejected,R05,0.0
+CLM10039372,77067,"Screening mammography, bilateral",PR20851,Unity Imaging,Radiology,2024-05-16,275.3,8304.65,30.2,Rejected,R10,0.0
+CLM10109546,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-02-10,581.63,8483.47,14.6,Approved,,236.83
+CLM10126788,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-03-28,298.26,8131.87,27.3,Approved,,166.67
+CLM10037204,99285,"Emergency dept visit, high severity",PR20616,Parkside Medical Center,Emergency Medicine,2024-05-14,1093.06,8912.0,8.2,Approved,,469.12
+CLM10186034,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-11-04,298.26,8095.19,27.1,Approved,,175.18
+CLM10187941,99284,"Emergency dept visit, moderate-high severity",PR21132,Parkside Medical Center,Emergency Medicine,2025-10-16,720.63,8512.04,11.8,Rejected,R10,0.0
+CLM10099646,77067,"Screening mammography, bilateral",PR20683,Riverside Imaging,Radiology,2025-01-09,275.3,8058.15,29.3,Rejected,R10,0.0
+CLM10113342,99215,"Office visit, established patient, high complexity",PR20932,Dr. Daniel Chen,Behavioral Health,2025-02-17,581.63,8138.75,14.0,Rejected,R10,0.0
+CLM10174029,99284,"Emergency dept visit, moderate-high severity",PR20151,Oakwood Medical Center,Emergency Medicine,2025-09-09,720.63,8222.64,11.4,Rejected,R10,0.0
+CLM10023413,99284,"Emergency dept visit, moderate-high severity",PR21176,Valley Medical Center,Emergency Medicine,2024-03-21,720.63,8200.02,11.4,Rejected,R10,0.0
+CLM10153192,99215,"Office visit, established patient, high complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2025-07-06,581.63,8055.53,13.8,Rejected,R10,0.0
+CLM10088250,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-12-04,581.63,8015.19,13.8,Approved,,233.72
+CLM10115700,99203,"Office visit, new patient, low complexity",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2025-02-09,259.65,7581.18,29.2,Rejected,R10,0.0
+CLM10026904,73721,MRI knee without contrast,PR20927,Oakwood Imaging,Radiology,2024-03-13,1103.91,8380.14,7.6,Approved,,608.44
+CLM10129909,99215,"Office visit, established patient, high complexity",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-04-03,581.63,7857.62,13.5,Rejected,R09,0.0
+CLM10114030,90960,"ESRD-related services, monthly",PR20743,Dr. Omar Anderson,Nephrology,2025-02-21,589.68,7865.47,13.3,Approved,,339.52
+CLM10148830,99215,"Office visit, established patient, high complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2025-06-23,581.63,7844.26,13.5,Rejected,R10,0.0
+CLM10058241,99215,"Office visit, established patient, high complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-08-13,581.63,7843.06,13.5,Rejected,R10,0.0
+CLM10173174,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-09-26,298.26,7474.82,25.1,Approved,,189.85
+CLM10014672,99215,"Office visit, established patient, high complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2024-02-20,581.63,7744.73,13.3,Approved,,230.62
+CLM10058668,99214,"Office visit, established patient, moderate complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-08-09,276.45,7387.89,26.7,Rejected,R05,0.0
+CLM10066064,99214,"Office visit, established patient, moderate complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-08-09,276.45,7387.89,26.7,Rejected,R01,0.0
+CLM10037574,99284,"Emergency dept visit, moderate-high severity",PR20377,Horizon Medical Center,Emergency Medicine,2024-04-28,720.63,7829.18,10.9,Rejected,R10,0.0
+CLM10178008,99214,"Office visit, established patient, moderate complexity",PR20752,Dr. Hassan Ramirez,Family Medicine,2025-10-04,276.45,7376.09,26.7,Approved,,168.27
+CLM10133492,99285,"Emergency dept visit, high severity",PR20527,Crescent Medical Center,Emergency Medicine,2025-03-17,1093.06,8188.72,7.5,Rejected,R01,0.0
+CLM10122388,99285,"Emergency dept visit, high severity",PR20527,Crescent Medical Center,Emergency Medicine,2025-03-17,1093.06,8137.56,7.4,Rejected,R10,0.0
+CLM10134427,99396,"Preventive visit, established patient, 40-64",PR20903,Valley Internal Medicine Associates,Internal Medicine,2025-04-24,373.77,7398.5,19.8,Rejected,R10,0.0
+CLM10065529,43239,Upper GI endoscopy with biopsy,PR20211,Dr. James Robinson,Gastroenterology,2024-09-14,1616.88,8603.25,5.3,Rejected,R10,0.0
+CLM10148462,77067,"Screening mammography, bilateral",PR20683,Riverside Imaging,Radiology,2025-06-14,275.3,7261.22,26.4,Rejected,R05,0.0
+CLM10014359,99284,"Emergency dept visit, moderate-high severity",PR20964,Horizon Medical Center,Emergency Medicine,2024-02-19,720.63,7701.81,10.7,Rejected,R10,0.0
+CLM10004078,43239,Upper GI endoscopy with biopsy,PR20191,Harbor Gastroenterology Associates,Gastroenterology,2024-01-19,1616.88,8564.98,5.3,Approved,,898.91
+CLM10188929,99215,"Office visit, established patient, high complexity",PR20590,Horizon Cardiology Associates,Cardiology,2025-11-14,581.63,7500.96,12.9,Approved,,245.84
+CLM10159932,99214,"Office visit, established patient, moderate complexity",PR21050,Dr. Nancy Wilson,Cardiology,2025-07-04,276.45,7150.27,25.9,Rejected,R06,0.0
+CLM10181630,99223,"Initial hospital inpatient care, high complexity",PR20418,Lakeview Regional Hospital,Hospital Medicine,2025-09-15,717.81,7588.21,10.6,Approved,,467.22
+CLM10164909,70450,CT head without contrast,PR20559,Pinecrest Imaging,Radiology,2025-08-18,759.9,7570.67,10.0,Rejected,R02,0.0
+CLM10018093,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-02-29,581.63,7357.31,12.6,Rejected,R10,0.0
+CLM10130636,99215,"Office visit, established patient, high complexity",PR20798,Crescent Family Medicine Associates,Family Medicine,2025-04-18,581.63,7348.8,12.6,Approved,,156.89
+CLM10151941,99214,"Office visit, established patient, moderate complexity",PR21050,Dr. Nancy Wilson,Cardiology,2025-07-04,276.45,7041.86,25.5,Rejected,R06,0.0
+CLM10024403,90834,"Psychotherapy, 45 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2024-03-19,207.72,6962.21,33.5,Rejected,R10,0.0
+CLM10143372,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-05-28,581.63,7306.95,12.6,Rejected,R10,0.0
+CLM10084357,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-11-18,581.63,7269.12,12.5,Rejected,R10,0.0
+CLM10119389,99285,"Emergency dept visit, high severity",PR20434,Oakwood Medical Center,Emergency Medicine,2025-03-08,1093.06,7766.71,7.1,Rejected,R10,0.0
+CLM10008684,99223,"Initial hospital inpatient care, high complexity",PR20392,Highland Regional Hospital,Hospital Medicine,2024-02-07,717.81,7351.96,10.2,Rejected,R10,0.0
+CLM10071826,99284,"Emergency dept visit, moderate-high severity",PR21115,Cedar Medical Center,Emergency Medicine,2024-09-23,720.63,7321.94,10.2,Approved,,403.72
+CLM10062742,99284,"Emergency dept visit, moderate-high severity",PR21137,Meadow Medical Center,Emergency Medicine,2024-08-20,720.63,7275.33,10.1,Approved,,396.37
+CLM10110219,90837,"Psychotherapy, 60 minutes",PR20932,Dr. Daniel Chen,Behavioral Health,2025-02-14,298.26,6785.33,22.7,Approved,,159.12
+CLM10112400,90837,"Psychotherapy, 60 minutes",PR20932,Dr. Daniel Chen,Behavioral Health,2025-02-14,298.26,6785.33,22.7,Rejected,R01,0.0
+CLM10062463,72148,MRI lumbar spine without contrast,PR21005,Cedar Imaging,Radiology,2024-08-09,1108.45,7542.25,6.8,Approved,,619.37
+CLM10185087,99284,"Emergency dept visit, moderate-high severity",PR20011,Oakwood Medical Center,Emergency Medicine,2025-10-23,720.63,7154.05,9.9,Approved,,472.5
+CLM10140473,90960,"ESRD-related services, monthly",PR20949,Dr. Joseph Perez,Nephrology,2025-05-23,589.68,6995.51,11.9,Rejected,R10,0.0
+CLM10029928,97110,"Therapeutic exercise, each 15 minutes",PR21134,Cedar Physical Therapy,Physical Therapy,2024-04-25,200.42,6597.7,32.9,Rejected,R05,0.0
+CLM10001967,99214,"Office visit, established patient, moderate complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-01-08,276.45,6670.57,24.1,Approved,,149.45
+CLM10145866,70450,CT head without contrast,PR20683,Riverside Imaging,Radiology,2025-06-12,759.9,7128.23,9.4,Approved,,361.72
+CLM10093897,70450,CT head without contrast,PR20693,Summit Imaging,Radiology,2024-12-22,759.9,6886.22,9.1,Rejected,R02,0.0
+CLM10124442,99284,"Emergency dept visit, moderate-high severity",PR20781,Evergreen Medical Center,Emergency Medicine,2025-03-19,720.63,6817.77,9.5,Approved,,483.6
+CLM10049836,99284,"Emergency dept visit, moderate-high severity",PR20058,Summit Medical Center,Emergency Medicine,2024-07-11,720.63,6817.17,9.5,Rejected,R10,0.0
+CLM10035500,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-05-09,581.63,6661.03,11.5,Rejected,R06,0.0
+CLM10164869,90960,"ESRD-related services, monthly",PR20105,Dr. Mark Patel,Nephrology,2025-08-12,589.68,6657.73,11.3,Rejected,R10,0.0
+CLM10023718,99213,"Office visit, established patient, low complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-03-26,183.68,6216.73,33.8,Rejected,R05,0.0
+CLM10031376,99213,"Office visit, established patient, low complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-03-26,183.68,6216.73,33.8,Rejected,R01,0.0
+CLM10141785,99285,"Emergency dept visit, high severity",PR20022,Cedar Medical Center,Emergency Medicine,2025-05-26,1093.06,7054.2,6.5,Approved,,658.64
+CLM10171516,99284,"Emergency dept visit, moderate-high severity",PR20781,Evergreen Medical Center,Emergency Medicine,2025-09-22,720.63,6664.56,9.2,Approved,,482.69
+CLM10051938,99215,"Office visit, established patient, high complexity",PR20882,Unity Behavioral Health Associates,Behavioral Health,2024-07-20,581.63,6521.74,11.2,Rejected,R10,0.0
+CLM10003427,99284,"Emergency dept visit, moderate-high severity",PR20022,Cedar Medical Center,Emergency Medicine,2024-01-10,720.63,6655.32,9.2,Rejected,R10,0.0
+CLM10004542,99285,"Emergency dept visit, high severity",PR20011,Oakwood Medical Center,Emergency Medicine,2024-01-17,1093.06,7018.39,6.4,Rejected,R10,0.0
+CLM10098071,99214,"Office visit, established patient, moderate complexity",PR21050,Dr. Nancy Wilson,Cardiology,2025-01-07,276.45,6191.16,22.4,Approved,,162.73
+CLM10076285,99284,"Emergency dept visit, moderate-high severity",PR20616,Parkside Medical Center,Emergency Medicine,2024-10-21,720.63,6599.77,9.2,Rejected,R05,0.0
+CLM10139115,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-05-16,581.63,6390.16,11.0,Rejected,R10,0.0
+CLM10172752,77067,"Screening mammography, bilateral",PR20683,Riverside Imaging,Radiology,2025-09-19,275.3,6062.43,22.0,Rejected,R05,0.0
+CLM10106344,99396,"Preventive visit, established patient, 40-64",PR20189,Northgate Internal Medicine Associates,Internal Medicine,2025-01-29,373.77,6144.79,16.4,Rejected,R10,0.0
+CLM10068136,99284,"Emergency dept visit, moderate-high severity",PR20985,Summit Medical Center,Emergency Medicine,2024-09-23,720.63,6473.42,9.0,Approved,,436.4
+CLM10134905,99396,"Preventive visit, established patient, 40-64",PR20304,Dr. Mark Walker,Internal Medicine,2025-04-15,373.77,6121.04,16.4,Rejected,R10,0.0
+CLM10110619,99396,"Preventive visit, established patient, 40-64",PR20189,Northgate Internal Medicine Associates,Internal Medicine,2025-01-29,373.77,6009.97,16.1,Rejected,R01,0.0
+CLM10016853,99396,"Preventive visit, established patient, 40-64",PR21081,Evergreen Internal Medicine Associates,Internal Medicine,2024-03-05,373.77,5985.29,16.0,Rejected,R05,0.0
+CLM10051796,99215,"Office visit, established patient, high complexity",PR20798,Crescent Family Medicine Associates,Family Medicine,2024-07-01,581.63,6171.07,10.6,Rejected,R05,0.0
+CLM10146719,99284,"Emergency dept visit, moderate-high severity",PR20781,Evergreen Medical Center,Emergency Medicine,2024-08-10,720.63,6267.93,8.7,Rejected,R08,0.0
+CLM10171001,43239,Upper GI endoscopy with biopsy,PR20780,Dr. Barbara White,Gastroenterology,2025-08-22,1616.88,7107.29,4.4,Approved,,979.9
+CLM10060837,99215,"Office visit, established patient, high complexity",PR20798,Crescent Family Medicine Associates,Family Medicine,2024-07-01,581.63,6043.44,10.4,Rejected,R01,0.0
+CLM10077575,93306,"Echocardiography, transthoracic, complete",PR20407,Parkside Cardiology Associates,Cardiology,2024-10-17,932.71,6363.07,6.8,Approved,,526.69
+CLM10179596,99214,"Office visit, established patient, moderate complexity",PR20728,Pinecrest Family Medicine Associates,Family Medicine,2025-10-20,276.45,5704.74,20.6,Approved,,166.12
+CLM10135971,70450,CT head without contrast,PR20782,Summit Imaging,Radiology,2025-04-13,759.9,6145.22,8.1,Approved,,462.81
+CLM10141064,70450,CT head without contrast,PR20782,Summit Imaging,Radiology,2025-04-13,759.9,6145.22,8.1,Approved,,462.81
+CLM10112380,99215,"Office visit, established patient, high complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2025-02-14,581.63,5956.28,10.2,Rejected,R10,0.0
+CLM10124450,77067,"Screening mammography, bilateral",PR20851,Unity Imaging,Radiology,2025-03-20,275.3,5528.44,20.1,Approved,,162.55
+CLM10173948,99285,"Emergency dept visit, high severity",PR20916,Meadow Medical Center,Emergency Medicine,2025-09-29,1093.06,6336.58,5.8,Pending,,
+CLM10102984,99284,"Emergency dept visit, moderate-high severity",PR20158,Horizon Medical Center,Emergency Medicine,2025-01-18,720.63,5954.46,8.3,Approved,,455.95
+CLM10152774,99215,"Office visit, established patient, high complexity",PR20973,Dr. Anthony Robinson,Internal Medicine,2025-07-10,581.63,5805.21,10.0,Rejected,R06,0.0
+CLM10031611,99396,"Preventive visit, established patient, 40-64",PR20217,Evergreen Family Medicine Associates,Family Medicine,2024-05-02,373.77,5579.65,14.9,Rejected,R06,0.0
+CLM10101734,96413,"Chemotherapy infusion, first hour",PR20720,Dr. Daniel Moore,Oncology,2025-01-17,1493.16,6665.57,4.5,Approved,,910.67
+CLM10125530,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-03-17,298.26,5419.48,18.2,Approved,,176.51
+CLM10029110,99214,"Office visit, established patient, moderate complexity",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2024-04-18,276.45,5344.36,19.3,Rejected,R10,0.0
+CLM10185251,99284,"Emergency dept visit, moderate-high severity",PR21137,Meadow Medical Center,Emergency Medicine,2025-11-06,720.63,5729.38,8.0,Approved,,466.34
+CLM10148787,99396,"Preventive visit, established patient, 40-64",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2025-06-19,373.77,5355.95,14.3,Approved,,235.11
+CLM10075438,90837,"Psychotherapy, 60 minutes",PR20041,Dr. Ahmed Walker,Behavioral Health,2024-10-21,298.26,5253.67,17.6,Approved,,149.43
+CLM10006214,90834,"Psychotherapy, 45 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2024-01-20,207.72,5155.55,24.8,Approved,,114.68
+CLM10084112,99203,"Office visit, new patient, low complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-11-16,259.65,5200.15,20.0,Rejected,R10,0.0
+CLM10149830,99214,"Office visit, established patient, moderate complexity",PR21078,Horizon Orthopedics Associates,Orthopedics,2025-06-25,276.45,5214.51,18.9,Rejected,R05,0.0
+CLM10088541,99215,"Office visit, established patient, high complexity",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2024-12-05,581.63,5519.36,9.5,Approved,,243.88
+CLM10059489,99215,"Office visit, established patient, high complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-08-19,581.63,5492.96,9.4,Rejected,R10,0.0
+CLM10180849,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-10-14,581.63,5464.74,9.4,Approved,,224.84
+CLM10169361,77067,"Screening mammography, bilateral",PR21187,Unity Imaging,Radiology,2025-08-19,275.3,5134.27,18.6,Approved,,174.45
+CLM10081549,99203,"Office visit, new patient, low complexity",PR20286,Dr. Barbara Young,Family Medicine,2024-11-11,259.65,5075.06,19.5,Rejected,R10,0.0
+CLM10147350,93306,"Echocardiography, transthoracic, complete",PR20181,Horizon Cardiology Associates,Cardiology,2025-06-06,932.71,5740.91,6.2,Approved,,540.49
+CLM10116528,99214,"Office visit, established patient, moderate complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-03-03,276.45,5044.82,18.2,Rejected,R10,0.0
+CLM10097529,99213,"Office visit, established patient, low complexity",PR20286,Dr. Barbara Young,Family Medicine,2024-12-16,183.68,4904.85,26.7,Rejected,R10,0.0
+CLM10169532,90837,"Psychotherapy, 60 minutes",PR21127,Dr. Priya Clark,Behavioral Health,2025-09-11,298.26,5019.09,16.8,Approved,,181.13
+CLM10139011,99214,"Office visit, established patient, moderate complexity",PR21166,Dr. Jennifer Kim,Family Medicine,2025-05-08,276.45,4991.66,18.1,Approved,,171.17
+CLM10042995,90834,"Psychotherapy, 45 minutes",PR20932,Dr. Daniel Chen,Behavioral Health,2024-06-10,207.72,4896.28,23.6,Rejected,R10,0.0
+CLM10139220,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-03-25,298.26,4969.33,16.7,Rejected,R01,0.0
+CLM10126922,99215,"Office visit, established patient, high complexity",PR20286,Dr. Barbara Young,Family Medicine,2025-04-07,581.63,5243.43,9.0,Approved,,240.34
+CLM10129008,90837,"Psychotherapy, 60 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-03-25,298.26,4879.91,16.4,Approved,,179.94
+CLM10171907,99214,"Office visit, established patient, moderate complexity",PR21117,Dr. Mark Ali,Neurology,2025-09-13,276.45,4789.67,17.3,Approved,,147.43
+CLM10163452,70450,CT head without contrast,PR20367,Harbor Imaging,Radiology,2025-08-19,759.9,5202.27,6.8,Rejected,R06,0.0
+CLM10150646,90834,"Psychotherapy, 45 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2025-06-30,207.72,4631.84,22.3,Approved,,114.22
+CLM10171848,99214,"Office visit, established patient, moderate complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-09-08,276.45,4659.89,16.9,Rejected,R10,0.0
+CLM10030778,99214,"Office visit, established patient, moderate complexity",PR20062,Riverside Orthopedics Associates,Orthopedics,2024-04-23,276.45,4644.18,16.8,Approved,,152.02
+CLM10138719,99214,"Office visit, established patient, moderate complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2025-05-06,276.45,4642.81,16.8,Rejected,R10,0.0
+CLM10144301,99214,"Office visit, established patient, moderate complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2025-05-06,276.45,4642.81,16.8,Rejected,R01,0.0
+CLM10120104,99214,"Office visit, established patient, moderate complexity",PR20631,Crescent Nephrology Associates,Nephrology,2025-03-16,276.45,4635.59,16.8,Rejected,R07,0.0
+CLM10050731,99214,"Office visit, established patient, moderate complexity",PR21192,Summit Neurology Associates,Neurology,2024-07-12,276.45,4633.81,16.8,Rejected,R10,0.0
+CLM10005808,99214,"Office visit, established patient, moderate complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-01-01,276.45,4629.12,16.7,Approved,,145.7
+CLM10131530,99396,"Preventive visit, established patient, 40-64",PR20483,Dr. Ethan Thomas,Internal Medicine,2025-04-25,373.77,4700.62,12.6,Rejected,R10,0.0
+CLM10194991,93306,"Echocardiography, transthoracic, complete",PR20837,Oakwood Cardiology Associates,Cardiology,2025-12-08,932.71,5237.67,5.6,Approved,,579.39
+CLM10106825,99214,"Office visit, established patient, moderate complexity",PR21197,Evergreen Endocrinology Associates,Endocrinology,2025-01-21,276.45,4522.61,16.4,Rejected,R05,0.0
+CLM10184215,99284,"Emergency dept visit, moderate-high severity",PR20507,Meadow Medical Center,Emergency Medicine,2025-10-24,720.63,4965.13,6.9,Rejected,R10,0.0
+CLM10042606,70450,CT head without contrast,PR20897,Evergreen Imaging,Radiology,2024-05-17,759.9,5004.03,6.6,Rejected,R10,0.0
+CLM10163419,99215,"Office visit, established patient, high complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2025-08-15,581.63,4825.51,8.3,Approved,,180.33
+CLM10123807,99214,"Office visit, established patient, moderate complexity",PR20852,Dr. Daniel Clark,Cardiology,2025-03-13,276.45,4504.99,16.3,Approved,,164.77
+CLM10042968,90837,"Psychotherapy, 60 minutes",PR20117,Parkside Behavioral Health Associates,Behavioral Health,2024-06-07,298.26,4515.12,15.1,Approved,,170.38
+CLM10114682,99284,"Emergency dept visit, moderate-high severity",PR20653,Summit Medical Center,Emergency Medicine,2025-02-25,720.63,4930.3,6.8,Rejected,R05,0.0
+CLM10174011,90837,"Psychotherapy, 60 minutes",PR21041,Meadow Behavioral Health Associates,Behavioral Health,2025-08-30,298.26,4497.9,15.1,Rejected,R10,0.0
+CLM10158528,99215,"Office visit, established patient, high complexity",PR20585,Dr. Sofia Ali,Cardiology,2025-07-25,581.63,4766.51,8.2,Rejected,R10,0.0
+CLM10139468,99214,"Office visit, established patient, moderate complexity",PR20044,Dr. Jessica Young,Gastroenterology,2025-05-22,276.45,4459.49,16.1,Rejected,R10,0.0
+CLM10151971,99284,"Emergency dept visit, moderate-high severity",PR20058,Summit Medical Center,Emergency Medicine,2025-07-07,720.63,4892.74,6.8,Rejected,R10,0.0
+CLM10102827,99214,"Office visit, established patient, moderate complexity",PR20105,Dr. Mark Patel,Nephrology,2025-01-09,276.45,4443.06,16.1,Approved,,162.25
+CLM10170216,99214,"Office visit, established patient, moderate complexity",PR20399,Bayside Orthopedics Associates,Orthopedics,2025-08-24,276.45,4441.05,16.1,Approved,,116.71
+CLM10099940,99214,"Office visit, established patient, moderate complexity",PR20003,Dr. Carlos Williams,Nephrology,2025-01-09,276.45,4424.85,16.0,Approved,,168.46
+CLM10144967,99215,"Office visit, established patient, high complexity",PR20485,Dr. Sarah Lee,Oncology,2025-05-31,581.63,4725.34,8.1,Approved,,249.89
+CLM10144263,90837,"Psychotherapy, 60 minutes",PR20332,Dr. Jessica Taylor,Behavioral Health,2025-06-09,298.26,4425.13,14.8,Approved,,182.66
+CLM10129757,99214,"Office visit, established patient, moderate complexity",PR20307,Dr. John Harris,Orthopedics,2025-04-14,276.45,4396.81,15.9,Rejected,R10,0.0
+CLM10163218,99284,"Emergency dept visit, moderate-high severity",PR20058,Summit Medical Center,Emergency Medicine,2025-08-19,720.63,4826.1,6.7,Approved,,490.1
+CLM10077998,77067,"Screening mammography, bilateral",PR20170,Parkside Imaging,Radiology,2024-10-29,275.3,4354.11,15.8,Approved,,137.76
+CLM10035162,99215,"Office visit, established patient, high complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-04-22,581.63,4652.83,8.0,Rejected,R05,0.0
+CLM10120315,90837,"Psychotherapy, 60 minutes",PR21042,Cedar Behavioral Health Associates,Behavioral Health,2025-03-12,298.26,4368.76,14.6,Rejected,R10,0.0
+CLM10102441,99214,"Office visit, established patient, moderate complexity",PR20852,Dr. Daniel Clark,Cardiology,2024-12-31,276.45,4316.9,15.6,Approved,,159.99
+CLM10108903,99214,"Office visit, established patient, moderate complexity",PR20942,Dr. Barbara Thompson,Cardiology,2025-02-06,276.45,4302.85,15.6,Rejected,R10,0.0
+CLM10001872,99213,"Office visit, established patient, low complexity",PR20286,Dr. Barbara Young,Family Medicine,2024-01-01,183.68,4198.35,22.9,Rejected,R01,0.0
+CLM10043164,99284,"Emergency dept visit, moderate-high severity",PR20553,Northgate Medical Center,Emergency Medicine,2024-06-03,720.63,4702.74,6.5,Rejected,R06,0.0
+CLM10036762,99215,"Office visit, established patient, high complexity",PR20590,Horizon Cardiology Associates,Cardiology,2024-05-16,581.63,4557.28,7.8,Approved,,197.77
+CLM10149498,99396,"Preventive visit, established patient, 40-64",PR20368,Lakeview Internal Medicine Associates,Internal Medicine,2025-06-16,373.77,4347.81,11.6,Approved,,211.66
+CLM10114544,97110,"Therapeutic exercise, each 15 minutes",PR20196,Sunrise Physical Therapy,Physical Therapy,2025-02-18,200.42,4161.43,20.8,Rejected,R10,0.0
+CLM10040405,99215,"Office visit, established patient, high complexity",PR20590,Horizon Cardiology Associates,Cardiology,2024-05-16,581.63,4541.69,7.8,Rejected,R01,0.0
+CLM10191445,99214,"Office visit, established patient, moderate complexity",PR21165,Dr. Luis Martin,Behavioral Health,2025-11-28,276.45,4234.89,15.3,Pending,,
+CLM10124262,97110,"Therapeutic exercise, each 15 minutes",PR20606,Riverside Physical Therapy,Physical Therapy,2025-03-26,200.42,4120.71,20.6,Approved,,110.02
+CLM10000143,99213,"Office visit, established patient, low complexity",PR20286,Dr. Barbara Young,Family Medicine,2024-01-01,183.68,4101.85,22.3,Approved,,106.85
+CLM10007137,99213,"Office visit, established patient, low complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-01-25,183.68,4091.97,22.3,Approved,,94.95
+CLM10143446,99214,"Office visit, established patient, moderate complexity",PR21197,Evergreen Endocrinology Associates,Endocrinology,2025-06-02,276.45,4181.3,15.1,Rejected,R05,0.0
+CLM10079829,99214,"Office visit, established patient, moderate complexity",PR20490,Dr. Laura Taylor,Nephrology,2024-11-07,276.45,4160.93,15.1,Rejected,R10,0.0
+CLM10164558,90837,"Psychotherapy, 60 minutes",PR20175,Crescent Behavioral Health Associates,Behavioral Health,2025-08-26,298.26,4178.01,14.0,Rejected,R10,0.0
+CLM10035440,99215,"Office visit, established patient, high complexity",PR20589,Dr. Carlos Singh,Cardiology,2024-05-01,581.63,4450.05,7.7,Rejected,R10,0.0
+CLM10128704,99284,"Emergency dept visit, moderate-high severity",PR20011,Oakwood Medical Center,Emergency Medicine,2025-04-14,720.63,4584.21,6.4,Rejected,R10,0.0
+CLM10057584,99214,"Office visit, established patient, moderate complexity",PR20791,Pinecrest Behavioral Health Associates,Behavioral Health,2024-08-14,276.45,4125.73,14.9,Approved,,151.25
+CLM10119001,90837,"Psychotherapy, 60 minutes",PR20651,Dr. Anthony Davis,Behavioral Health,2025-03-01,298.26,4123.5,13.8,Approved,,170.93
+CLM10133529,99214,"Office visit, established patient, moderate complexity",PR21098,Harbor Gastroenterology Associates,Gastroenterology,2025-04-12,276.45,4097.91,14.8,Rejected,R10,0.0
+CLM10125648,97110,"Therapeutic exercise, each 15 minutes",PR20665,Evergreen Physical Therapy,Physical Therapy,2025-03-28,200.42,4003.62,20.0,Rejected,R10,0.0
+CLM10066276,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-09-19,581.63,4378.75,7.5,Approved,,220.67
+CLM10076966,99215,"Office visit, established patient, high complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-09-19,581.63,4378.75,7.5,Rejected,R01,0.0
+CLM10172202,99284,"Emergency dept visit, moderate-high severity",PR21083,Unity Medical Center,Emergency Medicine,2025-09-18,720.63,4516.3,6.3,Rejected,R10,0.0
+CLM10170183,99214,"Office visit, established patient, moderate complexity",PR20446,Valley Behavioral Health Associates,Behavioral Health,2025-09-18,276.45,4063.81,14.7,Approved,,181.88
+CLM10142511,97110,"Therapeutic exercise, each 15 minutes",PR21134,Cedar Physical Therapy,Physical Therapy,2025-05-20,200.42,3983.65,19.9,Approved,,88.65
+CLM10194839,99214,"Office visit, established patient, moderate complexity",PR20332,Dr. Jessica Taylor,Behavioral Health,2025-11-12,276.45,4022.78,14.6,Pending,,
+CLM10196702,99214,"Office visit, established patient, moderate complexity",PR20234,Dr. James Miller,Family Medicine,2025-12-11,276.45,4014.37,14.5,Pending,,
+CLM10173846,99203,"Office visit, new patient, low complexity",PR20130,Summit Urgent Care Associates,Urgent Care,2025-09-20,259.65,3993.73,15.4,Rejected,R10,0.0
+CLM10154333,99214,"Office visit, established patient, moderate complexity",PR20078,Dr. Robert Martinez,Endocrinology,2025-06-25,276.45,4002.71,14.5,Rejected,R10,0.0
+CLM10040358,99214,"Office visit, established patient, moderate complexity",PR21036,Dr. Elizabeth Taylor,Family Medicine,2024-06-06,276.45,3979.27,14.4,Rejected,R10,0.0
+CLM10154983,99203,"Office visit, new patient, low complexity",PR20650,Riverside Family Medicine Associates,Family Medicine,2025-07-17,259.65,3940.97,15.2,Rejected,R10,0.0
+CLM10057813,99214,"Office visit, established patient, moderate complexity",PR20045,Parkside Gastroenterology Associates,Gastroenterology,2024-08-14,276.45,3956.13,14.3,Rejected,R10,0.0
+CLM10155684,90837,"Psychotherapy, 60 minutes",PR20677,Bayside Behavioral Health Associates,Behavioral Health,2025-07-11,298.26,3974.59,13.3,Rejected,R05,0.0
+CLM10159766,99214,"Office visit, established patient, moderate complexity",PR21117,Dr. Mark Ali,Neurology,2025-07-30,276.45,3946.21,14.3,Rejected,R10,0.0
+CLM10073505,99213,"Office visit, established patient, low complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-09-09,183.68,3847.26,20.9,Approved,,113.83
+CLM10132417,99214,"Office visit, established patient, moderate complexity",PR20301,Parkside Cardiology Associates,Cardiology,2025-04-09,276.45,3928.43,14.2,Rejected,R10,0.0
+CLM10035684,99214,"Office visit, established patient, moderate complexity",PR20374,Sunrise Neurology Associates,Neurology,2024-05-01,276.45,3926.17,14.2,Rejected,R10,0.0
+CLM10118236,99214,"Office visit, established patient, moderate complexity",PR20354,Dr. Luis Thompson,Internal Medicine,2025-03-08,276.45,3920.66,14.2,Rejected,R10,0.0
+CLM10192565,99214,"Office visit, established patient, moderate complexity",PR20728,Pinecrest Family Medicine Associates,Family Medicine,2025-11-28,276.45,3913.13,14.2,Pending,,
+CLM10049168,77067,"Screening mammography, bilateral",PR20529,Pinecrest Imaging,Radiology,2024-07-10,275.3,3907.52,14.2,Rejected,R10,0.0
+CLM10161290,99214,"Office visit, established patient, moderate complexity",PR21105,Oakwood Behavioral Health Associates,Behavioral Health,2025-07-29,276.45,3899.07,14.1,Rejected,R06,0.0
+CLM10014371,90837,"Psychotherapy, 60 minutes",PR20539,Northgate Behavioral Health Associates,Behavioral Health,2024-02-19,298.26,3913.87,13.1,Rejected,R10,0.0
+CLM10149550,99284,"Emergency dept visit, moderate-high severity",PR20616,Parkside Medical Center,Emergency Medicine,2025-06-22,720.63,4334.47,6.0,Rejected,R05,0.0
+CLM10042581,99214,"Office visit, established patient, moderate complexity",PR20298,Dr. Elizabeth Perez,Neurology,2024-06-13,276.45,3879.0,14.0,Approved,,171.32
+CLM10115113,99214,"Office visit, established patient, moderate complexity",PR20003,Dr. Carlos Williams,Nephrology,2025-02-11,276.45,3879.0,14.0,Approved,,169.87
+CLM10193544,99214,"Office visit, established patient, moderate complexity",PR20358,Evergreen Behavioral Health Associates,Behavioral Health,2025-12-05,276.45,3860.44,14.0,Rejected,R10,0.0
+CLM10046784,90834,"Psychotherapy, 45 minutes",PR20882,Unity Behavioral Health Associates,Behavioral Health,2024-06-28,207.72,3765.27,18.1,Approved,,125.09
+CLM10078927,99285,"Emergency dept visit, high severity",PR20434,Oakwood Medical Center,Emergency Medicine,2024-11-04,1093.06,4644.45,4.2,Approved,,667.75
+CLM10085979,99213,"Office visit, established patient, low complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-11-09,183.68,3729.53,20.3,Rejected,R01,0.0
+CLM10156005,90837,"Psychotherapy, 60 minutes",PR20605,Riverside Behavioral Health Associates,Behavioral Health,2025-07-18,298.26,3832.99,12.9,Rejected,R10,0.0
+CLM10081245,99213,"Office visit, established patient, low complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2024-11-09,183.68,3713.99,20.2,Rejected,R10,0.0
+CLM10129770,99396,"Preventive visit, established patient, 40-64",PR20820,Dr. Mei Allen,Family Medicine,2025-04-14,373.77,3888.98,10.4,Rejected,R10,0.0
+CLM10005788,99203,"Office visit, new patient, low complexity",PR20922,Riverside Family Medicine Associates,Family Medicine,2024-01-27,259.65,3765.46,14.5,Approved,,124.49
+CLM10193746,99213,"Office visit, established patient, low complexity",PR21197,Evergreen Endocrinology Associates,Endocrinology,2025-12-01,183.68,3683.13,20.1,Pending,,
+CLM10088403,99214,"Office visit, established patient, moderate complexity",PR20698,Valley Gastroenterology Associates,Gastroenterology,2024-11-27,276.45,3719.74,13.5,Approved,,174.91
+CLM10172506,99214,"Office visit, established patient, moderate complexity",PR21087,Dr. Grace Lewis,Behavioral Health,2025-09-23,276.45,3705.34,13.4,Approved,,182.0
+CLM10006145,99284,"Emergency dept visit, moderate-high severity",PR20058,Summit Medical Center,Emergency Medicine,2024-01-13,720.63,4137.75,5.7,Approved,,426.32
+CLM10190197,99203,"Office visit, new patient, low complexity",PR20708,Dr. Michael Young,Internal Medicine,2025-11-22,259.65,3665.46,14.1,Rejected,R07,0.0
+CLM10104146,99214,"Office visit, established patient, moderate complexity",PR20474,Dr. David Lee,Internal Medicine,2025-01-12,276.45,3674.7,13.3,Rejected,R10,0.0
+CLM10152102,99214,"Office visit, established patient, moderate complexity",PR20370,Unity Gastroenterology Associates,Gastroenterology,2025-06-27,276.45,3666.43,13.3,Approved,,169.12
+CLM10067063,99215,"Office visit, established patient, high complexity",PR20590,Horizon Cardiology Associates,Cardiology,2024-09-20,581.63,3959.01,6.8,Rejected,R06,0.0
+CLM10094365,99214,"Office visit, established patient, moderate complexity",PR20908,Dr. Sarah Khan,Nephrology,2024-12-13,276.45,3640.63,13.2,Approved,,163.04
+CLM10003344,93306,"Echocardiography, transthoracic, complete",PR20945,Summit Cardiology Associates,Cardiology,2024-01-20,932.71,4258.66,4.6,Rejected,R10,0.0
+CLM10045914,97110,"Therapeutic exercise, each 15 minutes",PR20364,Summit Physical Therapy,Physical Therapy,2024-06-15,200.42,3521.41,17.6,Rejected,R06,0.0
+CLM10123202,99214,"Office visit, established patient, moderate complexity",PR20586,Dr. Michael Perez,Internal Medicine,2025-03-11,276.45,3595.27,13.0,Rejected,R06,0.0
+CLM10052932,99215,"Office visit, established patient, high complexity",PR20245,Evergreen Cardiology Associates,Cardiology,2024-07-03,581.63,3893.54,6.7,Rejected,R10,0.0
+CLM10165371,99214,"Office visit, established patient, moderate complexity",PR20915,Dr. Mei Thompson,Endocrinology,2025-08-13,276.45,3580.53,13.0,Rejected,R10,0.0
+CLM10197516,99214,"Office visit, established patient, moderate complexity",PR20399,Bayside Orthopedics Associates,Orthopedics,2025-06-22,276.45,3573.62,12.9,Pending,,
+CLM10164454,99214,"Office visit, established patient, moderate complexity",PR21141,Highland Internal Medicine Associates,Internal Medicine,2025-08-18,276.45,3552.69,12.9,Rejected,R10,0.0
+CLM10070761,99214,"Office visit, established patient, moderate complexity",PR20843,Dr. David Clark,Cardiology,2024-09-23,276.45,3545.63,12.8,Rejected,R10,0.0
+CLM10157845,99213,"Office visit, established patient, low complexity",PR20480,Dr. Hassan Sanchez,Internal Medicine,2025-07-29,183.68,3449.35,18.8,Rejected,R10,0.0
+CLM10004230,99396,"Preventive visit, established patient, 40-64",PR20977,Highland Internal Medicine Associates,Internal Medicine,2024-01-15,373.77,3621.45,9.7,Approved,,201.67
+CLM10045562,99214,"Office visit, established patient, moderate complexity",PR20384,Dr. Elizabeth Walker,Gastroenterology,2024-06-25,276.45,3491.53,12.6,Approved,,158.39
+CLM10030955,99214,"Office visit, established patient, moderate complexity",PR20003,Dr. Carlos Williams,Nephrology,2024-04-18,276.45,3487.89,12.6,Rejected,R10,0.0
+CLM10182519,99203,"Office visit, new patient, low complexity",PR20383,Dr. Priya Allen,Internal Medicine,2025-10-01,259.65,3461.16,13.3,Approved,,160.97
+CLM10091592,97110,"Therapeutic exercise, each 15 minutes",PR20196,Sunrise Physical Therapy,Physical Therapy,2024-12-02,200.42,3392.01,16.9,Approved,,84.24
+CLM10137155,90837,"Psychotherapy, 60 minutes",PR20651,Dr. Anthony Davis,Behavioral Health,2025-05-06,298.26,3487.71,11.7,Rejected,R10,0.0
+CLM10056457,90837,"Psychotherapy, 60 minutes",PR20061,Horizon Behavioral Health Associates,Behavioral Health,2024-08-10,298.26,3448.59,11.6,Rejected,R10,0.0
+CLM10012551,99214,"Office visit, established patient, moderate complexity",PR20302,Crescent Neurology Associates,Neurology,2024-02-12,276.45,3421.71,12.4,Rejected,R05,0.0
+CLM10195204,99213,"Office visit, established patient, low complexity",PR20298,Dr. Elizabeth Perez,Neurology,2025-12-03,183.68,3327.39,18.1,Rejected,R10,0.0
+CLM10041563,97110,"Therapeutic exercise, each 15 minutes",PR20017,Lakeview Physical Therapy,Physical Therapy,2024-06-07,200.42,3343.57,16.7,Rejected,R10,0.0
+CLM10030115,99213,"Office visit, established patient, low complexity",PR20752,Dr. Hassan Ramirez,Family Medicine,2024-04-22,183.68,3315.6,18.1,Rejected,R10,0.0
+CLM10079673,99203,"Office visit, new patient, low complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-10-29,259.65,3389.14,13.1,Rejected,R05,0.0
+CLM10132566,99213,"Office visit, established patient, low complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-04-23,183.68,3306.08,18.0,Approved,,116.02
+CLM10000819,71046,"Chest X-ray, 2 views",PR20851,Unity Imaging,Radiology,2024-01-05,99.84,3211.59,32.2,Rejected,R10,0.0
+CLM10066800,99214,"Office visit, established patient, moderate complexity",PR20461,Highland Endocrinology Associates,Endocrinology,2024-09-20,276.45,3373.86,12.2,Approved,,141.72
+CLM10104855,99203,"Office visit, new patient, low complexity",PR20179,Dr. Sarah Brown,Urgent Care,2025-01-20,259.65,3351.49,12.9,Rejected,R07,0.0
+CLM10170259,99284,"Emergency dept visit, moderate-high severity",PR20507,Meadow Medical Center,Emergency Medicine,2025-09-05,720.63,3801.14,5.3,Rejected,R10,0.0
+CLM10117636,77067,"Screening mammography, bilateral",PR20035,Evergreen Imaging,Radiology,2025-02-08,275.3,3351.15,12.2,Approved,,158.26
+CLM10134696,99213,"Office visit, established patient, low complexity",PR20023,Oakwood Gastroenterology Associates,Gastroenterology,2025-04-25,183.68,3244.66,17.7,Approved,,111.72
+CLM10194082,99213,"Office visit, established patient, low complexity",PR21098,Harbor Gastroenterology Associates,Gastroenterology,2025-12-03,183.68,3242.53,17.7,Pending,,
+CLM10134822,77067,"Screening mammography, bilateral",PR20463,Highland Imaging,Radiology,2025-05-03,275.3,3330.99,12.1,Rejected,R10,0.0
+CLM10049893,71046,"Chest X-ray, 2 views",PR20851,Unity Imaging,Radiology,2024-06-15,99.84,3149.73,31.5,Rejected,R10,0.0
+CLM10071648,90837,"Psychotherapy, 60 minutes",PR20601,Dr. Susan Khan,Behavioral Health,2024-10-02,298.26,3341.02,11.2,Approved,,191.42
+CLM10094588,97110,"Therapeutic exercise, each 15 minutes",PR20196,Sunrise Physical Therapy,Physical Therapy,2024-05-06,200.42,3206.78,16.0,Rejected,R08,0.0
+CLM10159005,99214,"Office visit, established patient, moderate complexity",PR20482,Dr. Anthony Smith,Neurology,2025-07-26,276.45,3277.2,11.9,Approved,,200.53
+CLM10162216,99214,"Office visit, established patient, moderate complexity",PR20847,Valley Behavioral Health Associates,Behavioral Health,2025-08-14,276.45,3274.66,11.8,Rejected,R03,0.0
+CLM10042086,99214,"Office visit, established patient, moderate complexity",PR20654,Pinecrest Behavioral Health Associates,Behavioral Health,2024-06-13,276.45,3245.38,11.7,Approved,,163.85
+CLM10151516,99214,"Office visit, established patient, moderate complexity",PR20274,Dr. Lisa Smith,Endocrinology,2025-06-07,276.45,3235.15,11.7,Approved,,165.61
+CLM10123597,99213,"Office visit, established patient, low complexity",PR20672,Oakwood Endocrinology Associates,Endocrinology,2025-03-20,183.68,3140.22,17.1,Approved,,110.44
+CLM10157416,99214,"Office visit, established patient, moderate complexity",PR20219,Dr. Mark Smith,Orthopedics,2025-07-08,276.45,3231.95,11.7,Approved,,165.22
+CLM10109313,97110,"Therapeutic exercise, each 15 minutes",PR20048,Horizon Physical Therapy,Physical Therapy,2025-01-24,200.42,3152.42,15.7,Approved,,116.75
+CLM10180308,99284,"Emergency dept visit, moderate-high severity",PR20527,Crescent Medical Center,Emergency Medicine,2025-10-16,720.63,3666.33,5.1,Rejected,R10,0.0
+CLM10166178,99213,"Office visit, established patient, low complexity",PR20023,Oakwood Gastroenterology Associates,Gastroenterology,2025-08-20,183.68,3128.46,17.0,Rejected,R10,0.0
+CLM10191741,99214,"Office visit, established patient, moderate complexity",PR20495,Dr. Susan Gonzalez,Orthopedics,2025-11-28,276.45,3217.68,11.6,Rejected,R10,0.0
+CLM10043026,99213,"Office visit, established patient, low complexity",PR20755,Lakeview Family Medicine Associates,Family Medicine,2024-06-12,183.68,3118.32,17.0,Approved,,103.05
+CLM10040161,77067,"Screening mammography, bilateral",PR20897,Evergreen Imaging,Radiology,2024-05-23,275.3,3207.59,11.7,Rejected,R10,0.0
+CLM10111193,99214,"Office visit, established patient, moderate complexity",PR20698,Valley Gastroenterology Associates,Gastroenterology,2025-02-14,276.45,3192.67,11.5,Rejected,R06,0.0
+CLM10169607,99214,"Office visit, established patient, moderate complexity",PR20854,Riverside Neurology Associates,Neurology,2025-09-16,276.45,3190.39,11.5,Approved,,170.6
+CLM10122266,77067,"Screening mammography, bilateral",PR20851,Unity Imaging,Radiology,2025-02-25,275.3,3187.04,11.6,Approved,,158.15
+CLM10027569,90834,"Psychotherapy, 45 minutes",PR20341,Dr. David Walker,Behavioral Health,2024-04-08,207.72,3111.59,15.0,Rejected,R10,0.0
+CLM10036142,99214,"Office visit, established patient, moderate complexity",PR20560,Dr. Sarah Gonzalez,Family Medicine,2024-04-17,276.45,3167.94,11.5,Rejected,R10,0.0
+CLM10029106,99214,"Office visit, established patient, moderate complexity",PR21050,Dr. Nancy Wilson,Cardiology,2024-04-18,276.45,3155.66,11.4,Rejected,R07,0.0
+CLM10018822,99214,"Office visit, established patient, moderate complexity",PR20211,Dr. James Robinson,Gastroenterology,2024-03-14,276.45,3135.48,11.3,Rejected,R10,0.0
+CLM10046445,99203,"Office visit, new patient, low complexity",PR20798,Crescent Family Medicine Associates,Family Medicine,2024-06-21,259.65,3065.71,11.8,Approved,,118.25
+CLM10101388,99203,"Office visit, new patient, low complexity",PR20336,Harbor Family Medicine Associates,Family Medicine,2024-03-05,259.65,3046.05,11.7,Rejected,R08,0.0
+CLM10004088,99396,"Preventive visit, established patient, 40-64",PR20953,Dr. Laura Lee,Family Medicine,2024-01-20,373.77,3155.83,8.4,Rejected,R10,0.0
+CLM10109351,99214,"Office visit, established patient, moderate complexity",PR20772,Harbor Gastroenterology Associates,Gastroenterology,2025-01-29,276.45,3043.59,11.0,Rejected,R06,0.0
+CLM10144992,90837,"Psychotherapy, 60 minutes",PR20433,Lakeview Behavioral Health Associates,Behavioral Health,2025-06-03,298.26,3053.87,10.2,Rejected,R10,0.0
+CLM10083685,90834,"Psychotherapy, 45 minutes",PR20282,Dr. James Ramirez,Behavioral Health,2024-11-02,207.72,2962.44,14.3,Rejected,R10,0.0
+CLM10031526,99213,"Office visit, established patient, low complexity",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-04-25,183.68,2937.93,16.0,Approved,,79.38
+CLM10136934,97110,"Therapeutic exercise, each 15 minutes",PR20582,Parkside Physical Therapy,Physical Therapy,2025-05-09,200.42,2938.17,14.7,Approved,,119.28
+CLM10069658,99214,"Office visit, established patient, moderate complexity",PR21154,Summit Gastroenterology Associates,Gastroenterology,2024-09-19,276.45,3005.08,10.9,Rejected,R10,0.0
+CLM10082007,99214,"Office visit, established patient, moderate complexity",PR20773,Dr. Mary Sanchez,Family Medicine,2024-11-05,276.45,2987.56,10.8,Rejected,R05,0.0
+CLM10085303,99396,"Preventive visit, established patient, 40-64",PR20309,Dr. Mark Brown,Family Medicine,2024-11-23,373.77,3082.46,8.2,Approved,,211.0
+CLM10176091,99213,"Office visit, established patient, low complexity",PR20189,Northgate Internal Medicine Associates,Internal Medicine,2025-10-02,183.68,2888.15,15.7,Approved,,115.39
+CLM10195200,90834,"Psychotherapy, 45 minutes",PR20061,Horizon Behavioral Health Associates,Behavioral Health,2025-12-03,207.72,2909.63,14.0,Pending,,
+CLM10050847,99223,"Initial hospital inpatient care, high complexity",PR20018,Highland Regional Hospital,Hospital Medicine,2024-06-20,717.81,3419.62,4.8,Approved,,423.33
+CLM10129070,99213,"Office visit, established patient, low complexity",PR21172,Crescent Internal Medicine Associates,Internal Medicine,2025-04-02,183.68,2885.28,15.7,Rejected,R06,0.0
+CLM10084804,99214,"Office visit, established patient, moderate complexity",PR20003,Dr. Carlos Williams,Nephrology,2024-11-11,276.45,2977.29,10.8,Approved,,163.98
+CLM10174114,90834,"Psychotherapy, 45 minutes",PR20033,Lakeview Behavioral Health Associates,Behavioral Health,2025-09-20,207.72,2906.79,14.0,Rejected,R10,0.0
+CLM10101273,99214,"Office visit, established patient, moderate complexity",PR21169,Dr. Susan Khan,Neurology,2025-01-11,276.45,2971.27,10.7,Approved,,167.38
+CLM10042962,99214,"Office visit, established patient, moderate complexity",PR20917,Northgate Gastroenterology Associates,Gastroenterology,2024-06-07,276.45,2964.85,10.7,Rejected,R10,0.0
+CLM10083967,77067,"Screening mammography, bilateral",PR20121,Harbor Imaging,Radiology,2024-11-03,275.3,2961.69,10.8,Rejected,R10,0.0
+CLM10191099,99214,"Office visit, established patient, moderate complexity",PR20360,Dr. Lisa Taylor,Gastroenterology,2025-11-25,276.45,2951.25,10.7,Pending,,
+CLM10079924,99214,"Office visit, established patient, moderate complexity",PR20412,Meadow Family Medicine Associates,Family Medicine,2024-10-25,276.45,2950.96,10.7,Approved,,169.13
+CLM10021967,99213,"Office visit, established patient, low complexity",PR20222,Dr. John Anderson,Family Medicine,2024-02-26,183.68,2851.34,15.5,Rejected,R10,0.0
+CLM10170812,99213,"Office visit, established patient, low complexity",PR20045,Parkside Gastroenterology Associates,Gastroenterology,2025-09-09,183.68,2840.38,15.5,Approved,,101.55
+CLM10109404,90834,"Psychotherapy, 45 minutes",PR20349,Parkside Behavioral Health Associates,Behavioral Health,2025-02-03,207.72,2862.11,13.8,Rejected,R10,0.0
+CLM10036622,90834,"Psychotherapy, 45 minutes",PR20993,Harbor Behavioral Health Associates,Behavioral Health,2024-05-22,207.72,2849.04,13.7,Approved,,120.07
+CLM10192372,99213,"Office visit, established patient, low complexity",PR20951,Parkside Endocrinology Associates,Endocrinology,2025-12-04,183.68,2820.17,15.4,Pending,,
+CLM10039828,99214,"Office visit, established patient, moderate complexity",PR20275,Dr. Barbara Thompson,Nephrology,2024-06-04,276.45,2907.48,10.5,Approved,,165.54
+CLM10056799,99214,"Office visit, established patient, moderate complexity",PR20092,Dr. Thomas Thomas,Family Medicine,2024-08-05,276.45,2902.21,10.5,Approved,,169.49
+CLM10072494,99213,"Office visit, established patient, low complexity",PR20189,Northgate Internal Medicine Associates,Internal Medicine,2024-10-06,183.68,2804.4,15.3,Approved,,116.21
+CLM10195237,99213,"Office visit, established patient, low complexity",PR21036,Dr. Elizabeth Taylor,Family Medicine,2025-12-06,183.68,2803.6,15.3,Pending,,
+CLM10181754,99203,"Office visit, new patient, low complexity",PR20179,Dr. Sarah Brown,Urgent Care,2025-10-21,259.65,2879.44,11.1,Approved,,163.24
+CLM10107218,71046,"Chest X-ray, 2 views",PR20683,Riverside Imaging,Radiology,2025-01-28,99.84,2714.17,27.2,Rejected,R10,0.0
+CLM10128624,99213,"Office visit, established patient, low complexity",PR21154,Summit Gastroenterology Associates,Gastroenterology,2025-04-10,183.68,2795.97,15.2,Approved,,114.78
+CLM10166642,90834,"Psychotherapy, 45 minutes",PR20565,Dr. Richard Lopez,Behavioral Health,2025-09-03,207.72,2814.04,13.5,Pending,,
+CLM10035397,99214,"Office visit, established patient, moderate complexity",PR20268,Riverside Behavioral Health Associates,Behavioral Health,2024-05-16,276.45,2867.37,10.4,Rejected,R10,0.0
+CLM10164120,99213,"Office visit, established patient, low complexity",PR21018,Dr. John Allen,Gastroenterology,2025-08-12,183.68,2769.6,15.1,Approved,,121.89
+CLM10142058,99214,"Office visit, established patient, moderate complexity",PR20063,Dr. Mary Johnson,Family Medicine,2025-05-27,276.45,2854.87,10.3,Approved,,160.47
+CLM10124512,99213,"Office visit, established patient, low complexity",PR20478,Dr. Grace Rodriguez,Endocrinology,2025-03-25,183.68,2755.78,15.0,Rejected,R10,0.0
+CLM10193090,99213,"Office visit, established patient, low complexity",PR20023,Oakwood Gastroenterology Associates,Gastroenterology,2025-11-24,183.68,2754.06,15.0,Rejected,R10,0.0
+CLM10128245,99213,"Office visit, established patient, low complexity",PR20798,Crescent Family Medicine Associates,Family Medicine,2025-04-04,183.68,2727.93,14.9,Approved,,79.26
+CLM10018824,71046,"Chest X-ray, 2 views",PR20851,Unity Imaging,Radiology,2024-03-14,99.84,2637.58,26.4,Rejected,R10,0.0
+CLM10153869,90837,"Psychotherapy, 60 minutes",PR21105,Oakwood Behavioral Health Associates,Behavioral Health,2025-06-30,298.26,2835.0,9.5,Approved,,173.03
+CLM10168363,99214,"Office visit, established patient, moderate complexity",PR21056,Dr. Maria Taylor,Family Medicine,2025-09-01,276.45,2810.76,10.2,Rejected,R10,0.0
+CLM10089454,90837,"Psychotherapy, 60 minutes",PR20033,Lakeview Behavioral Health Associates,Behavioral Health,2024-03-23,298.26,2831.73,9.5,Rejected,R08,0.0
+CLM10198042,99213,"Office visit, established patient, low complexity",PR21018,Dr. John Allen,Gastroenterology,2025-12-20,183.68,2714.59,14.8,Pending,,
+CLM10079329,99214,"Office visit, established patient, moderate complexity",PR20664,Dr. Robert Harris,Orthopedics,2024-10-23,276.45,2804.19,10.1,Rejected,R06,0.0
+CLM10076884,99213,"Office visit, established patient, low complexity",PR20586,Dr. Michael Perez,Internal Medicine,2024-10-24,183.68,2706.62,14.7,Rejected,R10,0.0
+CLM10026132,99213,"Office visit, established patient, low complexity",PR20224,Riverside Neurology Associates,Neurology,2024-04-11,183.68,2700.74,14.7,Rejected,R10,0.0
+CLM10043322,99213,"Office visit, established patient, low complexity",PR20056,Dr. Barbara Ramirez,Internal Medicine,2024-06-17,183.68,2697.65,14.7,Approved,,110.68
+CLM10068795,99284,"Emergency dept visit, moderate-high severity",PR20400,Cedar Medical Center,Emergency Medicine,2024-09-02,720.63,3228.68,4.5,Rejected,R10,0.0
+CLM10069229,99213,"Office visit, established patient, low complexity",PR21192,Summit Neurology Associates,Neurology,2024-09-25,183.68,2686.17,14.6,Rejected,R10,0.0
+CLM10171241,99213,"Office visit, established patient, low complexity",PR20045,Parkside Gastroenterology Associates,Gastroenterology,2025-09-19,183.68,2683.78,14.6,Approved,,117.01
+CLM10120085,99213,"Office visit, established patient, low complexity",PR20506,Dr. Elizabeth Kim,Neurology,2025-03-14,183.68,2682.73,14.6,Rejected,R10,0.0
+CLM10026064,99396,"Preventive visit, established patient, 40-64",PR20173,Evergreen Internal Medicine Associates,Internal Medicine,2024-04-05,373.77,2871.04,7.7,Approved,,209.57
+CLM10130703,90837,"Psychotherapy, 60 minutes",PR20803,Harbor Behavioral Health Associates,Behavioral Health,2025-03-26,298.26,2789.98,9.4,Approved,,174.18
+CLM10092382,99214,"Office visit, established patient, moderate complexity",PR21179,Dr. Carlos Young,Nephrology,2024-12-16,276.45,2764.77,10.0,Approved,,173.69
+CLM10081624,99213,"Office visit, established patient, low complexity",PR21066,Dr. Matthew Gonzalez,Family Medicine,2024-10-24,183.68,2667.05,14.5,Approved,,82.59
+CLM10066763,99213,"Office visit, established patient, low complexity",PR20045,Parkside Gastroenterology Associates,Gastroenterology,2024-09-18,183.68,2666.93,14.5,Rejected,R10,0.0
+CLM10137846,99213,"Office visit, established patient, low complexity",PR20798,Crescent Family Medicine Associates,Family Medicine,2025-04-04,183.68,2663.27,14.5,Approved,,79.26
+CLM10046943,99213,"Office visit, established patient, low complexity",PR20915,Dr. Mei Thompson,Endocrinology,2024-06-25,183.68,2649.48,14.4,Approved,,93.91
+CLM10052659,99213,"Office visit, established patient, low complexity",PR20571,Dr. Luis Jackson,Internal Medicine,2024-07-26,183.68,2645.4,14.4,Approved,,108.07
+CLM10073332,90834,"Psychotherapy, 45 minutes",PR20789,Harbor Behavioral Health Associates,Behavioral Health,2024-10-05,207.72,2667.28,12.8,Rejected,R10,0.0
+CLM10059082,99213,"Office visit, established patient, low complexity",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2024-08-21,183.68,2633.88,14.3,Approved,,114.14
+CLM10191085,99213,"Office visit, established patient, low complexity",PR21062,Dr. Aisha Smith,Internal Medicine,2025-11-24,183.68,2626.92,14.3,Pending,,
+CLM10118082,97110,"Therapeutic exercise, each 15 minutes",PR20849,Oakwood Physical Therapy,Physical Therapy,2025-02-28,200.42,2642.01,13.2,Rejected,R10,0.0
+CLM10111670,99213,"Office visit, established patient, low complexity",PR20947,Cedar Neurology Associates,Neurology,2025-02-07,183.68,2620.96,14.3,Rejected,R10,0.0
+CLM10029167,99213,"Office visit, established patient, low complexity",PR20763,Dr. Sarah Hernandez,Neurology,2024-04-22,183.68,2613.89,14.2,Approved,,108.14
+CLM10143275,90834,"Psychotherapy, 45 minutes",PR20932,Dr. Daniel Chen,Behavioral Health,2025-05-13,207.72,2614.37,12.6,Approved,,120.55
+CLM10066295,99214,"Office visit, established patient, moderate complexity",PR20211,Dr. James Robinson,Gastroenterology,2024-09-20,276.45,2671.03,9.7,Rejected,R10,0.0
+CLM10152264,97110,"Therapeutic exercise, each 15 minutes",PR20663,Meadow Physical Therapy,Physical Therapy,2025-07-09,200.42,2585.07,12.9,Approved,,167.7
+CLM10067196,99213,"Office visit, established patient, low complexity",PR20412,Meadow Family Medicine Associates,Family Medicine,2024-09-11,183.68,2564.16,14.0,Rejected,R10,0.0
+CLM10058669,71046,"Chest X-ray, 2 views",PR20851,Unity Imaging,Radiology,2024-08-09,99.84,2475.91,24.8,Rejected,R10,0.0
+CLM10122889,99213,"Office visit, established patient, low complexity",PR20189,Northgate Internal Medicine Associates,Internal Medicine,2025-03-05,183.68,2553.21,13.9,Approved,,106.05
+CLM10092142,90834,"Psychotherapy, 45 minutes",PR20601,Dr. Susan Khan,Behavioral Health,2024-12-19,207.72,2571.57,12.4,Rejected,R10,0.0
+CLM10040489,99214,"Office visit, established patient, moderate complexity",PR20701,Harbor Gastroenterology Associates,Gastroenterology,2024-05-28,276.45,2636.38,9.5,Rejected,R03,0.0
+CLM10068056,99213,"Office visit, established patient, low complexity",PR21032,Dr. Hassan Smith,Internal Medicine,2024-09-18,183.68,2536.13,13.8,Approved,,116.02
+CLM10013601,99214,"Office visit, established patient, moderate complexity",PR20496,Dr. Linda Thompson,Family Medicine,2024-02-22,276.45,2625.48,9.5,Approved,,167.35
+CLM10058964,99214,"Office visit, established patient, moderate complexity",PR20641,Northgate Nephrology Associates,Nephrology,2024-08-14,276.45,2623.83,9.5,Approved,,163.83
+CLM10081923,99214,"Office visit, established patient, moderate complexity",PR20065,Dr. Kevin Thomas,Orthopedics,2024-10-22,276.45,2618.72,9.5,Rejected,R10,0.0
+CLM10131935,99203,"Office visit, new patient, low complexity",PR21017,Dr. James Taylor,Internal Medicine,2025-04-17,259.65,2597.83,10.0,Approved,,154.75
+CLM10190499,99213,"Office visit, established patient, low complexity",PR20076,Dr. Mei Lee,Neurology,2025-11-24,183.68,2511.47,13.7,Rejected,R10,0.0
+CLM10131722,99213,"Office visit, established patient, low complexity",PR20701,Harbor Gastroenterology Associates,Gastroenterology,2025-04-21,183.68,2507.93,13.7,Rejected,R10,0.0
+CLM10058904,99213,"Office visit, established patient, low complexity",PR20179,Dr. Sarah Brown,Urgent Care,2024-08-09,183.68,2507.56,13.7,Rejected,R10,0.0
+CLM10149319,90837,"Psychotherapy, 60 minutes",PR20651,Dr. Anthony Davis,Behavioral Health,2025-06-22,298.26,2620.22,8.8,Approved,,162.61
+CLM10062918,99214,"Office visit, established patient, moderate complexity",PR21185,Riverside Neurology Associates,Neurology,2024-09-04,276.45,2595.86,9.4,Rejected,R10,0.0
+CLM10062681,99214,"Office visit, established patient, moderate complexity",PR20174,Northgate Endocrinology Associates,Endocrinology,2024-09-06,276.45,2591.78,9.4,Approved,,156.42
+CLM10098879,99213,"Office visit, established patient, low complexity",PR20285,Dr. Barbara Wilson,Urgent Care,2025-01-02,183.68,2497.72,13.6,Approved,,101.75
+CLM10039101,90837,"Psychotherapy, 60 minutes",PR20537,Bayside Behavioral Health Associates,Behavioral Health,2024-05-09,298.26,2596.55,8.7,Rejected,R10,0.0
+CLM10085761,90837,"Psychotherapy, 60 minutes",PR20551,Lakeview Behavioral Health Associates,Behavioral Health,2024-11-18,298.26,2583.53,8.7,Rejected,R05,0.0
+CLM10000799,77067,"Screening mammography, bilateral",PR20012,Highland Imaging,Radiology,2024-01-05,275.3,2559.01,9.3,Approved,,152.71
+CLM10068584,99213,"Office visit, established patient, low complexity",PR20132,Dr. Jessica Jones,Endocrinology,2024-09-11,183.68,2465.07,13.4,Approved,,86.89
+CLM10008891,90837,"Psychotherapy, 60 minutes",PR20829,Evergreen Behavioral Health Associates,Behavioral Health,2024-02-05,298.26,2579.52,8.6,Approved,,172.99
+CLM10107519,99214,"Office visit, established patient, moderate complexity",PR20993,Harbor Behavioral Health Associates,Behavioral Health,2025-01-29,276.45,2556.89,9.2,Approved,,174.07
+CLM10007585,99214,"Office visit, established patient, moderate complexity",PR20028,Dr. Matthew Moore,Internal Medicine,2024-01-12,276.45,2550.53,9.2,Rejected,R10,0.0
+CLM10197380,71046,"Chest X-ray, 2 views",PR20760,Harbor Imaging,Radiology,2025-12-15,99.84,2373.24,23.8,Pending,,
+CLM10010394,99213,"Office visit, established patient, low complexity",PR20809,Dr. Robert Walker,Gastroenterology,2024-02-13,183.68,2452.1,13.3,Rejected,R10,0.0
+CLM10182388,99213,"Office visit, established patient, low complexity",PR20066,Dr. Kevin Johnson,Urgent Care,2025-10-25,183.68,2447.15,13.3,Approved,,127.47
+CLM10118221,99214,"Office visit, established patient, moderate complexity",PR20885,Dr. Jennifer Ali,Family Medicine,2025-03-07,276.45,2532.82,9.2,Approved,,173.72
+CLM10015807,90834,"Psychotherapy, 45 minutes",PR20539,Northgate Behavioral Health Associates,Behavioral Health,2024-02-19,207.72,2452.99,11.8,Approved,,113.2
+CLM10085786,99213,"Office visit, established patient, low complexity",PR21169,Dr. Susan Khan,Neurology,2024-11-20,183.68,2423.74,13.2,Rejected,R10,0.0
+CLM10173922,99213,"Office visit, established patient, low complexity",PR20881,Dr. John Williams,Internal Medicine,2025-09-26,183.68,2421.11,13.2,Approved,,114.93
+CLM10155486,99214,"Office visit, established patient, moderate complexity",PR20982,Dr. Nancy Smith,Internal Medicine,2025-07-17,276.45,2513.36,9.1,Rejected,R05,0.0
+CLM10136239,99214,"Office visit, established patient, moderate complexity",PR20743,Dr. Omar Anderson,Nephrology,2025-04-10,276.45,2510.03,9.1,Rejected,R10,0.0
+CLM10046694,90834,"Psychotherapy, 45 minutes",PR21093,Dr. Thomas Jackson,Behavioral Health,2024-06-21,207.72,2440.36,11.7,Rejected,R06,0.0
+CLM10144800,99214,"Office visit, established patient, moderate complexity",PR20539,Northgate Behavioral Health Associates,Behavioral Health,2025-06-09,276.45,2506.62,9.1,Rejected,R10,0.0
+CLM10175819,99214,"Office visit, established patient, moderate complexity",PR20675,Unity Behavioral Health Associates,Behavioral Health,2025-10-01,276.45,2495.49,9.0,Approved,,163.95
+CLM10003328,99214,"Office visit, established patient, moderate complexity",PR20490,Dr. Laura Taylor,Nephrology,2024-01-19,276.45,2489.46,9.0,Rejected,R10,0.0
+CLM10120348,99214,"Office visit, established patient, moderate complexity",PR20979,Dr. Ethan Ramirez,Endocrinology,2025-03-14,276.45,2487.19,9.0,Approved,,121.28
+CLM10088845,99214,"Office visit, established patient, moderate complexity",PR20407,Parkside Cardiology Associates,Cardiology,2024-12-05,276.45,2470.94,8.9,Approved,,163.81
+CLM10193597,99213,"Office visit, established patient, low complexity",PR20644,Riverside Endocrinology Associates,Endocrinology,2025-10-27,183.68,2377.36,12.9,Pending,,
+CLM10032046,99213,"Office visit, established patient, low complexity",PR20755,Lakeview Family Medicine Associates,Family Medicine,2024-04-29,183.68,2370.87,12.9,Approved,,103.21
+CLM10081183,99213,"Office visit, established patient, low complexity",PR20729,Dr. Susan Chen,Endocrinology,2024-11-06,183.68,2369.11,12.9,Rejected,R10,0.0
+CLM10164850,99213,"Office visit, established patient, low complexity",PR20354,Dr. Luis Thompson,Internal Medicine,2025-08-05,183.68,2368.47,12.9,Approved,,79.26
+CLM10025976,99214,"Office visit, established patient, moderate complexity",PR20983,Dr. Carlos Davis,Family Medicine,2024-03-31,276.45,2459.13,8.9,Approved,,107.89
+CLM10008178,99213,"Office visit, established patient, low complexity",PR20795,Lakeview Urgent Care Associates,Urgent Care,2024-01-22,183.68,2355.64,12.8,Approved,,107.36
+CLM10146378,99214,"Office visit, established patient, moderate complexity",PR20607,Dr. Elizabeth Taylor,Internal Medicine,2025-06-13,276.45,2446.95,8.9,Rejected,R10,0.0
+CLM10070891,99213,"Office visit, established patient, low complexity",PR20225,Unity Endocrinology Associates,Endocrinology,2024-10-03,183.68,2353.37,12.8,Rejected,R10,0.0
+CLM10171707,99214,"Office visit, established patient, moderate complexity",PR21002,Riverside Endocrinology Associates,Endocrinology,2025-09-17,276.45,2443.38,8.8,Approved,,161.58
+CLM10104630,99213,"Office visit, established patient, low complexity",PR20947,Cedar Neurology Associates,Neurology,2025-01-24,183.68,2348.79,12.8,Approved,,126.66
+CLM10192497,97110,"Therapeutic exercise, each 15 minutes",PR20910,Harbor Physical Therapy,Physical Therapy,2025-11-24,200.42,2364.84,11.8,Rejected,R10,0.0
+CLM10150960,97110,"Therapeutic exercise, each 15 minutes",PR20830,Parkside Physical Therapy,Physical Therapy,2025-07-03,200.42,2333.72,11.6,Approved,,116.44
+CLM10171742,99214,"Office visit, established patient, moderate complexity",PR20522,Dr. John Lopez,Endocrinology,2025-09-20,276.45,2409.2,8.7,Rejected,R10,0.0
+CLM10059022,99213,"Office visit, established patient, low complexity",PR20162,Lakeview Urgent Care Associates,Urgent Care,2024-08-19,183.68,2310.09,12.6,Approved,,109.52
+CLM10114293,97110,"Therapeutic exercise, each 15 minutes",PR20830,Parkside Physical Therapy,Physical Therapy,2025-02-20,200.42,2326.62,11.6,Approved,,139.27
+CLM10091720,71046,"Chest X-ray, 2 views",PR20760,Harbor Imaging,Radiology,2024-12-12,99.84,2221.1,22.2,Rejected,R10,0.0
+CLM10194234,90834,"Psychotherapy, 45 minutes",PR20831,Dr. Mark Allen,Behavioral Health,2025-11-12,207.72,2314.9,11.1,Pending,,
+CLM10131164,99213,"Office visit, established patient, low complexity",PR21197,Evergreen Endocrinology Associates,Endocrinology,2025-04-18,183.68,2283.5,12.4,Rejected,R05,0.0
+CLM10000821,99214,"Office visit, established patient, moderate complexity",PR20805,Meadow Internal Medicine Associates,Internal Medicine,2024-01-05,276.45,2373.98,8.6,Rejected,R10,0.0
+CLM10172869,99213,"Office visit, established patient, low complexity",PR21098,Harbor Gastroenterology Associates,Gastroenterology,2025-09-25,183.68,2277.9,12.4,Approved,,122.07
+CLM10035165,99214,"Office visit, established patient, moderate complexity",PR20676,Dr. Robert Johnson,Internal Medicine,2024-04-23,276.45,2365.48,8.6,Rejected,R10,0.0
+CLM10125368,99214,"Office visit, established patient, moderate complexity",PR20954,Riverside Endocrinology Associates,Endocrinology,2025-03-27,276.45,2361.89,8.5,Rejected,R10,0.0
+CLM10038810,90837,"Psychotherapy, 60 minutes",PR20270,Dr. Barbara Lopez,Behavioral Health,2024-04-25,298.26,2373.95,8.0,Rejected,R03,0.0
+CLM10034071,71046,"Chest X-ray, 2 views",PR20760,Harbor Imaging,Radiology,2024-05-10,99.84,2172.58,21.8,Rejected,R10,0.0
+CLM10037163,71046,"Chest X-ray, 2 views",PR20760,Harbor Imaging,Radiology,2024-05-10,99.84,2172.58,21.8,Rejected,R01,0.0
+CLM10157833,90837,"Psychotherapy, 60 minutes",PR20513,Meadow Behavioral Health Associates,Behavioral Health,2025-07-28,298.26,2365.98,7.9,Approved,,180.32
+CLM10006534,99213,"Office visit, established patient, low complexity",PR20403,Dr. William Lewis,Internal Medicine,2024-01-23,183.68,2248.17,12.2,Rejected,R10,0.0
+CLM10021656,99213,"Office visit, established patient, low complexity",PR20223,Valley Family Medicine Associates,Family Medicine,2024-03-21,183.68,2247.75,12.2,Approved,,103.35
+CLM10188626,97110,"Therapeutic exercise, each 15 minutes",PR20665,Evergreen Physical Therapy,Physical Therapy,2025-11-11,200.42,2263.96,11.3,Rejected,R10,0.0
+CLM10183510,99213,"Office visit, established patient, low complexity",PR20876,Dr. Hassan Johnson,Neurology,2025-10-30,183.68,2237.19,12.2,Rejected,R10,0.0
+CLM10159978,99396,"Preventive visit, established patient, 40-64",PR20600,Unity Internal Medicine Associates,Internal Medicine,2025-07-24,373.77,2422.64,6.5,Approved,,224.52
+CLM10095164,90834,"Psychotherapy, 45 minutes",PR20764,Dr. Maria Lewis,Behavioral Health,2024-12-25,207.72,2247.83,10.8,Approved,,86.29
+CLM10034902,90837,"Psychotherapy, 60 minutes",PR20270,Dr. Barbara Lopez,Behavioral Health,2024-04-25,298.26,2335.87,7.8,Rejected,R03,0.0
+CLM10001814,99213,"Office visit, established patient, low complexity",PR21117,Dr. Mark Ali,Neurology,2024-01-10,183.68,2217.73,12.1,Approved,,108.21
+CLM10057542,99214,"Office visit, established patient, moderate complexity",PR20099,Lakeview Internal Medicine Associates,Internal Medicine,2024-08-12,276.45,2306.29,8.3,Approved,,161.95
+CLM10109739,90837,"Psychotherapy, 60 minutes",PR20117,Parkside Behavioral Health Associates,Behavioral Health,2025-02-04,298.26,2326.34,7.8,Approved,,187.32
+CLM10112489,90834,"Psychotherapy, 45 minutes",PR20119,Dr. Laura Ramirez,Behavioral Health,2025-02-20,207.72,2235.27,10.8,Rejected,R06,0.0
+CLM10146671,99213,"Office visit, established patient, low complexity",PR20708,Dr. Michael Young,Internal Medicine,2025-06-17,183.68,2210.69,12.0,Rejected,R10,0.0
+CLM10112348,99213,"Office visit, established patient, low complexity",PR20045,Parkside Gastroenterology Associates,Gastroenterology,2025-02-12,183.68,2209.44,12.0,Approved,,113.27
+CLM10050069,99214,"Office visit, established patient, moderate complexity",PR20343,Bayside Orthopedics Associates,Orthopedics,2024-07-11,276.45,2301.71,8.3,Approved,,152.76
+CLM10050895,99396,"Preventive visit, established patient, 40-64",PR20600,Unity Internal Medicine Associates,Internal Medicine,2024-07-05,373.77,2396.81,6.4,Approved,,213.21
+CLM10028560,99213,"Office visit, established patient, low complexity",PR21006,Dr. Elizabeth Martin,Internal Medicine,2024-04-10,183.68,2187.59,11.9,Rejected,R10,0.0
+CLM10060498,99213,"Office visit, established patient, low complexity",PR20277,Dr. James Patel,Internal Medicine,2024-08-23,183.68,2181.4,11.9,Approved,,119.43
+CLM10022391,99214,"Office visit, established patient, moderate complexity",PR20446,Valley Behavioral Health Associates,Behavioral Health,2024-03-21,276.45,2269.67,8.2,Approved,,147.76
+CLM10035846,99213,"Office visit, established patient, low complexity",PR20748,Dr. Sarah Singh,Internal Medicine,2024-05-15,183.68,2174.7,11.8,Rejected,R10,0.0
+CLM10070685,99214,"Office visit, established patient, moderate complexity",PR21169,Dr. Susan Khan,Neurology,2024-10-05,276.45,2261.18,8.2,Approved,,164.84
+CLM10005775,99203,"Office visit, new patient, low complexity",PR20823,Harbor Family Medicine Associates,Family Medicine,2024-01-26,259.65,2242.02,8.6,Approved,,152.34
+CLM10151379,99213,"Office visit, established patient, low complexity",PR20498,Riverside Urgent Care Associates,Urgent Care,2025-06-28,183.68,2162.93,11.8,Approved,,123.4
+CLM10171727,97110,"Therapeutic exercise, each 15 minutes",PR20196,Sunrise Physical Therapy,Physical Therapy,2025-09-18,200.42,2174.29,10.8,Pending,,
+CLM10179964,99213,"Office visit, established patient, low complexity",PR20915,Dr. Mei Thompson,Endocrinology,2025-10-11,183.68,2152.71,11.7,Pending,,
+CLM10013309,71046,"Chest X-ray, 2 views",PR20683,Riverside Imaging,Radiology,2024-02-22,99.84,2068.82,20.7,Approved,,42.28
+CLM10010846,99213,"Office visit, established patient, low complexity",PR20162,Lakeview Urgent Care Associates,Urgent Care,2024-02-08,183.68,2149.2,11.7,Approved,,103.3
+CLM10058272,90834,"Psychotherapy, 45 minutes",PR21087,Dr. Grace Lewis,Behavioral Health,2024-08-16,207.72,2171.78,10.5,Rejected,R10,0.0
+CLM10021501,99396,"Preventive visit, established patient, 40-64",PR20149,Dr. Mei Johnson,Family Medicine,2024-03-12,373.77,2333.59,6.2,Approved,,191.56
+CLM10155724,99213,"Office visit, established patient, low complexity",PR21063,Dr. Luis Anderson,Neurology,2025-07-16,183.68,2138.89,11.6,Rejected,R06,0.0
+CLM10078179,71046,"Chest X-ray, 2 views",PR20760,Harbor Imaging,Radiology,2024-10-23,99.84,2051.59,20.5,Approved,,62.53
+CLM10149226,99213,"Office visit, established patient, low complexity",PR20274,Dr. Lisa Smith,Endocrinology,2025-06-06,183.68,2134.27,11.6,Approved,,122.41
+CLM10179446,90837,"Psychotherapy, 60 minutes",PR20408,Unity Behavioral Health Associates,Behavioral Health,2025-10-09,298.26,2248.05,7.5,Approved,,183.45
+CLM10126299,99213,"Office visit, established patient, low complexity",PR20876,Dr. Hassan Johnson,Neurology,2025-04-03,183.68,2132.77,11.6,Rejected,R10,0.0
+CLM10030108,99213,"Office visit, established patient, low complexity",PR20357,Dr. Nancy Allen,Gastroenterology,2024-04-20,183.68,2128.25,11.6,Rejected,R10,0.0
+CLM10029129,90837,"Psychotherapy, 60 minutes",PR20630,Dr. Kevin Walker,Behavioral Health,2024-04-19,298.26,2241.92,7.5,Rejected,R03,0.0
+CLM10198215,99214,"Office visit, established patient, moderate complexity",PR20644,Riverside Endocrinology Associates,Endocrinology,2025-12-17,276.45,2219.28,8.0,Pending,,
+CLM10191535,99213,"Office visit, established patient, low complexity",PR21197,Evergreen Endocrinology Associates,Endocrinology,2025-11-11,183.68,2125.9,11.6,Approved,,82.02
+CLM10134861,99213,"Office visit, established patient, low complexity",PR20384,Dr. Elizabeth Walker,Gastroenterology,2025-05-06,183.68,2122.76,11.6,Approved,,108.02
+CLM10117442,99214,"Office visit, established patient, moderate complexity",PR20005,Riverside Cardiology Associates,Cardiology,2025-02-27,276.45,2207.68,8.0,Rejected,R10,0.0
+CLM10029971,99213,"Office visit, established patient, low complexity",PR20246,Dr. William Jones,Urgent Care,2024-04-09,183.68,2108.82,11.5,Rejected,R06,0.0
+CLM10112873,99213,"Office visit, established patient, low complexity",PR20023,Oakwood Gastroenterology Associates,Gastroenterology,2025-01-31,183.68,2099.2,11.4,Approved,,124.95
+CLM10128734,99213,"Office visit, established patient, low complexity",PR20889,Highland Neurology Associates,Neurology,2025-03-21,183.68,2096.35,11.4,Approved,,110.1
+CLM10149414,71046,"Chest X-ray, 2 views",PR20775,Northgate Imaging,Radiology,2025-06-28,99.84,2003.82,20.1,Rejected,R10,0.0
+CLM10126952,99396,"Preventive visit, established patient, 40-64",PR20832,Dr. Luis Jones,Family Medicine,2025-04-08,373.77,2276.83,6.1,Rejected,R10,0.0
+CLM10105764,99213,"Office visit, established patient, low complexity",PR21047,Highland Gastroenterology Associates,Gastroenterology,2025-01-09,183.68,2086.06,11.4,Rejected,R10,0.0
+CLM10014891,90834,"Psychotherapy, 45 minutes",PR20539,Northgate Behavioral Health Associates,Behavioral Health,2024-02-06,207.72,2096.25,10.1,Approved,,111.0
+CLM10046377,90837,"Psychotherapy, 60 minutes",PR20041,Dr. Ahmed Walker,Behavioral Health,2024-06-11,298.26,2184.53,7.3,Rejected,R10,0.0
+CLM10064641,99213,"Office visit, established patient, low complexity",PR20917,Northgate Gastroenterology Associates,Gastroenterology,2024-09-06,183.68,2069.79,11.3,Approved,,109.25
+CLM10048029,99214,"Office visit, established patient, moderate complexity",PR20618,Lakeview Family Medicine Associates,Family Medicine,2024-06-14,276.45,2161.73,7.8,Rejected,R10,0.0
+CLM10105769,99213,"Office visit, established patient, low complexity",PR21002,Riverside Endocrinology Associates,Endocrinology,2025-01-10,183.68,2066.38,11.2,Approved,,109.6
+CLM10010060,99213,"Office visit, established patient, low complexity",PR20289,Dr. Lisa Ali,Gastroenterology,2024-02-08,183.68,2064.57,11.2,Rejected,R10,0.0
+CLM10067055,99213,"Office visit, established patient, low complexity",PR21018,Dr. John Allen,Gastroenterology,2024-09-19,183.68,2064.08,11.2,Approved,,104.51
+CLM10194744,99214,"Office visit, established patient, moderate complexity",PR20956,Dr. Linda Taylor,Cardiology,2025-12-08,276.45,2150.96,7.8,Pending,,
+CLM10032586,99213,"Office visit, established patient, low complexity",PR20758,Crescent Endocrinology Associates,Endocrinology,2024-04-30,183.68,2054.68,11.2,Rejected,R10,0.0
+CLM10028130,99213,"Office visit, established patient, low complexity",PR20798,Crescent Family Medicine Associates,Family Medicine,2024-04-12,183.68,2052.19,11.2,Rejected,R06,0.0
+CLM10179162,99213,"Office visit, established patient, low complexity",PR21197,Evergreen Endocrinology Associates,Endocrinology,2025-10-09,183.68,2051.84,11.2,Approved,,88.95
+CLM10177233,99214,"Office visit, established patient, moderate complexity",PR20945,Summit Cardiology Associates,Cardiology,2025-10-07,276.45,2136.39,7.7,Rejected,R10,0.0
+CLM10036674,90837,"Psychotherapy, 60 minutes",PR20119,Dr. Laura Ramirez,Behavioral Health,2024-05-06,298.26,2155.32,7.2,Rejected,R10,0.0
+CLM10155262,90834,"Psychotherapy, 45 minutes",PR21068,Dr. Anthony Ramirez,Behavioral Health,2025-07-20,207.72,2057.19,9.9,Approved,,140.43
+CLM10195002,90834,"Psychotherapy, 45 minutes",PR21105,Oakwood Behavioral Health Associates,Behavioral Health,2025-12-08,207.72,2049.24,9.9,Pending,,
+CLM10169261,99213,"Office visit, established patient, low complexity",PR20402,Dr. Carlos Hernandez,Endocrinology,2025-09-09,183.68,2024.02,11.0,Rejected,R10,0.0
+CLM10033585,99203,"Office visit, new patient, low complexity",PR20841,Unity Internal Medicine Associates,Internal Medicine,2024-05-10,259.65,2092.43,8.1,Rejected,R07,0.0
+CLM10108075,99213,"Office visit, established patient, low complexity",PR20920,Dr. Robert Kim,Family Medicine,2025-01-24,183.68,2001.32,10.9,Approved,,110.49
+CLM10008346,90837,"Psychotherapy, 60 minutes",PR21080,Dr. Laura Patel,Behavioral Health,2024-02-04,298.26,2114.41,7.1,Approved,,165.64
+CLM10027619,99213,"Office visit, established patient, low complexity",PR20374,Sunrise Neurology Associates,Neurology,2024-04-11,183.68,1989.02,10.8,Approved,,114.67
+CLM10122046,99213,"Office visit, established patient, low complexity",PR21059,Evergreen Neurology Associates,Neurology,2025-03-11,183.68,1986.39,10.8,Rejected,R06,0.0
+CLM10051450,99213,"Office visit, established patient, low complexity",PR21104,Dr. Daniel Walker,Urgent Care,2024-07-15,183.68,1973.23,10.7,Rejected,R10,0.0
+CLM10071015,99213,"Office visit, established patient, low complexity",PR21169,Dr. Susan Khan,Neurology,2024-09-24,183.68,1958.99,10.7,Approved,,114.37
+CLM10019349,99213,"Office visit, established patient, low complexity",PR20431,Dr. Lisa Thomas,Neurology,2024-03-13,183.68,1955.12,10.6,Rejected,R10,0.0
+CLM10185577,90834,"Psychotherapy, 45 minutes",PR20654,Pinecrest Behavioral Health Associates,Behavioral Health,2025-11-10,207.72,1979.01,9.5,Approved,,129.43
+CLM10197443,99213,"Office visit, established patient, low complexity",PR20769,Northgate Neurology Associates,Neurology,2025-12-17,183.68,1951.33,10.6,Pending,,
+CLM10066973,97110,"Therapeutic exercise, each 15 minutes",PR20086,Cedar Physical Therapy,Physical Therapy,2024-09-14,200.42,1961.95,9.8,Approved,,82.74
+CLM10010291,99213,"Office visit, established patient, low complexity",PR20814,Dr. James Hernandez,Family Medicine,2024-02-07,183.68,1941.0,10.6,Rejected,R10,0.0
+CLM10110879,99213,"Office visit, established patient, low complexity",PR20644,Riverside Endocrinology Associates,Endocrinology,2025-02-15,183.68,1936.19,10.5,Rejected,R10,0.0
+CLM10077015,99203,"Office visit, new patient, low complexity",PR20037,Dr. Robert Wilson,Internal Medicine,2024-10-12,259.65,2006.62,7.7,Rejected,R10,0.0
+CLM10179249,96372,"Therapeutic injection, subcutaneous/IM",PR20899,Riverside Internal Medicine Associates,Internal Medicine,2025-10-15,49.54,1788.19,36.1,Rejected,R10,0.0
+CLM10114469,99213,"Office visit, established patient, low complexity",PR21098,Harbor Gastroenterology Associates,Gastroenterology,2025-02-07,183.68,1916.19,10.4,Rejected,R10,0.0
+CLM10079615,71046,"Chest X-ray, 2 views",PR20760,Harbor Imaging,Radiology,2024-10-24,99.84,1831.06,18.3,Approved,,56.25
+CLM10068336,99213,"Office visit, established patient, low complexity",PR20506,Dr. Elizabeth Kim,Neurology,2024-09-17,183.68,1911.85,10.4,Rejected,R10,0.0
+CLM10163152,97110,"Therapeutic exercise, each 15 minutes",PR21134,Cedar Physical Therapy,Physical Therapy,2025-08-14,200.42,1923.82,9.6,Rejected,R05,0.0
+CLM10033153,99213,"Office visit, established patient, low complexity",PR20769,Northgate Neurology Associates,Neurology,2024-04-22,183.68,1902.01,10.4,Rejected,R10,0.0
+CLM10175901,99213,"Office visit, established patient, low complexity",PR20189,Northgate Internal Medicine Associates,Internal Medicine,2025-10-06,183.68,1896.81,10.3,Rejected,R10,0.0
+CLM10137337,99213,"Office visit, established patient, low complexity",PR21160,Lakeview Internal Medicine Associates,Internal Medicine,2025-04-29,183.68,1896.48,10.3,Approved,,110.29
+CLM10163850,71046,"Chest X-ray, 2 views",PR20732,Lakeview Imaging,Radiology,2025-08-14,99.84,1812.29,18.2,Rejected,R10,0.0
+CLM10095308,71046,"Chest X-ray, 2 views",PR20851,Unity Imaging,Radiology,2024-12-12,99.84,1785.26,17.9,Approved,,58.2
+CLM10096861,71046,"Chest X-ray, 2 views",PR20851,Unity Imaging,Radiology,2024-12-12,99.84,1785.26,17.9,Rejected,R01,0.0
+CLM10133188,99396,"Preventive visit, established patient, 40-64",PR20508,Dr. Patricia Jones,Internal Medicine,2025-04-29,373.77,2052.46,5.5,Rejected,R07,0.0
+CLM10035824,99214,"Office visit, established patient, moderate complexity",PR20399,Bayside Orthopedics Associates,Orthopedics,2024-05-14,276.45,1951.72,7.1,Approved,,128.05
+CLM10179283,97110,"Therapeutic exercise, each 15 minutes",PR20582,Parkside Physical Therapy,Physical Therapy,2025-10-17,200.42,1874.03,9.4,Rejected,R10,0.0
+CLM10181237,99213,"Office visit, established patient, low complexity",PR20505,Dr. Ahmed Thompson,Family Medicine,2025-10-22,183.68,1856.91,10.1,Rejected,R10,0.0
+CLM10041457,99213,"Office visit, established patient, low complexity",PR20069,Dr. Mei Jones,Urgent Care,2024-05-30,183.68,1846.28,10.1,Approved,,95.86
+CLM10188701,99214,"Office visit, established patient, moderate complexity",PR20945,Summit Cardiology Associates,Cardiology,2025-11-17,276.45,1935.45,7.0,Approved,,173.96
+CLM10059287,99203,"Office visit, new patient, low complexity",PR20272,Dr. Kevin Nguyen,Internal Medicine,2024-08-20,259.65,1904.85,7.3,Approved,,155.04
+CLM10196661,99213,"Office visit, established patient, low complexity",PR21053,Dr. Barbara Garcia,Family Medicine,2025-12-08,183.68,1818.0,9.9,Pending,,
+CLM10160997,99213,"Office visit, established patient, low complexity",PR21169,Dr. Susan Khan,Neurology,2025-07-18,183.68,1810.95,9.9,Rejected,R10,0.0
+CLM10051478,99213,"Office visit, established patient, low complexity",PR20077,Dr. James Thompson,Gastroenterology,2024-07-17,183.68,1807.88,9.8,Approved,,123.8
+CLM10097697,90834,"Psychotherapy, 45 minutes",PR20438,Meadow Behavioral Health Associates,Behavioral Health,2024-12-31,207.72,1816.15,8.7,Approved,,85.2
+CLM10028315,99213,"Office visit, established patient, low complexity",PR20526,Dr. Lisa Khan,Urgent Care,2024-04-09,183.68,1765.27,9.6,Approved,,69.41
+CLM10001491,99213,"Office visit, established patient, low complexity",PR20166,Dr. Linda Chen,Internal Medicine,2024-01-02,183.68,1761.61,9.6,Approved,,103.71
+CLM10133941,99214,"Office visit, established patient, moderate complexity",PR20189,Northgate Internal Medicine Associates,Internal Medicine,2025-04-26,276.45,1851.75,6.7,Approved,,164.42
+CLM10193663,90834,"Psychotherapy, 45 minutes",PR20892,Horizon Behavioral Health Associates,Behavioral Health,2025-11-24,207.72,1777.38,8.6,Pending,,
+CLM10038192,99214,"Office visit, established patient, moderate complexity",PR20278,Harbor Family Medicine Associates,Family Medicine,2024-05-23,276.45,1844.96,6.7,Rejected,R05,0.0
+CLM10024274,71046,"Chest X-ray, 2 views",PR20120,Cedar Imaging,Radiology,2024-03-28,99.84,1657.6,16.6,Approved,,48.98
+CLM10170421,99213,"Office visit, established patient, low complexity",PR20621,Parkside Neurology Associates,Neurology,2025-09-17,183.68,1733.13,9.4,Rejected,R10,0.0
+CLM10118278,90834,"Psychotherapy, 45 minutes",PR20250,Dr. Aisha Wilson,Behavioral Health,2025-02-07,207.72,1752.44,8.4,Approved,,130.5
+CLM10005141,99213,"Office visit, established patient, low complexity",PR20057,Bayside Family Medicine Associates,Family Medicine,2024-01-20,183.68,1724.3,9.4,Rejected,R10,0.0
+CLM10089296,99214,"Office visit, established patient, moderate complexity",PR20611,Highland Behavioral Health Associates,Behavioral Health,2024-12-02,276.45,1815.24,6.6,Rejected,R10,0.0
+CLM10173322,97110,"Therapeutic exercise, each 15 minutes",PR20335,Evergreen Physical Therapy,Physical Therapy,2025-09-19,200.42,1736.04,8.7,Rejected,R03,0.0
+CLM10096760,99214,"Office visit, established patient, moderate complexity",PR20297,Dr. Omar Robinson,Internal Medicine,2024-12-31,276.45,1807.1,6.5,Rejected,R05,0.0
+CLM10022758,99214,"Office visit, established patient, moderate complexity",PR20374,Sunrise Neurology Associates,Neurology,2024-03-29,276.45,1797.46,6.5,Rejected,R10,0.0
+CLM10085788,99213,"Office visit, established patient, low complexity",PR20069,Dr. Mei Jones,Urgent Care,2024-11-20,183.68,1703.71,9.3,Rejected,R07,0.0
+CLM10061048,90834,"Psychotherapy, 45 minutes",PR20551,Lakeview Behavioral Health Associates,Behavioral Health,2024-08-28,207.72,1727.74,8.3,Rejected,R05,0.0
+CLM10078905,99213,"Office visit, established patient, low complexity",PR21110,Dr. John Taylor,Urgent Care,2024-11-02,183.68,1686.2,9.2,Approved,,110.89
+CLM10072958,99213,"Office visit, established patient, low complexity",PR21018,Dr. John Allen,Gastroenterology,2024-09-26,183.68,1679.9,9.1,Approved,,115.46
+CLM10126543,99213,"Office visit, established patient, low complexity",PR20272,Dr. Kevin Nguyen,Internal Medicine,2025-04-01,183.68,1678.75,9.1,Approved,,120.35
+CLM10050905,99213,"Office visit, established patient, low complexity",PR20302,Crescent Neurology Associates,Neurology,2024-07-08,183.68,1676.97,9.1,Rejected,R10,0.0
+CLM10179537,93000,"Electrocardiogram, complete",PR21050,Dr. Nancy Wilson,Cardiology,2025-10-16,51.32,1540.52,30.0,Rejected,R10,0.0
+CLM10015497,93000,"Electrocardiogram, complete",PR20286,Dr. Barbara Young,Family Medicine,2024-02-16,51.32,1538.31,30.0,Rejected,R10,0.0
+CLM10044165,99213,"Office visit, established patient, low complexity",PR20681,Dr. Jennifer Moore,Urgent Care,2024-06-07,183.68,1659.74,9.0,Rejected,R05,0.0
+CLM10109637,99213,"Office visit, established patient, low complexity",PR21166,Dr. Jennifer Kim,Family Medicine,2025-01-27,183.68,1657.87,9.0,Rejected,R10,0.0
+CLM10140633,99213,"Office visit, established patient, low complexity",PR20649,Pinecrest Family Medicine Associates,Family Medicine,2025-05-19,183.68,1655.93,9.0,Rejected,R07,0.0
+CLM10071649,99213,"Office visit, established patient, low complexity",PR20057,Bayside Family Medicine Associates,Family Medicine,2024-10-02,183.68,1651.57,9.0,Approved,,108.64
+CLM10193378,96372,"Therapeutic injection, subcutaneous/IM",PR20286,Dr. Barbara Young,Family Medicine,2025-11-25,49.54,1516.59,30.6,Rejected,R10,0.0
+CLM10045249,90834,"Psychotherapy, 45 minutes",PR20438,Meadow Behavioral Health Associates,Behavioral Health,2024-06-19,207.72,1674.57,8.1,Rejected,R10,0.0
+CLM10086500,71046,"Chest X-ray, 2 views",PR20760,Harbor Imaging,Radiology,2024-11-30,99.84,1561.95,15.6,Approved,,52.79
+CLM10190477,99213,"Office visit, established patient, low complexity",PR20506,Dr. Elizabeth Kim,Neurology,2025-11-21,183.68,1630.63,8.9,Rejected,R07,0.0
+CLM10050727,90837,"Psychotherapy, 60 minutes",PR20119,Dr. Laura Ramirez,Behavioral Health,2024-07-12,298.26,1744.74,5.8,Rejected,R10,0.0
+CLM10107444,90837,"Psychotherapy, 60 minutes",PR20488,Pinecrest Behavioral Health Associates,Behavioral Health,2025-01-23,298.26,1743.57,5.8,Rejected,R10,0.0
+CLM10054607,99213,"Office visit, established patient, low complexity",PR21018,Dr. John Allen,Gastroenterology,2024-07-24,183.68,1628.52,8.9,Rejected,R10,0.0
+CLM10084218,99213,"Office visit, established patient, low complexity",PR21100,Dr. Patricia Smith,Urgent Care,2024-10-29,183.68,1609.14,8.8,Approved,,119.34
+CLM10120730,96372,"Therapeutic injection, subcutaneous/IM",PR20286,Dr. Barbara Young,Family Medicine,2025-02-18,49.54,1465.84,29.6,Approved,,30.85
+CLM10131255,96372,"Therapeutic injection, subcutaneous/IM",PR20286,Dr. Barbara Young,Family Medicine,2025-02-18,49.54,1465.84,29.6,Rejected,R01,0.0
+CLM10182778,99213,"Office visit, established patient, low complexity",PR21136,Dr. Elizabeth Young,Urgent Care,2025-11-01,183.68,1589.17,8.7,Approved,,117.38
+CLM10161209,99213,"Office visit, established patient, low complexity",PR20530,Highland Endocrinology Associates,Endocrinology,2025-08-13,183.68,1579.85,8.6,Approved,,106.94
+CLM10055853,99213,"Office visit, established patient, low complexity",PR20763,Dr. Sarah Hernandez,Neurology,2024-08-01,183.68,1578.43,8.6,Approved,,106.55
+CLM10121607,96372,"Therapeutic injection, subcutaneous/IM",PR20974,Valley Orthopedics Associates,Orthopedics,2025-03-20,49.54,1438.45,29.0,Rejected,R05,0.0
+CLM10147621,90834,"Psychotherapy, 45 minutes",PR20785,Pinecrest Behavioral Health Associates,Behavioral Health,2025-06-04,207.72,1591.55,7.7,Approved,,120.57
+CLM10139573,99213,"Office visit, established patient, low complexity",PR21171,Meadow Family Medicine Associates,Family Medicine,2025-05-11,183.68,1566.69,8.5,Rejected,R06,0.0
+CLM10145947,99213,"Office visit, established patient, low complexity",PR20552,Crescent Neurology Associates,Neurology,2025-05-20,183.68,1562.19,8.5,Rejected,R10,0.0
+CLM10182692,99213,"Office visit, established patient, low complexity",PR20480,Dr. Hassan Sanchez,Internal Medicine,2025-10-28,183.68,1558.95,8.5,Approved,,109.93
+CLM10098236,99213,"Office visit, established patient, low complexity",PR20458,Dr. Barbara Ramirez,Gastroenterology,2024-12-31,183.68,1556.26,8.5,Approved,,111.92
+CLM10119167,96372,"Therapeutic injection, subcutaneous/IM",PR20752,Dr. Hassan Ramirez,Family Medicine,2025-03-12,49.54,1421.99,28.7,Approved,,33.68
+CLM10164723,99214,"Office visit, established patient, moderate complexity",PR21111,Dr. Hassan Walker,Internal Medicine,2025-08-22,276.45,1646.99,6.0,Approved,,173.32
+CLM10160718,99213,"Office visit, established patient, low complexity",PR20498,Riverside Urgent Care Associates,Urgent Care,2025-07-19,183.68,1553.15,8.5,Approved,,119.25
+CLM10156530,99213,"Office visit, established patient, low complexity",PR21120,Northgate Neurology Associates,Neurology,2025-07-22,183.68,1551.3,8.4,Approved,,111.6
+CLM10130195,99213,"Office visit, established patient, low complexity",PR20110,Bayside Family Medicine Associates,Family Medicine,2025-04-04,183.68,1549.67,8.4,Rejected,R03,0.0
+CLM10123949,99213,"Office visit, established patient, low complexity",PR20761,Harbor Urgent Care Associates,Urgent Care,2025-03-24,183.68,1548.56,8.4,Rejected,R10,0.0
+CLM10016982,99213,"Office visit, established patient, low complexity",PR20835,Dr. Mary Clark,Internal Medicine,2024-02-24,183.68,1547.43,8.4,Approved,,101.65
+CLM10022592,99213,"Office visit, established patient, low complexity",PR20917,Northgate Gastroenterology Associates,Gastroenterology,2024-03-18,183.68,1544.93,8.4,Rejected,R10,0.0
+CLM10079655,99214,"Office visit, established patient, moderate complexity",PR20994,Dr. Michael Moore,Orthopedics,2024-10-28,276.45,1636.04,5.9,Approved,,166.45
+CLM10043742,99214,"Office visit, established patient, moderate complexity",PR20843,Dr. David Clark,Cardiology,2024-06-13,276.45,1624.19,5.9,Approved,,173.45
+CLM10198689,99213,"Office visit, established patient, low complexity",PR21035,Dr. Thomas Lopez,Neurology,2025-12-20,183.68,1526.37,8.3,Pending,,
+CLM10102030,99213,"Office visit, established patient, low complexity",PR20839,Dr. Mei Lopez,Internal Medicine,2025-01-16,183.68,1521.76,8.3,Approved,,108.44
+CLM10037178,99213,"Office visit, established patient, low complexity",PR21172,Crescent Internal Medicine Associates,Internal Medicine,2024-05-13,183.68,1518.08,8.3,Approved,,114.33
+CLM10095399,99213,"Office visit, established patient, low complexity",PR20727,Dr. Mary Singh,Urgent Care,2024-12-23,183.68,1506.56,8.2,Rejected,R10,0.0
+CLM10033911,99213,"Office visit, established patient, low complexity",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2024-04-28,183.68,1504.85,8.2,Approved,,107.75
+CLM10084119,93000,"Electrocardiogram, complete",PR20286,Dr. Barbara Young,Family Medicine,2024-11-17,51.32,1366.3,26.6,Approved,,26.72
+CLM10148314,99214,"Office visit, established patient, moderate complexity",PR20677,Bayside Behavioral Health Associates,Behavioral Health,2025-06-23,276.45,1589.47,5.7,Rejected,R10,0.0
+CLM10112328,99213,"Office visit, established patient, low complexity",PR21056,Dr. Maria Taylor,Family Medicine,2025-02-11,183.68,1484.83,8.1,Rejected,R07,0.0
+CLM10067575,99213,"Office visit, established patient, low complexity",PR20087,Oakwood Internal Medicine Associates,Internal Medicine,2024-09-23,183.68,1483.6,8.1,Rejected,R10,0.0
+CLM10002342,99213,"Office visit, established patient, low complexity",PR21143,Dr. Barbara Robinson,Urgent Care,2024-01-01,183.68,1481.11,8.1,Rejected,R10,0.0
+CLM10139960,99213,"Office visit, established patient, low complexity",PR20917,Northgate Gastroenterology Associates,Gastroenterology,2025-05-22,183.68,1476.45,8.0,Approved,,117.23
+CLM10164339,99214,"Office visit, established patient, moderate complexity",PR21105,Oakwood Behavioral Health Associates,Behavioral Health,2025-07-28,276.45,1565.81,5.7,Rejected,R06,0.0
+CLM10087922,99213,"Office visit, established patient, low complexity",PR20621,Parkside Neurology Associates,Neurology,2024-12-03,183.68,1471.33,8.0,Rejected,R10,0.0
+CLM10010802,99213,"Office visit, established patient, low complexity",PR21003,Dr. Ahmed Young,Endocrinology,2024-02-06,183.68,1462.08,8.0,Rejected,R10,0.0
+CLM10165855,71046,"Chest X-ray, 2 views",PR20683,Riverside Imaging,Radiology,2025-08-04,99.84,1376.52,13.8,Approved,,47.16
+CLM10011404,97110,"Therapeutic exercise, each 15 minutes",PR20591,Highland Physical Therapy,Physical Therapy,2024-02-08,200.42,1469.21,7.3,Approved,,151.32
+CLM10121873,99213,"Office visit, established patient, low complexity",PR20026,Unity Urgent Care Associates,Urgent Care,2025-03-19,183.68,1440.34,7.8,Rejected,R10,0.0
+CLM10105358,71046,"Chest X-ray, 2 views",PR20851,Unity Imaging,Radiology,2025-01-29,99.84,1355.13,13.6,Approved,,58.11
+CLM10047708,99213,"Office visit, established patient, low complexity",PR20063,Dr. Mary Johnson,Family Medicine,2024-07-03,183.68,1436.61,7.8,Rejected,R10,0.0
+CLM10166173,99213,"Office visit, established patient, low complexity",PR20448,Dr. Elizabeth Martinez,Family Medicine,2025-08-19,183.68,1435.15,7.8,Rejected,R05,0.0
+CLM10115375,99213,"Office visit, established patient, low complexity",PR20391,Pinecrest Internal Medicine Associates,Internal Medicine,2025-02-28,183.68,1434.65,7.8,Approved,,113.06
+CLM10075402,99213,"Office visit, established patient, low complexity",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2024-10-18,183.68,1433.63,7.8,Approved,,115.28
+CLM10184813,99213,"Office visit, established patient, low complexity",PR20947,Cedar Neurology Associates,Neurology,2025-10-28,183.68,1430.67,7.8,Pending,,
+CLM10038294,99213,"Office visit, established patient, low complexity",PR21158,Dr. William Allen,Urgent Care,2024-05-06,183.68,1418.87,7.7,Approved,,97.33
+CLM10041914,99213,"Office visit, established patient, low complexity",PR20674,Harbor Internal Medicine Associates,Internal Medicine,2024-05-28,183.68,1411.43,7.7,Approved,,105.77
+CLM10161225,99214,"Office visit, established patient, moderate complexity",PR20730,Evergreen Endocrinology Associates,Endocrinology,2025-08-14,276.45,1503.15,5.4,Rejected,R10,0.0
+CLM10161828,99213,"Office visit, established patient, low complexity",PR20077,Dr. James Thompson,Gastroenterology,2025-08-05,183.68,1405.14,7.6,Rejected,R10,0.0
+CLM10018406,99213,"Office visit, established patient, low complexity",PR20735,Dr. William Jackson,Urgent Care,2024-03-04,183.68,1405.01,7.6,Rejected,R10,0.0
+CLM10039432,99214,"Office visit, established patient, moderate complexity",PR20077,Dr. James Thompson,Gastroenterology,2024-05-26,276.45,1495.65,5.4,Approved,,160.9
+CLM10093962,99213,"Office visit, established patient, low complexity",PR20482,Dr. Anthony Smith,Neurology,2024-11-06,183.68,1381.8,7.5,Rejected,R01,0.0
+CLM10146166,90834,"Psychotherapy, 45 minutes",PR20119,Dr. Laura Ramirez,Behavioral Health,2025-06-16,207.72,1403.82,6.8,Approved,,130.62
+CLM10194453,99213,"Office visit, established patient, low complexity",PR20518,Bayside Urgent Care Associates,Urgent Care,2025-12-08,183.68,1371.14,7.5,Pending,,
+CLM10096371,99213,"Office visit, established patient, low complexity",PR20183,Dr. Robert Hernandez,Endocrinology,2024-12-26,183.68,1359.73,7.4,Rejected,R10,0.0
+CLM10064436,99213,"Office visit, established patient, low complexity",PR20917,Northgate Gastroenterology Associates,Gastroenterology,2024-09-10,183.68,1359.06,7.4,Approved,,106.58
+CLM10086806,99214,"Office visit, established patient, moderate complexity",PR20282,Dr. James Ramirez,Behavioral Health,2024-11-30,276.45,1451.25,5.2,Approved,,157.95
+CLM10022753,99214,"Office visit, established patient, moderate complexity",PR20534,Evergreen Family Medicine Associates,Family Medicine,2024-03-28,276.45,1445.01,5.2,Approved,,161.56
+CLM10083429,99213,"Office visit, established patient, low complexity",PR20482,Dr. Anthony Smith,Neurology,2024-11-06,183.68,1351.81,7.4,Rejected,R10,0.0
+CLM10167850,99213,"Office visit, established patient, low complexity",PR21120,Northgate Neurology Associates,Neurology,2025-09-01,183.68,1351.44,7.4,Rejected,R10,0.0
+CLM10018667,99214,"Office visit, established patient, moderate complexity",PR20523,Dr. Carlos Gonzalez,Family Medicine,2024-03-05,276.45,1437.41,5.2,Approved,,161.88
+CLM10106714,99213,"Office visit, established patient, low complexity",PR20522,Dr. John Lopez,Endocrinology,2025-02-03,183.68,1344.28,7.3,Approved,,119.59
+CLM10043813,71046,"Chest X-ray, 2 views",PR21164,Evergreen Imaging,Radiology,2024-06-18,99.84,1257.48,12.6,Rejected,R07,0.0
+CLM10104708,99213,"Office visit, established patient, low complexity",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2025-01-02,183.68,1338.61,7.3,Rejected,R10,0.0
+CLM10062500,71046,"Chest X-ray, 2 views",PR20642,Valley Imaging,Radiology,2024-08-20,99.84,1253.6,12.6,Rejected,R10,0.0
+CLM10138091,99214,"Office visit, established patient, moderate complexity",PR20473,Dr. Maria Martinez,Cardiology,2025-05-16,276.45,1425.73,5.2,Approved,,165.87
+CLM10063541,99214,"Office visit, established patient, moderate complexity",PR21171,Meadow Family Medicine Associates,Family Medicine,2024-08-30,276.45,1420.61,5.1,Approved,,155.11
+CLM10100733,93000,"Electrocardiogram, complete",PR20590,Horizon Cardiology Associates,Cardiology,2024-12-23,51.32,1195.26,23.3,Approved,,30.65
+CLM10136852,99213,"Office visit, established patient, low complexity",PR20583,Dr. Wei Sanchez,Internal Medicine,2025-05-01,183.68,1323.14,7.2,Approved,,120.61
+CLM10074859,99213,"Office visit, established patient, low complexity",PR20833,Pinecrest Family Medicine Associates,Family Medicine,2024-10-17,183.68,1321.69,7.2,Rejected,R10,0.0
+CLM10116794,97110,"Therapeutic exercise, each 15 minutes",PR20971,Unity Physical Therapy,Physical Therapy,2025-02-27,200.42,1334.11,6.7,Rejected,R10,0.0
+CLM10020241,93000,"Electrocardiogram, complete",PR20286,Dr. Barbara Young,Family Medicine,2024-03-18,51.32,1178.83,23.0,Rejected,R10,0.0
+CLM10151019,99213,"Office visit, established patient, low complexity",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2025-06-13,183.68,1309.72,7.1,Rejected,R10,0.0
+CLM10090187,99213,"Office visit, established patient, low complexity",PR20459,Riverside Neurology Associates,Neurology,2024-12-04,183.68,1308.92,7.1,Rejected,R10,0.0
+CLM10047522,99213,"Office visit, established patient, low complexity",PR20162,Lakeview Urgent Care Associates,Urgent Care,2024-06-05,183.68,1305.34,7.1,Rejected,R10,0.0
+CLM10150527,99213,"Office visit, established patient, low complexity",PR20519,Dr. Hassan Thomas,Endocrinology,2025-06-20,183.68,1304.82,7.1,Rejected,R10,0.0
+CLM10072163,99213,"Office visit, established patient, low complexity",PR20078,Dr. Robert Martinez,Endocrinology,2024-10-01,183.68,1298.68,7.1,Rejected,R07,0.0
+CLM10178226,99203,"Office visit, new patient, low complexity",PR20498,Riverside Urgent Care Associates,Urgent Care,2025-09-30,259.65,1366.71,5.3,Rejected,R10,0.0
+CLM10065931,93000,"Electrocardiogram, complete",PR20584,Cedar Internal Medicine Associates,Internal Medicine,2024-09-11,51.32,1158.26,22.6,Rejected,R10,0.0
+CLM10192821,90834,"Psychotherapy, 45 minutes",PR20675,Unity Behavioral Health Associates,Behavioral Health,2025-11-25,207.72,1313.78,6.3,Pending,,
+CLM10191627,90834,"Psychotherapy, 45 minutes",PR20244,Lakeview Behavioral Health Associates,Behavioral Health,2025-11-23,207.72,1309.33,6.3,Rejected,R10,0.0
+CLM10131849,71046,"Chest X-ray, 2 views",PR20732,Lakeview Imaging,Radiology,2025-04-09,99.84,1199.22,12.0,Approved,,57.84
+CLM10123701,93000,"Electrocardiogram, complete",PR21050,Dr. Nancy Wilson,Cardiology,2025-03-26,51.32,1138.69,22.2,Approved,,31.72
+CLM10129305,93000,"Electrocardiogram, complete",PR21050,Dr. Nancy Wilson,Cardiology,2025-03-26,51.32,1138.69,22.2,Rejected,R01,0.0
+CLM10061141,99213,"Office visit, established patient, low complexity",PR20421,Summit Family Medicine Associates,Family Medicine,2024-08-13,183.68,1270.75,6.9,Rejected,R05,0.0
+CLM10017610,99203,"Office visit, new patient, low complexity",PR21019,Lakeview Family Medicine Associates,Family Medicine,2024-03-01,259.65,1335.88,5.1,Approved,,141.52
+CLM10090369,99203,"Office visit, new patient, low complexity",PR20036,Dr. Elizabeth Johnson,Family Medicine,2024-04-01,259.65,1334.18,5.1,Rejected,R08,0.0
+CLM10176321,96372,"Therapeutic injection, subcutaneous/IM",PR20062,Riverside Orthopedics Associates,Orthopedics,2025-09-29,49.54,1120.71,22.6,Rejected,R06,0.0
+CLM10191024,99213,"Office visit, established patient, low complexity",PR20526,Dr. Lisa Khan,Urgent Care,2025-11-19,183.68,1248.63,6.8,Rejected,R05,0.0
+CLM10088623,99214,"Office visit, established patient, moderate complexity",PR20023,Oakwood Gastroenterology Associates,Gastroenterology,2024-11-17,276.45,1319.08,4.8,Rejected,R10,0.0
+CLM10050291,93000,"Electrocardiogram, complete",PR21050,Dr. Nancy Wilson,Cardiology,2024-07-10,51.32,1088.81,21.2,Approved,,29.99
+CLM10063058,71046,"Chest X-ray, 2 views",PR21187,Unity Imaging,Radiology,2024-08-29,99.84,1130.33,11.3,Rejected,R10,0.0
+CLM10003296,97110,"Therapeutic exercise, each 15 minutes",PR20475,Meadow Physical Therapy,Physical Therapy,2024-01-18,200.42,1225.97,6.1,Approved,,83.68
+CLM10107453,90837,"Psychotherapy, 60 minutes",PR20119,Dr. Laura Ramirez,Behavioral Health,2025-01-23,298.26,1322.29,4.4,Approved,,182.21
+CLM10132462,99214,"Office visit, established patient, moderate complexity",PR21169,Dr. Susan Khan,Neurology,2025-04-16,276.45,1287.52,4.7,Rejected,R10,0.0
+CLM10063945,71046,"Chest X-ray, 2 views",PR20732,Lakeview Imaging,Radiology,2024-09-12,99.84,1106.44,11.1,Approved,,49.76
+CLM10152619,97110,"Therapeutic exercise, each 15 minutes",PR20959,Parkside Physical Therapy,Physical Therapy,2025-06-28,200.42,1198.58,6.0,Rejected,R05,0.0
+CLM10072479,99213,"Office visit, established patient, low complexity",PR20982,Dr. Nancy Smith,Internal Medicine,2024-10-04,183.68,1178.77,6.4,Rejected,R05,0.0
+CLM10129701,99213,"Office visit, established patient, low complexity",PR20023,Oakwood Gastroenterology Associates,Gastroenterology,2025-04-09,183.68,1178.51,6.4,Rejected,R10,0.0
+CLM10177839,99213,"Office visit, established patient, low complexity",PR20354,Dr. Luis Thompson,Internal Medicine,2025-10-11,183.68,1175.74,6.4,Approved,,87.73
+CLM10030479,97110,"Therapeutic exercise, each 15 minutes",PR20415,Oakwood Physical Therapy,Physical Therapy,2024-04-12,200.42,1179.44,5.9,Rejected,R10,0.0
+CLM10104009,71046,"Chest X-ray, 2 views",PR20788,Meadow Imaging,Radiology,2025-01-22,99.84,1067.99,10.7,Approved,,64.32
+CLM10184815,99213,"Office visit, established patient, low complexity",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2025-10-28,183.68,1150.73,6.3,Pending,,
+CLM10029390,99213,"Office visit, established patient, low complexity",PR20555,Crescent Urgent Care Associates,Urgent Care,2024-03-08,183.68,1145.32,6.2,Rejected,R10,0.0
+CLM10016611,71046,"Chest X-ray, 2 views",PR20897,Evergreen Imaging,Radiology,2024-02-05,99.84,1054.87,10.6,Approved,,58.28
+CLM10111244,99214,"Office visit, established patient, moderate complexity",PR20646,Meadow Cardiology Associates,Cardiology,2025-01-20,276.45,1229.46,4.4,Rejected,R10,0.0
+CLM10140379,99214,"Office visit, established patient, moderate complexity",PR20031,Dr. Thomas Rodriguez,Nephrology,2025-05-16,276.45,1208.89,4.4,Rejected,R10,0.0
+CLM10106960,99213,"Office visit, established patient, low complexity",PR20077,Dr. James Thompson,Gastroenterology,2025-01-29,183.68,1110.28,6.0,Rejected,R10,0.0
+CLM10185864,99213,"Office visit, established patient, low complexity",PR20765,Dr. Mary Johnson,Endocrinology,2025-11-11,183.68,1107.39,6.0,Approved,,114.24
+CLM10008976,99213,"Office visit, established patient, low complexity",PR20627,Parkside Gastroenterology Associates,Gastroenterology,2024-02-09,183.68,1099.85,6.0,Rejected,R10,0.0
+CLM10101711,93000,"Electrocardiogram, complete",PR21050,Dr. Nancy Wilson,Cardiology,2025-01-16,51.32,965.48,18.8,Approved,,26.05
+CLM10064798,99213,"Office visit, established patient, low complexity",PR20583,Dr. Wei Sanchez,Internal Medicine,2024-08-23,183.68,1095.75,6.0,Rejected,R10,0.0
+CLM10007598,99214,"Office visit, established patient, moderate complexity",PR20975,Dr. Jessica Anderson,Neurology,2024-01-17,276.45,1187.35,4.3,Approved,,161.67
+CLM10029442,99213,"Office visit, established patient, low complexity",PR20122,Dr. Thomas Ramirez,Family Medicine,2024-04-08,183.68,1093.35,6.0,Rejected,R05,0.0
+CLM10108868,99213,"Office visit, established patient, low complexity",PR21011,Dr. Maria Allen,Internal Medicine,2025-02-05,183.68,1091.33,5.9,Rejected,R10,0.0
+CLM10190705,71046,"Chest X-ray, 2 views",PR20131,Horizon Imaging,Radiology,2025-11-17,99.84,994.53,10.0,Rejected,R07,0.0
+CLM10116443,96372,"Therapeutic injection, subcutaneous/IM",PR20903,Valley Internal Medicine Associates,Internal Medicine,2025-02-25,49.54,938.65,18.9,Approved,,20.47
+CLM10043347,99213,"Office visit, established patient, low complexity",PR20552,Crescent Neurology Associates,Neurology,2024-06-19,183.68,1061.32,5.8,Approved,,103.23
+CLM10192095,93000,"Electrocardiogram, complete",PR20590,Horizon Cardiology Associates,Cardiology,2025-12-03,51.32,924.17,18.0,Rejected,R10,0.0
+CLM10132879,96372,"Therapeutic injection, subcutaneous/IM",PR20504,Dr. Elizabeth Thomas,Family Medicine,2025-04-26,49.54,915.2,18.5,Rejected,R10,0.0
+CLM10045229,97110,"Therapeutic exercise, each 15 minutes",PR20331,Evergreen Physical Therapy,Physical Therapy,2024-06-18,200.42,1056.93,5.3,Rejected,R10,0.0
+CLM10183937,96372,"Therapeutic injection, subcutaneous/IM",PR20903,Valley Internal Medicine Associates,Internal Medicine,2025-10-24,49.54,898.5,18.1,Rejected,R05,0.0
+CLM10197666,99213,"Office visit, established patient, low complexity",PR20045,Parkside Gastroenterology Associates,Gastroenterology,2025-12-15,183.68,1028.81,5.6,Pending,,
+CLM10011846,99203,"Office visit, new patient, low complexity",PR21171,Meadow Family Medicine Associates,Family Medicine,2024-01-26,259.65,1102.35,4.2,Approved,,145.34
+CLM10085010,93000,"Electrocardiogram, complete",PR20223,Valley Family Medicine Associates,Family Medicine,2024-11-25,51.32,890.72,17.4,Approved,,30.65
+CLM10080960,99214,"Office visit, established patient, moderate complexity",PR20604,Dr. Priya Lewis,Nephrology,2024-11-08,276.45,1114.81,4.0,Approved,,163.7
+CLM10099393,99213,"Office visit, established patient, low complexity",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2024-12-24,183.68,1020.23,5.6,Rejected,R10,0.0
+CLM10031953,71046,"Chest X-ray, 2 views",PR20367,Harbor Imaging,Radiology,2024-04-18,99.84,929.34,9.3,Approved,,57.21
+CLM10100725,99213,"Office visit, established patient, low complexity",PR21066,Dr. Matthew Gonzalez,Family Medicine,2024-12-15,183.68,1012.68,5.5,Approved,,88.92
+CLM10005717,90834,"Psychotherapy, 45 minutes",PR20705,Dr. Hassan Williams,Behavioral Health,2024-01-24,207.72,1022.01,4.9,Rejected,R05,0.0
+CLM10150603,99213,"Office visit, established patient, low complexity",PR20526,Dr. Lisa Khan,Urgent Care,2025-06-27,183.68,996.46,5.4,Approved,,80.63
+CLM10172839,99213,"Office visit, established patient, low complexity",PR20246,Dr. William Jones,Urgent Care,2025-09-24,183.68,996.45,5.4,Rejected,R07,0.0
+CLM10146446,96372,"Therapeutic injection, subcutaneous/IM",PR20744,Dr. Robert Nguyen,Orthopedics,2024-08-26,49.54,852.65,17.2,Rejected,R08,0.0
+CLM10115510,99213,"Office visit, established patient, low complexity",PR21169,Dr. Susan Khan,Neurology,2025-02-19,183.68,979.65,5.3,Rejected,R10,0.0
+CLM10054074,93000,"Electrocardiogram, complete",PR21050,Dr. Nancy Wilson,Cardiology,2024-06-29,51.32,846.67,16.5,Rejected,R06,0.0
+CLM10054706,93000,"Electrocardiogram, complete",PR20752,Dr. Hassan Ramirez,Family Medicine,2024-08-01,51.32,845.52,16.5,Approved,,28.58
+CLM10014140,93000,"Electrocardiogram, complete",PR20798,Crescent Family Medicine Associates,Family Medicine,2024-02-22,51.32,838.88,16.3,Approved,,21.19
+CLM10007263,90834,"Psychotherapy, 45 minutes",PR20844,Dr. Lisa Ramirez,Behavioral Health,2024-02-02,207.72,989.73,4.8,Approved,,116.24
+CLM10132119,99214,"Office visit, established patient, moderate complexity",PR20552,Crescent Neurology Associates,Neurology,2025-04-05,276.45,1047.42,3.8,Approved,,181.74
+CLM10040196,93000,"Electrocardiogram, complete",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2024-05-27,51.32,820.73,16.0,Rejected,R10,0.0
+CLM10041431,93000,"Electrocardiogram, complete",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2024-05-27,51.32,820.73,16.0,Rejected,R01,0.0
+CLM10052959,71046,"Chest X-ray, 2 views",PR20897,Evergreen Imaging,Radiology,2024-07-11,99.84,863.19,8.6,Rejected,R10,0.0
+CLM10033266,99213,"Office visit, established patient, low complexity",PR20108,Crescent Family Medicine Associates,Family Medicine,2024-05-03,183.68,942.59,5.1,Rejected,R10,0.0
+CLM10176681,96372,"Therapeutic injection, subcutaneous/IM",PR21020,Lakeview Family Medicine Associates,Family Medicine,2025-10-03,49.54,801.55,16.2,Rejected,R10,0.0
+CLM10012471,99213,"Office visit, established patient, low complexity",PR20111,Dr. Laura Lee,Family Medicine,2024-02-04,183.68,932.4,5.1,Approved,,107.75
+CLM10172978,96372,"Therapeutic injection, subcutaneous/IM",PR20399,Bayside Orthopedics Associates,Orthopedics,2025-09-12,49.54,797.4,16.1,Approved,,22.14
+CLM10056695,71046,"Chest X-ray, 2 views",PR20428,Sunrise Imaging,Radiology,2024-08-13,99.84,847.0,8.5,Rejected,R10,0.0
+CLM10002722,96372,"Therapeutic injection, subcutaneous/IM",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-01-15,49.54,789.47,15.9,Rejected,R10,0.0
+CLM10003949,71046,"Chest X-ray, 2 views",PR20215,Meadow Imaging,Radiology,2024-01-11,99.84,838.3,8.4,Approved,,39.76
+CLM10006304,93000,"Electrocardiogram, complete",PR20237,Dr. Aisha Walker,Cardiology,2024-01-26,51.32,789.64,15.4,Approved,,28.63
+CLM10038841,97110,"Therapeutic exercise, each 15 minutes",PR20991,Horizon Physical Therapy,Physical Therapy,2024-05-13,200.42,937.73,4.7,Rejected,R10,0.0
+CLM10005761,93000,"Electrocardiogram, complete",PR20933,Evergreen Internal Medicine Associates,Internal Medicine,2024-01-26,51.32,785.45,15.3,Approved,,25.2
+CLM10085173,96372,"Therapeutic injection, subcutaneous/IM",PR20583,Dr. Wei Sanchez,Internal Medicine,2024-11-16,49.54,779.54,15.7,Rejected,R10,0.0
+CLM10130400,71046,"Chest X-ray, 2 views",PR21010,Sunrise Imaging,Radiology,2025-04-19,99.84,821.85,8.2,Rejected,R10,0.0
+CLM10046651,90834,"Psychotherapy, 45 minutes",PR20611,Highland Behavioral Health Associates,Behavioral Health,2024-06-17,207.72,917.58,4.4,Approved,,123.27
+CLM10055915,90834,"Psychotherapy, 45 minutes",PR20565,Dr. Richard Lopez,Behavioral Health,2024-08-06,207.72,917.07,4.4,Rejected,R04,0.0
+CLM10008864,96372,"Therapeutic injection, subcutaneous/IM",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-02-03,49.54,754.87,15.2,Approved,,21.54
+CLM10039222,99213,"Office visit, established patient, low complexity",PR20272,Dr. Kevin Nguyen,Internal Medicine,2024-05-27,183.68,874.28,4.8,Approved,,109.15
+CLM10043127,99213,"Office visit, established patient, low complexity",PR20378,Unity Urgent Care Associates,Urgent Care,2024-05-29,183.68,869.84,4.7,Approved,,111.72
+CLM10142798,93000,"Electrocardiogram, complete",PR20264,Dr. James Patel,Family Medicine,2025-05-25,51.32,725.48,14.1,Rejected,R06,0.0
+CLM10092844,90834,"Psychotherapy, 45 minutes",PR20705,Dr. Hassan Williams,Behavioral Health,2024-12-03,207.72,880.04,4.2,Approved,,90.25
+CLM10128865,96372,"Therapeutic injection, subcutaneous/IM",PR20359,Dr. Lisa White,Orthopedics,2025-04-09,49.54,718.11,14.5,Rejected,R07,0.0
+CLM10054995,99213,"Office visit, established patient, low complexity",PR20304,Dr. Mark Walker,Internal Medicine,2024-07-04,183.68,850.62,4.6,Rejected,R10,0.0
+CLM10044247,96372,"Therapeutic injection, subcutaneous/IM",PR20903,Valley Internal Medicine Associates,Internal Medicine,2024-06-14,49.54,716.07,14.5,Rejected,R10,0.0
+CLM10173279,99213,"Office visit, established patient, low complexity",PR20986,Cedar Gastroenterology Associates,Gastroenterology,2025-09-16,183.68,841.44,4.6,Rejected,R10,0.0
+CLM10016443,99213,"Office visit, established patient, low complexity",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2024-02-26,183.68,836.75,4.6,Rejected,R10,0.0
+CLM10109851,71046,"Chest X-ray, 2 views",PR20355,Pinecrest Imaging,Radiology,2025-02-10,99.84,742.17,7.4,Rejected,R10,0.0
+CLM10175726,80053,Comprehensive metabolic panel,PR20596,Cedar Diagnostics Lab,Laboratory,2025-09-23,38.42,678.46,17.7,Rejected,R10,0.0
+CLM10093798,93000,"Electrocardiogram, complete",PR20584,Cedar Internal Medicine Associates,Internal Medicine,2024-12-16,51.32,688.13,13.4,Approved,,30.69
+CLM10137862,93000,"Electrocardiogram, complete",PR20857,Dr. Anthony Chen,Internal Medicine,2025-04-23,51.32,680.04,13.3,Rejected,R10,0.0
+CLM10051163,99213,"Office visit, established patient, low complexity",PR21169,Dr. Susan Khan,Neurology,2024-07-10,183.68,812.32,4.4,Rejected,R10,0.0
+CLM10059314,90471,Immunization administration,PR21128,Meadow Internal Medicine Associates,Internal Medicine,2024-08-21,44.25,672.83,15.2,Rejected,R10,0.0
+CLM10030802,99213,"Office visit, established patient, low complexity",PR20038,Valley Endocrinology Associates,Endocrinology,2024-04-24,183.68,810.86,4.4,Approved,,112.19
+CLM10040421,93000,"Electrocardiogram, complete",PR20425,Horizon Family Medicine Associates,Family Medicine,2024-05-20,51.32,676.06,13.2,Rejected,R10,0.0
+CLM10158125,99213,"Office visit, established patient, low complexity",PR20078,Dr. Robert Martinez,Endocrinology,2025-07-30,183.68,807.63,4.4,Approved,,99.09
+CLM10039630,99213,"Office visit, established patient, low complexity",PR20042,Bayside Internal Medicine Associates,Internal Medicine,2024-05-21,183.68,801.09,4.4,Approved,,96.78
+CLM10195255,80053,Comprehensive metabolic panel,PR21161,Oakwood Diagnostics Lab,Laboratory,2025-12-08,38.42,654.95,17.0,Pending,,
+CLM10069439,99213,"Office visit, established patient, low complexity",PR20951,Parkside Endocrinology Associates,Endocrinology,2024-09-22,183.68,798.73,4.3,Approved,,103.6
+CLM10168921,96372,"Therapeutic injection, subcutaneous/IM",PR21171,Meadow Family Medicine Associates,Family Medicine,2025-09-02,49.54,657.43,13.3,Pending,,
+CLM10097643,80053,Comprehensive metabolic panel,PR20596,Cedar Diagnostics Lab,Laboratory,2024-12-27,38.42,624.5,16.3,Rejected,R10,0.0
+CLM10126800,71046,"Chest X-ray, 2 views",PR20090,Lakeview Imaging,Radiology,2025-03-30,99.84,676.84,6.8,Rejected,R05,0.0
+CLM10144632,96372,"Therapeutic injection, subcutaneous/IM",PR20885,Dr. Jennifer Ali,Family Medicine,2025-05-28,49.54,624.71,12.6,Rejected,R10,0.0
+CLM10111958,99213,"Office visit, established patient, low complexity",PR20841,Unity Internal Medicine Associates,Internal Medicine,2025-02-07,183.68,754.42,4.1,Approved,,110.91
+CLM10116609,99213,"Office visit, established patient, low complexity",PR20841,Unity Internal Medicine Associates,Internal Medicine,2025-02-07,183.68,754.42,4.1,Rejected,R01,0.0
+CLM10193838,80053,Comprehensive metabolic panel,PR20658,Pinecrest Diagnostics Lab,Laboratory,2025-12-05,38.42,607.55,15.8,Pending,,
+CLM10092770,96372,"Therapeutic injection, subcutaneous/IM",PR20894,Valley Internal Medicine Associates,Internal Medicine,2024-12-20,49.54,606.81,12.2,Rejected,R06,0.0
+CLM10165361,80053,Comprehensive metabolic panel,PR20030,Valley Diagnostics Lab,Laboratory,2025-08-08,38.42,587.51,15.3,Approved,,26.09
+CLM10024984,96372,"Therapeutic injection, subcutaneous/IM",PR21158,Dr. William Allen,Urgent Care,2024-03-28,49.54,596.85,12.0,Rejected,R10,0.0
+CLM10134663,93000,"Electrocardiogram, complete",PR20204,Harbor Cardiology Associates,Cardiology,2025-04-22,51.32,595.99,11.6,Approved,,32.12
+CLM10171769,96372,"Therapeutic injection, subcutaneous/IM",PR21171,Meadow Family Medicine Associates,Family Medicine,2025-09-22,49.54,586.56,11.8,Rejected,R10,0.0
+CLM10109180,93000,"Electrocardiogram, complete",PR21163,Dr. Grace Perez,Cardiology,2025-02-06,51.32,580.47,11.3,Approved,,29.9
+CLM10082132,80053,Comprehensive metabolic panel,PR20930,Oakwood Diagnostics Lab,Laboratory,2024-11-13,38.42,564.83,14.7,Approved,,20.7
+CLM10106361,96372,"Therapeutic injection, subcutaneous/IM",PR20026,Unity Urgent Care Associates,Urgent Care,2025-01-30,49.54,566.87,11.4,Rejected,R10,0.0
+CLM10071804,93000,"Electrocardiogram, complete",PR20798,Crescent Family Medicine Associates,Family Medicine,2024-09-18,51.32,565.78,11.0,Rejected,R10,0.0
+CLM10074360,93000,"Electrocardiogram, complete",PR20798,Crescent Family Medicine Associates,Family Medicine,2024-09-18,51.32,565.78,11.0,Rejected,R01,0.0
+CLM10080221,93000,"Electrocardiogram, complete",PR20057,Bayside Family Medicine Associates,Family Medicine,2024-10-25,51.32,565.07,11.0,Approved,,29.48
+CLM10137383,96372,"Therapeutic injection, subcutaneous/IM",PR20714,Dr. Robert Martinez,Family Medicine,2025-05-06,49.54,560.25,11.3,Rejected,R06,0.0
+CLM10196404,80053,Comprehensive metabolic panel,PR20369,Northgate Diagnostics Lab,Laboratory,2025-12-11,38.42,547.52,14.3,Pending,,
+CLM10158634,99213,"Office visit, established patient, low complexity",PR21156,Dr. David Moore,Urgent Care,2025-08-03,183.68,689.39,3.8,Approved,,108.87
+CLM10068675,80053,Comprehensive metabolic panel,PR20524,Summit Diagnostics Lab,Laboratory,2024-09-21,38.42,542.39,14.1,Rejected,R06,0.0
+CLM10103196,71046,"Chest X-ray, 2 views",PR20463,Highland Imaging,Radiology,2025-01-13,99.84,601.53,6.0,Rejected,R07,0.0
+CLM10115626,96372,"Therapeutic injection, subcutaneous/IM",PR20822,Dr. Jessica Ali,Internal Medicine,2025-02-27,49.54,549.35,11.1,Approved,,28.72
+CLM10144401,80053,Comprehensive metabolic panel,PR20637,Harbor Diagnostics Lab,Laboratory,2025-05-30,38.42,537.21,14.0,Approved,,23.06
+CLM10156708,93000,"Electrocardiogram, complete",PR20088,Dr. Omar Miller,Cardiology,2025-07-15,51.32,545.28,10.6,Rejected,R07,0.0
+CLM10076554,80053,Comprehensive metabolic panel,PR20348,Valley Diagnostics Lab,Laboratory,2024-10-21,38.42,531.03,13.8,Approved,,24.54
+CLM10014480,71046,"Chest X-ray, 2 views",PR20850,Summit Imaging,Radiology,2024-02-26,99.84,591.01,5.9,Approved,,50.23
+CLM10142419,80053,Comprehensive metabolic panel,PR20965,Lakeview Diagnostics Lab,Laboratory,2025-06-02,38.42,529.54,13.8,Approved,,24.94
+CLM10191198,71046,"Chest X-ray, 2 views",PR21164,Evergreen Imaging,Radiology,2025-04-25,99.84,589.19,5.9,Pending,,
+CLM10119633,96372,"Therapeutic injection, subcutaneous/IM",PR20327,Horizon Internal Medicine Associates,Internal Medicine,2025-03-04,49.54,537.71,10.9,Rejected,R10,0.0
+CLM10187781,96372,"Therapeutic injection, subcutaneous/IM",PR20800,Bayside Internal Medicine Associates,Internal Medicine,2025-11-10,49.54,537.12,10.8,Pending,,
+CLM10155033,80053,Comprehensive metabolic panel,PR20801,Evergreen Diagnostics Lab,Laboratory,2025-07-22,38.42,523.83,13.6,Approved,,24.34
+CLM10066435,93000,"Electrocardiogram, complete",PR20005,Riverside Cardiology Associates,Cardiology,2024-09-13,51.32,524.66,10.2,Rejected,R10,0.0
+CLM10000115,93000,"Electrocardiogram, complete",PR20254,Dr. Robert Khan,Internal Medicine,2024-01-03,51.32,521.97,10.2,Approved,,26.29
+CLM10019809,93000,"Electrocardiogram, complete",PR20181,Horizon Cardiology Associates,Cardiology,2024-03-07,51.32,520.66,10.1,Approved,,26.65
+CLM10136530,93000,"Electrocardiogram, complete",PR20646,Meadow Cardiology Associates,Cardiology,2025-04-19,51.32,517.12,10.1,Approved,,31.59
+CLM10014261,90471,Immunization administration,PR20368,Lakeview Internal Medicine Associates,Internal Medicine,2024-02-04,44.25,507.91,11.5,Rejected,R10,0.0
+CLM10156436,80053,Comprehensive metabolic panel,PR20575,Horizon Diagnostics Lab,Laboratory,2025-07-14,38.42,500.5,13.0,Rejected,R10,0.0
+CLM10006351,80053,Comprehensive metabolic panel,PR20369,Northgate Diagnostics Lab,Laboratory,2024-01-29,38.42,500.14,13.0,Rejected,R10,0.0
+CLM10032923,80053,Comprehensive metabolic panel,PR20266,Bayside Diagnostics Lab,Laboratory,2024-04-18,38.42,499.81,13.0,Approved,,22.14
+CLM10042212,96372,"Therapeutic injection, subcutaneous/IM",PR20555,Crescent Urgent Care Associates,Urgent Care,2024-06-05,49.54,506.76,10.2,Rejected,R10,0.0
+CLM10018124,80053,Comprehensive metabolic panel,PR20965,Lakeview Diagnostics Lab,Laboratory,2024-03-02,38.42,493.84,12.9,Rejected,R10,0.0
+CLM10041635,93000,"Electrocardiogram, complete",PR20286,Dr. Barbara Young,Family Medicine,2024-05-16,51.32,506.53,9.9,Approved,,27.76
+CLM10028480,80053,Comprehensive metabolic panel,PR20965,Lakeview Diagnostics Lab,Laboratory,2024-03-27,38.42,492.57,12.8,Rejected,R06,0.0
+CLM10194080,90471,Immunization administration,PR20057,Bayside Family Medicine Associates,Family Medicine,2025-12-03,44.25,496.91,11.2,Pending,,
+CLM10050064,80053,Comprehensive metabolic panel,PR20913,Valley Diagnostics Lab,Laboratory,2024-07-11,38.42,490.09,12.8,Approved,,22.47
+CLM10173380,80053,Comprehensive metabolic panel,PR20575,Horizon Diagnostics Lab,Laboratory,2025-09-24,38.42,488.5,12.7,Rejected,R10,0.0
+CLM10196346,96372,"Therapeutic injection, subcutaneous/IM",PR20375,Dr. Linda Smith,Family Medicine,2025-12-08,49.54,495.19,10.0,Pending,,
+CLM10196844,99213,"Office visit, established patient, low complexity",PR20286,Dr. Barbara Young,Family Medicine,2025-12-18,183.68,629.19,3.4,Pending,,
+CLM10160610,80053,Comprehensive metabolic panel,PR20021,Unity Diagnostics Lab,Laboratory,2025-08-06,38.42,483.6,12.6,Approved,,25.05
+CLM10161565,96372,"Therapeutic injection, subcutaneous/IM",PR20312,Unity Orthopedics Associates,Orthopedics,2025-08-03,49.54,492.88,9.9,Approved,,30.45
+CLM10090143,96372,"Therapeutic injection, subcutaneous/IM",PR20359,Dr. Lisa White,Orthopedics,2024-11-29,49.54,481.66,9.7,Rejected,R10,0.0
+CLM10173370,90471,Immunization administration,PR20283,Dr. Barbara Allen,Family Medicine,2025-09-23,44.25,471.84,10.7,Pending,,
+CLM10098176,80053,Comprehensive metabolic panel,PR20101,Bayside Diagnostics Lab,Laboratory,2024-12-26,38.42,462.21,12.0,Approved,,24.15
+CLM10099411,80053,Comprehensive metabolic panel,PR20101,Bayside Diagnostics Lab,Laboratory,2024-12-26,38.42,462.21,12.0,Rejected,R01,0.0
+CLM10108106,80053,Comprehensive metabolic panel,PR20176,Lakeview Diagnostics Lab,Laboratory,2025-01-27,38.42,458.37,11.9,Approved,,23.36
+CLM10066565,80053,Comprehensive metabolic panel,PR20878,Bayside Diagnostics Lab,Laboratory,2024-09-21,38.42,453.61,11.8,Approved,,24.96
+CLM10059935,80053,Comprehensive metabolic panel,PR20348,Valley Diagnostics Lab,Laboratory,2024-08-14,38.42,449.85,11.7,Rejected,R10,0.0
+CLM10186985,93000,"Electrocardiogram, complete",PR20194,Dr. Fatima Garcia,Family Medicine,2025-11-11,51.32,461.59,9.0,Pending,,
+CLM10197901,80053,Comprehensive metabolic panel,PR20878,Bayside Diagnostics Lab,Laboratory,2025-12-12,38.42,447.27,11.6,Pending,,
+CLM10109570,80053,Comprehensive metabolic panel,PR20540,Crescent Diagnostics Lab,Laboratory,2024-08-13,38.42,441.53,11.5,Rejected,R08,0.0
+CLM10113011,93000,"Electrocardiogram, complete",PR20149,Dr. Mei Johnson,Family Medicine,2025-02-15,51.32,447.48,8.7,Approved,,29.16
+CLM10075466,90471,Immunization administration,PR20710,Dr. Jessica Martin,Internal Medicine,2024-10-22,44.25,440.35,10.0,Rejected,R10,0.0
+CLM10129374,80053,Comprehensive metabolic panel,PR20176,Lakeview Diagnostics Lab,Laboratory,2025-04-07,38.42,431.93,11.2,Approved,,23.01
+CLM10039126,93000,"Electrocardiogram, complete",PR20258,Dr. Carlos Kim,Cardiology,2024-05-15,51.32,440.8,8.6,Approved,,28.08
+CLM10151852,80053,Comprehensive metabolic panel,PR20176,Lakeview Diagnostics Lab,Laboratory,2025-06-27,38.42,424.43,11.0,Rejected,R10,0.0
+CLM10170286,80053,Comprehensive metabolic panel,PR21161,Oakwood Diagnostics Lab,Laboratory,2025-09-09,38.42,418.88,10.9,Approved,,16.15
+CLM10160015,80053,Comprehensive metabolic panel,PR20356,Unity Diagnostics Lab,Laboratory,2025-07-29,38.42,403.56,10.5,Rejected,R10,0.0
+CLM10135043,93000,"Electrocardiogram, complete",PR21183,Dr. Omar Thompson,Family Medicine,2025-05-01,51.32,416.23,8.1,Rejected,R06,0.0
+CLM10194277,93000,"Electrocardiogram, complete",PR21159,Crescent Internal Medicine Associates,Internal Medicine,2025-11-24,51.32,410.02,8.0,Pending,,
+CLM10136103,93000,"Electrocardiogram, complete",PR20373,Dr. Laura Garcia,Cardiology,2025-05-05,51.32,409.14,8.0,Rejected,R10,0.0
+CLM10107001,93000,"Electrocardiogram, complete",PR20571,Dr. Luis Jackson,Internal Medicine,2025-01-31,51.32,407.04,7.9,Approved,,30.46
+CLM10184858,80053,Comprehensive metabolic panel,PR20658,Pinecrest Diagnostics Lab,Laboratory,2025-10-31,38.42,389.53,10.1,Rejected,R10,0.0
+CLM10129159,93000,"Electrocardiogram, complete",PR20995,Dr. Sarah Robinson,Internal Medicine,2025-04-10,51.32,398.65,7.8,Rejected,R10,0.0
+CLM10040968,93000,"Electrocardiogram, complete",PR20216,Dr. William Kim,Cardiology,2024-05-28,51.32,397.87,7.8,Rejected,R06,0.0
+CLM10157899,96372,"Therapeutic injection, subcutaneous/IM",PR20526,Dr. Lisa Khan,Urgent Care,2025-08-01,49.54,396.03,8.0,Rejected,R10,0.0
+CLM10175479,93000,"Electrocardiogram, complete",PR21155,Highland Internal Medicine Associates,Internal Medicine,2025-09-25,51.32,397.07,7.7,Approved,,31.24
+CLM10133587,80053,Comprehensive metabolic panel,PR20369,Northgate Diagnostics Lab,Laboratory,2025-04-21,38.42,383.65,10.0,Approved,,25.86
+CLM10071421,80053,Comprehensive metabolic panel,PR20965,Lakeview Diagnostics Lab,Laboratory,2024-10-03,38.42,383.37,10.0,Rejected,R10,0.0
+CLM10028663,80053,Comprehensive metabolic panel,PR21175,Evergreen Diagnostics Lab,Laboratory,2024-04-17,38.42,380.48,9.9,Approved,,21.72
+CLM10085714,85025,Complete blood count with differential,PR20362,Pinecrest Diagnostics Lab,Laboratory,2024-11-12,24.64,365.82,14.8,Approved,,15.57
+CLM10166055,80053,Comprehensive metabolic panel,PR20965,Lakeview Diagnostics Lab,Laboratory,2025-08-29,38.42,376.44,9.8,Rejected,R10,0.0
+CLM10117820,96372,"Therapeutic injection, subcutaneous/IM",PR21012,Pinecrest Family Medicine Associates,Family Medicine,2025-03-04,49.54,387.2,7.8,Approved,,27.11
+CLM10003440,93000,"Electrocardiogram, complete",PR20558,Dr. Anthony Davis,Internal Medicine,2024-01-11,51.32,385.77,7.5,Approved,,29.78
+CLM10077836,80053,Comprehensive metabolic panel,PR21126,Unity Diagnostics Lab,Laboratory,2024-10-14,38.42,369.94,9.6,Rejected,R01,0.0
+CLM10085855,80053,Comprehensive metabolic panel,PR21126,Unity Diagnostics Lab,Laboratory,2024-11-24,38.42,364.33,9.5,Rejected,R10,0.0
+CLM10073455,80053,Comprehensive metabolic panel,PR21126,Unity Diagnostics Lab,Laboratory,2024-10-14,38.42,364.3,9.5,Rejected,R10,0.0
+CLM10184494,90471,Immunization administration,PR21157,Bayside Internal Medicine Associates,Internal Medicine,2025-10-23,44.25,369.08,8.3,Pending,,
+CLM10161863,83036,Hemoglobin A1c,PR20362,Pinecrest Diagnostics Lab,Laboratory,2025-08-08,31.39,342.58,10.9,Approved,,19.49
+CLM10123971,80053,Comprehensive metabolic panel,PR20369,Northgate Diagnostics Lab,Laboratory,2025-03-26,38.42,346.22,9.0,Approved,,22.83
+CLM10063784,93000,"Electrocardiogram, complete",PR20256,Dr. Jennifer Ramirez,Internal Medicine,2024-09-01,51.32,340.81,6.6,Rejected,R10,0.0
+CLM10167734,96372,"Therapeutic injection, subcutaneous/IM",PR20312,Unity Orthopedics Associates,Orthopedics,2025-08-17,49.54,338.86,6.8,Rejected,R10,0.0
+CLM10194300,80053,Comprehensive metabolic panel,PR20575,Horizon Diagnostics Lab,Laboratory,2025-11-27,38.42,324.81,8.5,Pending,,
+CLM10190910,93000,"Electrocardiogram, complete",PR21023,Dr. Sarah Khan,Family Medicine,2025-11-04,51.32,337.65,6.6,Rejected,R07,0.0
+CLM10164505,85025,Complete blood count with differential,PR20326,Harbor Diagnostics Lab,Laboratory,2025-08-21,24.64,309.68,12.6,Approved,,15.15
+CLM10105348,96372,"Therapeutic injection, subcutaneous/IM",PR21031,Pinecrest Urgent Care Associates,Urgent Care,2025-01-29,49.54,332.74,6.7,Approved,,32.58
+CLM10045323,83036,Hemoglobin A1c,PR20749,Oakwood Diagnostics Lab,Laboratory,2024-06-25,31.39,307.22,9.8,Approved,,18.78
+CLM10152362,93000,"Electrocardiogram, complete",PR20047,Pinecrest Cardiology Associates,Cardiology,2025-06-25,51.32,326.57,6.4,Rejected,R10,0.0
+CLM10130571,80053,Comprehensive metabolic panel,PR20540,Crescent Diagnostics Lab,Laboratory,2025-04-15,38.42,313.43,8.2,Approved,,24.29
+CLM10025659,80053,Comprehensive metabolic panel,PR20348,Valley Diagnostics Lab,Laboratory,2024-02-27,38.42,313.36,8.2,Approved,,22.59
+CLM10174421,80053,Comprehensive metabolic panel,PR20221,Meadow Diagnostics Lab,Laboratory,2025-09-23,38.42,307.92,8.0,Approved,,23.46
+CLM10088602,93000,"Electrocardiogram, complete",PR20814,Dr. James Hernandez,Family Medicine,2024-10-29,51.32,319.24,6.2,Rejected,R10,0.0
+CLM10036755,93000,"Electrocardiogram, complete",PR20838,Cedar Family Medicine Associates,Family Medicine,2024-05-15,51.32,317.95,6.2,Rejected,R10,0.0
+CLM10181664,85025,Complete blood count with differential,PR20410,Cedar Diagnostics Lab,Laboratory,2025-10-10,24.64,289.97,11.8,Approved,,16.3
+CLM10007849,80053,Comprehensive metabolic panel,PR20437,Highland Diagnostics Lab,Laboratory,2024-01-11,38.42,301.3,7.8,Approved,,21.64
+CLM10011669,93000,"Electrocardiogram, complete",PR20694,Summit Internal Medicine Associates,Internal Medicine,2024-02-09,51.32,314.19,6.1,Rejected,R10,0.0
+CLM10060938,93000,"Electrocardiogram, complete",PR20222,Dr. John Anderson,Family Medicine,2024-08-19,51.32,309.25,6.0,Rejected,R10,0.0
+CLM10126394,93000,"Electrocardiogram, complete",PR20901,Cedar Internal Medicine Associates,Internal Medicine,2025-03-18,51.32,302.66,5.9,Rejected,R10,0.0
+CLM10096919,81001,Urinalysis with microscopy,PR20369,Northgate Diagnostics Lab,Laboratory,2024-12-21,15.78,266.76,16.9,Rejected,R10,0.0
+CLM10098575,80053,Comprehensive metabolic panel,PR20576,Evergreen Diagnostics Lab,Laboratory,2025-01-01,38.42,286.54,7.5,Approved,,22.74
+CLM10105734,80053,Comprehensive metabolic panel,PR20576,Evergreen Diagnostics Lab,Laboratory,2025-01-01,38.42,286.54,7.5,Rejected,R01,0.0
+CLM10040556,80053,Comprehensive metabolic panel,PR20030,Valley Diagnostics Lab,Laboratory,2024-06-03,38.42,285.28,7.4,Rejected,R10,0.0
+CLM10136574,80053,Comprehensive metabolic panel,PR21126,Unity Diagnostics Lab,Laboratory,2025-04-29,38.42,284.96,7.4,Approved,,23.55
+CLM10088154,81001,Urinalysis with microscopy,PR20021,Unity Diagnostics Lab,Laboratory,2024-11-29,15.78,258.57,16.4,Approved,,9.48
+CLM10103464,93000,"Electrocardiogram, complete",PR20233,Sunrise Internal Medicine Associates,Internal Medicine,2025-01-06,51.32,294.07,5.7,Rejected,R10,0.0
+CLM10060540,85025,Complete blood count with differential,PR20021,Unity Diagnostics Lab,Laboratory,2024-08-26,24.64,261.94,10.6,Rejected,R10,0.0
+CLM10112866,80053,Comprehensive metabolic panel,PR20382,Horizon Diagnostics Lab,Laboratory,2025-01-30,38.42,275.45,7.2,Rejected,R10,0.0
+CLM10084954,80053,Comprehensive metabolic panel,PR20030,Valley Diagnostics Lab,Laboratory,2024-11-21,38.42,273.61,7.1,Rejected,R10,0.0
+CLM10065552,80053,Comprehensive metabolic panel,PR20410,Cedar Diagnostics Lab,Laboratory,2024-09-16,38.42,271.79,7.1,Rejected,R10,0.0
+CLM10044726,80053,Comprehensive metabolic panel,PR20682,Meadow Diagnostics Lab,Laboratory,2024-06-13,38.42,265.85,6.9,Approved,,22.39
+CLM10132478,81001,Urinalysis with microscopy,PR20266,Bayside Diagnostics Lab,Laboratory,2025-04-17,15.78,239.51,15.2,Approved,,10.11
+CLM10155679,80053,Comprehensive metabolic panel,PR20801,Evergreen Diagnostics Lab,Laboratory,2025-07-11,38.42,258.74,6.7,Approved,,23.17
+CLM10093920,90471,Immunization administration,PR20239,Dr. Grace Nguyen,Family Medicine,2024-12-24,44.25,261.99,5.9,Approved,,25.45
+CLM10140735,80053,Comprehensive metabolic panel,PR20965,Lakeview Diagnostics Lab,Laboratory,2025-05-26,38.42,254.17,6.6,Rejected,R10,0.0
+CLM10021517,93000,"Electrocardiogram, complete",PR20726,Dr. Jessica Chen,Family Medicine,2024-03-13,51.32,262.73,5.1,Approved,,27.74
+CLM10145986,80053,Comprehensive metabolic panel,PR20878,Bayside Diagnostics Lab,Laboratory,2025-05-31,38.42,232.85,6.1,Approved,,21.89
+CLM10156881,81001,Urinalysis with microscopy,PR20965,Lakeview Diagnostics Lab,Laboratory,2025-06-27,15.78,207.79,13.2,Approved,,10.34
+CLM10047699,80053,Comprehensive metabolic panel,PR20576,Evergreen Diagnostics Lab,Laboratory,2024-07-03,38.42,219.17,5.7,Approved,,22.25
+CLM10079246,83036,Hemoglobin A1c,PR20637,Harbor Diagnostics Lab,Laboratory,2024-09-19,31.39,211.09,6.7,Rejected,R06,0.0
+CLM10063103,85025,Complete blood count with differential,PR21175,Evergreen Diagnostics Lab,Laboratory,2024-09-02,24.64,204.34,8.3,Approved,,15.66
+CLM10168998,81001,Urinalysis with microscopy,PR20930,Oakwood Diagnostics Lab,Laboratory,2025-09-08,15.78,192.98,12.2,Approved,,10.92
+CLM10154862,81001,Urinalysis with microscopy,PR20176,Lakeview Diagnostics Lab,Laboratory,2025-07-02,15.78,187.75,11.9,Rejected,R10,0.0
+CLM10013266,81001,Urinalysis with microscopy,PR20965,Lakeview Diagnostics Lab,Laboratory,2024-02-21,15.78,185.99,11.8,Approved,,8.32
+CLM10180928,80053,Comprehensive metabolic panel,PR20356,Unity Diagnostics Lab,Laboratory,2025-10-20,38.42,206.48,5.4,Approved,,21.86
+CLM10121974,85025,Complete blood count with differential,PR20965,Lakeview Diagnostics Lab,Laboratory,2025-02-28,24.64,192.15,7.8,Approved,,15.06
+CLM10127030,83036,Hemoglobin A1c,PR20524,Summit Diagnostics Lab,Laboratory,2025-03-26,31.39,193.29,6.2,Rejected,R10,0.0
+CLM10029714,85025,Complete blood count with differential,PR20266,Bayside Diagnostics Lab,Laboratory,2024-04-09,24.64,184.85,7.5,Approved,,15.28
+CLM10011923,83036,Hemoglobin A1c,PR20382,Horizon Diagnostics Lab,Laboratory,2024-02-07,31.39,189.7,6.0,Approved,,18.05
+CLM10078328,81001,Urinalysis with microscopy,PR20596,Cedar Diagnostics Lab,Laboratory,2024-10-31,15.78,169.43,10.7,Approved,,6.36
+CLM10050354,81001,Urinalysis with microscopy,PR21043,Northgate Diagnostics Lab,Laboratory,2024-07-15,15.78,167.6,10.6,Rejected,R10,0.0
+CLM10137054,85025,Complete blood count with differential,PR20540,Crescent Diagnostics Lab,Laboratory,2025-04-25,24.64,170.32,6.9,Approved,,15.27
+CLM10046109,80053,Comprehensive metabolic panel,PR20382,Horizon Diagnostics Lab,Laboratory,2024-06-06,38.42,179.89,4.7,Rejected,R10,0.0
+CLM10181673,81001,Urinalysis with microscopy,PR21126,Unity Diagnostics Lab,Laboratory,2025-10-12,15.78,156.94,9.9,Rejected,R07,0.0
+CLM10070235,81001,Urinalysis with microscopy,PR20382,Horizon Diagnostics Lab,Laboratory,2024-09-21,15.78,152.46,9.7,Rejected,R10,0.0
+CLM10107071,81001,Urinalysis with microscopy,PR20745,Highland Diagnostics Lab,Laboratory,2025-01-11,15.78,152.34,9.7,Approved,,7.59
+CLM10009822,81001,Urinalysis with microscopy,PR20021,Unity Diagnostics Lab,Laboratory,2024-02-10,15.78,141.21,8.9,Rejected,R07,0.0
+CLM10132919,80053,Comprehensive metabolic panel,PR20112,Harbor Diagnostics Lab,Laboratory,2025-04-29,38.42,156.04,4.1,Approved,,25.79
+CLM10017046,80053,Comprehensive metabolic panel,PR20030,Valley Diagnostics Lab,Laboratory,2024-02-29,38.42,152.8,4.0,Approved,,21.97
+CLM10023849,80053,Comprehensive metabolic panel,PR20030,Valley Diagnostics Lab,Laboratory,2024-02-29,38.42,152.8,4.0,Approved,,21.97
+CLM10077715,81001,Urinalysis with microscopy,PR21175,Evergreen Diagnostics Lab,Laboratory,2024-10-28,15.78,128.95,8.2,Rejected,R10,0.0
+CLM10179197,80053,Comprehensive metabolic panel,PR21151,Northgate Diagnostics Lab,Laboratory,2025-10-13,38.42,148.73,3.9,Rejected,R10,0.0
+CLM10143907,81001,Urinalysis with microscopy,PR20878,Bayside Diagnostics Lab,Laboratory,2025-06-03,15.78,123.12,7.8,Approved,,9.37
+CLM10036795,81001,Urinalysis with microscopy,PR21175,Evergreen Diagnostics Lab,Laboratory,2024-05-18,15.78,118.18,7.5,Rejected,R10,0.0
+CLM10014401,81001,Urinalysis with microscopy,PR20749,Oakwood Diagnostics Lab,Laboratory,2024-02-21,15.78,111.65,7.1,Approved,,9.02
+CLM10180312,81001,Urinalysis with microscopy,PR20382,Horizon Diagnostics Lab,Laboratory,2025-10-16,15.78,106.51,6.7,Approved,,9.39
+CLM10173697,81001,Urinalysis with microscopy,PR20576,Evergreen Diagnostics Lab,Laboratory,2025-09-27,15.78,98.95,6.3,Approved,,9.27
+CLM10006501,81001,Urinalysis with microscopy,PR20682,Meadow Diagnostics Lab,Laboratory,2024-01-20,15.78,87.25,5.5,Approved,,9.37
+CLM10156141,81001,Urinalysis with microscopy,PR21043,Northgate Diagnostics Lab,Laboratory,2025-07-01,15.78,83.15,5.3,Rejected,R10,0.0
+CLM10009533,81001,Urinalysis with microscopy,PR20913,Valley Diagnostics Lab,Laboratory,2024-02-09,15.78,62.09,3.9,Rejected,R10,0.0
