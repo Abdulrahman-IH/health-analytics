@@ -1,0 +1,396 @@
+{
+  "n_patients": 20000,
+  "n_eligible_patients": 19781,
+  "n_prescriptions": 33655,
+  "n_fills": 213422,
+  "n_reminders": 100796,
+  "n_app_users": 7640,
+  "enrolment_rate": 0.38622920984783377,
+  "mean_pdc": 0.8215105412367661,
+  "mean_mpr_raw": 0.8958402191885978,
+  "adherent_rate": 0.6280268944947172,
+  "adherent_all_meds": 0.545270714321824,
+  "mpr_pdc_misclassified": 0.06536575501744098,
+  "pdc_hist": {
+    "bins": [
+      "0\u201310%",
+      "10\u201320%",
+      "20\u201330%",
+      "30\u201340%",
+      "40\u201350%",
+      "50\u201360%",
+      "60\u201370%",
+      "70\u201380%",
+      "80\u201390%",
+      "90\u2013100%"
+    ],
+    "App reminder users": [
+      0,
+      28,
+      61,
+      50,
+      109,
+      293,
+      540,
+      989,
+      1661,
+      3909
+    ],
+    "Non-users": [
+      0,
+      62,
+      88,
+      132,
+      342,
+      853,
+      1592,
+      2219,
+      2792,
+      4061
+    ]
+  },
+  "users": {
+    "n": 7640,
+    "mean_pdc": 0.8570773565650719,
+    "adherent": 0.7290575916230366
+  },
+  "non_users": {
+    "n": 12141,
+    "mean_pdc": 0.7991293148873505,
+    "adherent": 0.5644510336875052
+  },
+  "tests": {
+    "welch_t": 25.17836455908699,
+    "welch_p": 2.175868457966592e-137,
+    "mw_p": 4.9499366945072605e-174,
+    "chi2": 543.1768192636026,
+    "chi_p": 3.839952899168502e-120,
+    "cohens_d": 0.36166965038735494,
+    "rank_biserial": 0.2370912502355611,
+    "rr": 1.2916223872603658,
+    "rd": 0.16460655793553147,
+    "rd_ci": [
+      0.15129812930795017,
+      0.17791498656311278
+    ]
+  },
+  "iptw": {
+    "rd": 0.15055998671815796,
+    "rd_ci": [
+      0.13493041005313544,
+      0.16524929461281787
+    ],
+    "pdc_diff": 0.05246551633862029,
+    "pdc_ci": [
+      0.04761218803412509,
+      0.05728852587653772
+    ],
+    "users": 0.7219747752220336,
+    "non_users": 0.5714147885038756,
+    "max_smd_before": 0.7642125695476123,
+    "max_smd_after": 0.0007642133730573778,
+    "adj_or": 2.4584637326782484,
+    "adj_or_ci": [
+      2.273758916426944,
+      2.6581727206119403
+    ]
+  },
+  "by_condition": [
+    {
+      "condition": "Hypertension",
+      "users": 0.72469723183391,
+      "non_users": 0.5635933184269367,
+      "diff": 0.16110391340697328
+    },
+    {
+      "condition": "Hyperlipidemia",
+      "users": 0.7029702970297029,
+      "non_users": 0.5365033621517772,
+      "diff": 0.16646693487792574
+    },
+    {
+      "condition": "Type 2 diabetes",
+      "users": 0.7209379128137384,
+      "non_users": 0.5341047503045067,
+      "diff": 0.18683316250923176
+    },
+    {
+      "condition": "COPD",
+      "users": 0.6796246648793566,
+      "non_users": 0.4872761545711593,
+      "diff": 0.19234851030819727
+    },
+    {
+      "condition": "Heart failure",
+      "users": 0.6879699248120301,
+      "non_users": 0.516867469879518,
+      "diff": 0.17110245493251208
+    }
+  ],
+  "by_drug": [
+    {
+      "drug_class": "LAMA/LABA inhaler",
+      "adherent": 0.5620396600566572,
+      "n": 1765
+    },
+    {
+      "drug_class": "Statin",
+      "adherent": 0.6064744562468386,
+      "n": 9885
+    },
+    {
+      "drug_class": "Metformin",
+      "adherent": 0.6176413444725083,
+      "n": 5147
+    },
+    {
+      "drug_class": "Beta blocker",
+      "adherent": 0.625748502994012,
+      "n": 1336
+    },
+    {
+      "drug_class": "Calcium channel blocker",
+      "adherent": 0.6475869809203143,
+      "n": 3564
+    },
+    {
+      "drug_class": "ACE inhibitor",
+      "adherent": 0.6476248976248976,
+      "n": 4884
+    },
+    {
+      "drug_class": "SGLT2 inhibitor",
+      "adherent": 0.6500994035785288,
+      "n": 1509
+    },
+    {
+      "drug_class": "ARB",
+      "adherent": 0.6579020204815943,
+      "n": 3613
+    },
+    {
+      "drug_class": "DPP-4 inhibitor",
+      "adherent": 0.6584536958368734,
+      "n": 1177
+    }
+  ],
+  "dose_response": {
+    "bands": [
+      "Q1 lowest",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5 highest"
+    ],
+    "adherent": [
+      0.6708115183246073,
+      0.6570680628272252,
+      0.7715968586387435,
+      0.7454188481675392,
+      0.800392670157068
+    ],
+    "engagement": [
+      0.22246178569644878,
+      0.5074226646780854,
+      0.6764946476355498,
+      0.8261586497521722,
+      0.9831491911589091
+    ],
+    "spearman": 0.16898867254184893
+  },
+  "fatigue": {
+    "months": [
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "engaged": [
+      0.7124767225325884,
+      0.7094494047619048,
+      0.6911103424420616,
+      0.6842291789722387,
+      0.6660401002506265,
+      0.6488294314381271,
+      0.6373905317933748,
+      0.6234839397574303,
+      0.6155892524607608,
+      0.6058573970165595,
+      0.5947242206235012
+    ],
+    "refill": [
+      0.3888268156424581,
+      0.3919270833333333,
+      0.3773780698720166,
+      0.3826343768458358,
+      0.368796992481203,
+      0.3488170444692184,
+      0.34877522528239624,
+      0.35305877648940426,
+      0.3398510242085661,
+      0.33652661831120845,
+      0.32718824940047964
+    ]
+  },
+  "funnel": {
+    "Refill requested": 0.3421365927219334,
+    "Opened": 0.27424699392833046,
+    "Ignored": 0.22401682606452636,
+    "Dismissed": 0.09008293979919837,
+    "Snoozed": 0.06951664748601134
+  },
+  "features": [
+    {
+      "feature": "Push (vs SMS)",
+      "adherent_on": 0.7334332334332334,
+      "adherent_off": 0.7129742962056304,
+      "odds_ratio": 1.1239977204422666,
+      "ci_low": 0.9801741773688756,
+      "ci_high": 1.2889248714455357
+    },
+    {
+      "feature": "Daily dose reminders",
+      "adherent_on": 0.7419647721082259,
+      "adherent_off": 0.6957337083919363,
+      "odds_ratio": 1.2915879124109373,
+      "ci_low": 1.141917777767748,
+      "ci_high": 1.4608751767987047
+    },
+    {
+      "feature": "Caregiver alerts",
+      "adherent_on": 0.7587768969422424,
+      "adherent_off": 0.7251738937398253,
+      "odds_ratio": 1.225502563680988,
+      "ci_low": 1.0213153493436498,
+      "ci_high": 1.4705120554134872
+    }
+  ],
+  "segments": [
+    {
+      "segment": "Non-adherent (<50%)",
+      "patients": 875,
+      "share": 0.04423436631110662,
+      "mean_pdc": 0.3728357021765668,
+      "depression": 0.2754285714285714,
+      "copay": 17.09968,
+      "app_user": 0.2834285714285714
+    },
+    {
+      "segment": "Partially adherent (50\u201379%)",
+      "patients": 6491,
+      "share": 0.3281431676861635,
+      "mean_pdc": 0.6858789146227541,
+      "depression": 0.2543521799414574,
+      "copay": 16.794284393775996,
+      "app_user": 0.2811585271914959
+    },
+    {
+      "segment": "Adherent (\u226580%)",
+      "patients": 12415,
+      "share": 0.6276224660027299,
+      "mean_pdc": 0.9240458108726283,
+      "depression": 0.17583568264196536,
+      "copay": 14.502615384615385,
+      "app_user": 0.4484091824405961
+    }
+  ],
+  "model": {
+    "Logistic regression": {
+      "cv_auc_mean": 0.8160595920449232,
+      "cv_auc_sd": 0.008746101773465489,
+      "test_auc": 0.823253730507573,
+      "test_pr_auc": 0.7232115415953796,
+      "brier": 0.16377050876000507
+    },
+    "Gradient boosting": {
+      "cv_auc_mean": 0.815529383868127,
+      "cv_auc_sd": 0.009615824966904935,
+      "test_auc": 0.8199768505557268,
+      "test_pr_auc": 0.7133395957688424,
+      "brier": 0.16505963536013335
+    }
+  },
+  "drivers": [
+    {
+      "feature": "90-day supply share",
+      "odds_ratio_per_sd": 0.2621096834690676
+    },
+    {
+      "feature": "Enrolled in reminder app",
+      "odds_ratio_per_sd": 0.7262002320937986
+    },
+    {
+      "feature": "Digital literacy",
+      "odds_ratio_per_sd": 0.7566583652253603
+    },
+    {
+      "feature": "Monthly copay (log)",
+      "odds_ratio_per_sd": 1.3193147215306542
+    },
+    {
+      "feature": "Depression diagnosis",
+      "odds_ratio_per_sd": 1.2997363987450754
+    },
+    {
+      "feature": "Medicaid",
+      "odds_ratio_per_sd": 1.2395142111035662
+    },
+    {
+      "feature": "No. chronic conditions",
+      "odds_ratio_per_sd": 1.1999604874282053
+    },
+    {
+      "feature": "No. maintenance Rx",
+      "odds_ratio_per_sd": 0.8527865005477641
+    },
+    {
+      "feature": "Prior-year hospitalisations",
+      "odds_ratio_per_sd": 1.1562656685103696
+    },
+    {
+      "feature": "Hyperlipidemia",
+      "odds_ratio_per_sd": 1.1489868914222596
+    }
+  ],
+  "tiers": [
+    {
+      "risk_tier": "Low",
+      "patients": 7913,
+      "share": 0.40003033213689904,
+      "observed_non_adherent": 0.10072033362820675,
+      "app_user": 0.4481233413370403,
+      "not_enrolled_n": 4367
+    },
+    {
+      "risk_tier": "Moderate",
+      "patients": 5934,
+      "share": 0.29998483393155045,
+      "observed_non_adherent": 0.41304347826086957,
+      "app_user": 0.5835861139197843,
+      "not_enrolled_n": 2471
+    },
+    {
+      "risk_tier": "High",
+      "patients": 3956,
+      "share": 0.1999898892877003,
+      "observed_non_adherent": 0.6322042467138523,
+      "app_user": 0.134479271991911,
+      "not_enrolled_n": 3424
+    },
+    {
+      "risk_tier": "Very high",
+      "patients": 1978,
+      "share": 0.09999494464385016,
+      "observed_non_adherent": 0.8134479271991911,
+      "app_user": 0.050050556117290194,
+      "not_enrolled_n": 1879
+    }
+  ]
+}
